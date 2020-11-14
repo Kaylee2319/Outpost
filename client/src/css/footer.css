@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+/* iPhone 4 (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .footer {
+    height: 7rem;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: -35px;
+  }
+  .icon-bar {
+    margin-right: -55px;
+  }
+  .follow {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .icon-bar a {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    margin-top: 2px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 17px;
+    border: white;
+  }
+
+  .facebook {
+    color: white;
+    background-color: black;
+    height: 17px;
+    width: 19px;
+    border-radius: 20%;
+    position: relative;
+    right: -30%;
+    padding-top: 2px;
+    padding-bottom: -1px;
+  }
+
+  .twitter {
+    color: white;
+    background-color: black;
+    height: 19px;
+    width: 19px;
+    border-radius: 20%;
+    position: relative;
+    right: -30%;
+  }
+
+  .instagram {
+    color: white;
+    background-color: black;
+    height: 19px;
+    width: 19px;
+    border-radius: 20%;
+    position: relative;
+    right: -30%;
+  }
+}
+/* iPhone 6 (portrait) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .footer {
+    height: 8rem;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: -35px;
+  }
+  .icon-bar {
+    margin-right: -55px;
+  }
+  .follow {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .icon-bar a {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    margin-top: 2px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 17px;
+    border: white;
+  }
+
+  .facebook {
+    color: white;
+    background-color: black;
+    height: 17px;
+    width: 19px;
+    border-radius: 20%;
+    position: relative;
+    right: -30%;
+    padding-top: 2px;
+    padding-bottom: -1px;
+  }
+
+  .twitter {
+    color: white;
+    background-color: black;
+    height: 19px;
+    width: 19px;
+    border-radius: 20%;
+    position: relative;
+    right: -30%;
+  }
+
+  .instagram {
+    color: white;
+    background-color: black;
+    height: 19px;
+    width: 19px;
+    border-radius: 20%;
+    position: relative;
+    right: -30%;
+  }
+}
+/* iPhone 6+ (portrait) ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
+  .footer {
+    height: 8rem;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    margin-left: -35px;
+  }
+  .icon-bar {
+    margin-right: -55px;
+  }
+  .follow {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .icon-bar a {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    margin-top: 2px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 17px;
+    border: white;
+  }
+
+  .facebook {
+    color: white;
+    background-color: black;
+    height: 17px;
+    width: 19px;
+    border-radius: 20%;
+    position: relative;
+    right: -30%;
+    padding-top: 2px;
+    padding-bottom: -1px;
+  }
+
+  .twitter {
+    color: white;
+    background-color: black;
+    height: 19px;
+    width: 19px;
+    border-radius: 20%;
+    position: relative;
+    right: -30%;
+  }
+
+  .instagram {
+    color: white;
+    background-color: black;
+    height: 19px;
+    width: 19px;
+    border-radius: 20%;
+    position: relative;
+    right: -30%;
+  }
+}

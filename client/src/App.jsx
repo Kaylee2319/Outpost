@@ -10,6 +10,7 @@ import AboutPage from './components/AboutPage';
 import PolicyGuide from './components/PolicyGuide';
 import VeteranPrograms from './components/VeteranPrograms';
 import ContactUs from './components/ContactUsPage';
+import Menu from './components/MenuPage';
 import './App.css';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/policy" component={PolicyGuide} />
         <Route exact path="/veteranprograms" component={VeteranPrograms} />
         <Route exact path="/contactus" component={ContactUs} />
+        <Route exact path="/menu" component={Menu} />
       </Switch>
     </BrowserRouter>
   );
