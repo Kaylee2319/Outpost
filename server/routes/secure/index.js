@@ -15,7 +15,7 @@ router.put('/password', updatePassword);
 router.post('/logout', logoutUser);
 router.delete('/', deleteUser);
 
-// Send DM
+// Send DM - post and get???
 
 // Send Chat in Chatroom
 

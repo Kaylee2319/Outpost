@@ -17,7 +17,8 @@ const userSchema = new mongoose.Schema(
     user_name: {
       type: String,
       required: true,
-      trim: true
+      trim: true,
+      unique: true
     },
     email: {
       type: String,
@@ -112,8 +113,8 @@ userSchema.virtual('chatMessages', {
 //Create a relationship between User to Chatrooms
 userSchema.virtual('chatrooms', {
   ref: 'Chatrooms',
-  localField: 'chat_id',
-  foreignField: 'message_id'
+  localField: 'user_id',
+  foreignField: 'chat_id'
 });
 
 userSchema.methods.toJSON = function () {

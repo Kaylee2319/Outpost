@@ -15,7 +15,7 @@ exports.createUser = async (req, res) => {
       email,
       password
     });
-    sendWelcomeEmail(user.email, user.name);
+    sendWelcomeEmail(user.email, user.user_name);
     const token = await user.generateAuthToken();
     res.cookie('jwt', token, {
       httpOnly: true,
@@ -30,9 +30,9 @@ exports.createUser = async (req, res) => {
 
 // Login a User loginUser
 exports.loginUser = async (req, res) => {
-  const { email, password } = req.body; //------------------------------------user_name or email????
+  const { email, password } = req.body;
   try {
-    const user = await User.findByCredentials(email, password); //------------user_name or email????
+    const user = await User.findByCredentials(email, password);
     const token = await user.generateAuthToken();
     res.cookie('jwt', token, {
       httpOnly: true,
@@ -67,7 +67,7 @@ exports.updateUserProfile = async (req, res) => {
     'gamer_tags',
     'avatar',
     'first_name',
-    'Last_name',
+    'last_name',
     'service_branch',
     'location'
   ];
@@ -122,7 +122,7 @@ exports.logoutUser = async (req, res) => {
 exports.deleteUser = async (req, res) => {
   try {
     await req.user.remove();
-    sendCancellationEmail(req.user.email, req.user.name);
+    sendCancellationEmail(req.user.email, req.user.user_name);
     res.clearCookie('jwt');
     res.json({ message: 'user deleted' });
   } catch (error) {
