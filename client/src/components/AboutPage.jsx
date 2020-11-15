@@ -8,10 +8,10 @@ const AboutPage = () => {
     <body>
       <NavBar />
       <div className="title">
-        <p>About Us</p>
+        <span>About Us</span>
       </div>
       <div className="story">
-        <h3 className="ourstory">Our Story</h3>
+        <h2 className="ourstory">Our Story</h2>
         <p>
           In 1958, Joe Coulombe took over a small chain of convenience stores
           around the LA area. These were called Pronto Markets. The whole idea
@@ -22,7 +22,6 @@ const AboutPage = () => {
         </p>
 
         <p>
-          {' '}
           After 10 years of running Pronto Markets, the convenience store
           formula just didn’t continue to make sense. So, Joe, the classic
           entrepreneur, took note that the demographics were changing in the
