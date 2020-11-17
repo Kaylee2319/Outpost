@@ -13,9 +13,9 @@ const HomePage = () => {
       <NavBar />
       <div className="Join">
         <span className="about">
-          Connect with veterans & schedule your favorite game.
+          Connect with veterans & play your favorite game.
         </span>
-        <button className="joinButton">Join</button>
+        <button className="joinButton">Link Up</button>
       </div>
       <div className="HowItWorks">
         <span className="HowTitle">How it Works</span>
@@ -76,70 +76,37 @@ const HomePage = () => {
           <div className="friendName">
             <h1 className="friend">friend</h1>john doe
           </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
-          <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
-          </div>
         </div>
       </div>
       <div className="perks">
-        <span className="perksTitle">Enjoy Perks</span>
+        <span className="perksTitle">Veteran Programs</span>
         <Link to="/event" className="eventLink">
           <span className="viewAll">View All</span>
         </Link>
       </div>
       <div className="thePerks">
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
-        <h1 className="perk">perk</h1>
+        <div className="benifits1">
+          <h1 className="perk">Education</h1>
+          <h1 className="perk">Job Support</h1>
+        </div>
+        <div className="benifits1">
+          <h1 className="perk">Mental Health</h1>
+          <h1 className="perk">Perks</h1>
+        </div>
       </div>
       <div className="instaWins">
-        <span className="instaTitle">Check our Insta-wins!</span>
+        <span className="instaTitle">Check out our Instagram</span>
       </div>
       <div className="theWins">
+        <h1 className="instaWin">instaWin</h1>
+        <h1 className="instaWin">instaWin</h1>
+        <h1 className="instaWin">instaWin</h1>
+        <h1 className="instaWin">instaWin</h1>
+        <h1 className="instaWin">instaWin</h1>
+        <h1 className="instaWin">instaWin</h1>
+        <h1 className="instaWin">instaWin</h1>
+        <h1 className="instaWin">instaWin</h1>
+        <h1 className="instaWin">instaWin</h1>
         <h1 className="instaWin">instaWin</h1>
         <h1 className="instaWin">instaWin</h1>
         <h1 className="instaWin">instaWin</h1>
