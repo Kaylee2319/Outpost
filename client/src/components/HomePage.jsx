@@ -48,7 +48,7 @@ const HomePage = () => {
           <span className="viewAll">View All</span>
         </Link>
       </div>
-      <div class="events">
+      <div className="events">
         <h1 className="item">event</h1>
         <h1 className="item">event</h1>
         <h1 className="item">event</h1>
@@ -120,7 +120,7 @@ const HomePage = () => {
           <span className="viewAll">View All</span>
         </Link>
       </div>
-      <div class="thePerks">
+      <div className="thePerks">
         <h1 className="perk">perk</h1>
         <h1 className="perk">perk</h1>
         <h1 className="perk">perk</h1>
@@ -139,7 +139,7 @@ const HomePage = () => {
       <div className="instaWins">
         <span className="instaTitle">Check our Insta-wins!</span>
       </div>
-      <div class="theWins">
+      <div className="theWins">
         <h1 className="instaWin">instaWin</h1>
         <h1 className="instaWin">instaWin</h1>
         <h1 className="instaWin">instaWin</h1>

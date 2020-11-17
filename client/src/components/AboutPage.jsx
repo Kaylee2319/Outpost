@@ -5,7 +5,7 @@ import Footer from './footer';
 
 const AboutPage = () => {
   return (
-    <body>
+    <>
       <NavBar />
       <div className="title">
         <span>About Us</span>
@@ -31,7 +31,7 @@ const AboutPage = () => {
         </p>
       </div>
       <Footer />
-    </body>
+    </>
   );
 };
 

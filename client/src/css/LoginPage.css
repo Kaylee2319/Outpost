@@ -1,54 +1,328 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
-
-/* iPhone 6 7 8 (portrait) ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+.topTitle {
+  height: 9rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
 }
-
-/* iPhone 6 7 8+ (portrait) ----------- */
-@media only screen and (device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
+.gameUp {
+  font-size: 22px;
+  font-family: 'Cabin', sans-serif;
+}
+.signInTitle {
+  height: 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -2rem;
+}
+.signIn {
+  font-size: 21px;
+  font-family: 'Cabin', sans-serif;
+}
+.loginForm {
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+.email {
+  margin-left: -2px;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+.emailBox {
+  height: 1.5rem;
+  box-shadow: lightgray;
+}
+.passwordBox {
+  height: 1.5rem;
+  box-shadow: lightgray;
+}
+.password {
+  margin-left: -2px;
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+.loginButton {
+  margin: 1.5rem;
+  height: 2rem;
+  width: 9rem;
+  background-color: darkgray;
+  border: none;
+  border-radius: 12%;
+}
+.or {
+  height: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -0.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.signinWith {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signinWith .signButton {
+  height: 2rem;
+  width: 2rem;
+  border: olive 1px solid;
+  font-size: 10px;
+  box-shadow: darkgray;
+  margin: 6px;
+}
+.noAccountTitle {
+  height: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 900;
+  margin-top: 0.75rem;
+  /* margin-bottom: 1rem; */
+}
+.signupLink {
+  height: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+.signLink {
+  font-size: 12px;
 }
 
 /* iPhone 11 (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-}
+  .topTitle {
+    height: 10rem;
+  }
+  .signInTitle {
+    margin-top: 1rem;
+  }
 
-/* iPhone pro 11 (portrait) ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
+  .loginForm {
+    height: 17rem;
+  }
+  .or {
+    height: 1.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+  }
+  .signinWith .signButton {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .signLink {
+    font-size: 13px;
+  }
 }
-/* iPhone 11 pro max (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-}
-
 /* iPhone 12 (portrait) ----------- */
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
+  .topTitle {
+    height: 10rem;
+  }
+  .signInTitle {
+    margin-top: 1.3rem;
+  }
+  .signinWith .signButton {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .signLink {
+    font-size: 13px;
+  }
 }
 /* iPhone 12 pro max (portrait) ----------- */
 @media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
+  .topTitle {
+    height: 10rem;
+  }
+  .signInTitle {
+    margin-top: 1rem;
+  }
+
+  .loginForm {
+    height: 17rem;
+  }
+  .or {
+    height: 1.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .signinWith .signButton {
+    height: 3rem;
+    width: 3rem;
+  }
+  .signLink {
+    font-size: 13px;
+  }
 }
 /* iPhone 12 mini (portrait) ----------- */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
-}
-
-/* Samsung Galaxy S3 (portrait) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
-}
-/* Samsung Galaxy S4 (portrait) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
-}
-
-/* Samsung Galaxy S5 (portrait) ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
-}
-
-/* Samsung Galaxy note 20 ------------*/
-@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
+  .loginForm {
+    height: 16.25rem;
+  }
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .topTitle {
+    height: 10rem;
+  }
+  .signInTitle {
+    margin-top: 1rem;
+  }
+
+  .loginForm {
+    height: 17rem;
+  }
+  .or {
+    height: 1.5rem;
+    margin-top: 0.25rem;
+    margin-bottom: 1.25rem;
+  }
+  .signinWith .signButton {
+    height: 3rem;
+    width: 3rem;
+  }
+  .signLink {
+    font-size: 13px;
+  }
 }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
+  .topTitle {
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+  }
+  .gameUp {
+    font-size: 22px;
+    font-family: 'Cabin', sans-serif;
+  }
+  .signInTitle {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -2rem;
+  }
+  .signIn {
+    font-size: 21px;
+    font-family: 'Cabin', sans-serif;
+  }
+  .loginForm {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .or {
+    height: 1rem;
+    margin-top: 0.5rem;
+  }
+  .signinWith .signButton {
+    height: 2rem;
+    width: 2rem;
+    margin: 6px;
+  }
+  .noAccountTitle {
+    height: 1rem;
+    font-size: 13px;
+    font-weight: 900;
+    margin-top: 0.75rem;
+  }
+  .signupLink {
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .signLink {
+    font-size: 14px;
+  }
 }
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
+  .topTitle {
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+  }
+  .gameUp {
+    font-size: 22px;
+    font-family: 'Cabin', sans-serif;
+  }
+  .signInTitle {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -2rem;
+  }
+  .signIn {
+    font-size: 21px;
+    font-family: 'Cabin', sans-serif;
+  }
+  .loginForm {
+    height: 15rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .or {
+    height: 1rem;
+    margin-top: 0.5rem;
+  }
+  .signinWith .signButton {
+    height: 3rem;
+    width: 3rem;
+    margin: 6px;
+  }
+  .noAccountTitle {
+    height: 1rem;
+    font-size: 13px;
+    font-weight: 900;
+    margin-top: 0.75rem;
+  }
+  .signupLink {
+    height: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .signLink {
+    font-size: 14px;
+  }
 }
