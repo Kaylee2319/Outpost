@@ -1,5 +1,6 @@
 const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
+const ChatRoomMessages = require('./chatMessages');
 
 const chatroomSchema = new mongoose.Schema(
   {

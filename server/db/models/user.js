@@ -1,5 +1,11 @@
 const { ObjectId } = require('mongodb');
 const mongoose = require('mongoose');
+const validator = require('validator');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const ChatMessage = require('./chatMessages');
+const Chatrooms = require('chatrooms');
+const DirectMessage = require('directMessages');
 
 const userSchema = new mongoose.Schema(
   {
@@ -11,7 +17,8 @@ const userSchema = new mongoose.Schema(
     user_name: {
       type: String,
       required: true,
-      trim: true
+      trim: true,
+      unique: true
     },
     email: {
       type: String,
@@ -106,9 +113,41 @@ userSchema.virtual('chatMessages', {
 //Create a relationship between User to Chatrooms
 userSchema.virtual('chatrooms', {
   ref: 'Chatrooms',
-  localField: 'chat_id',
-  foreignField: 'message_id'
+  localField: 'user_id',
+  foreignField: 'chat_id'
 });
+
+userSchema.methods.toJSON = function () {
+  const user = this;
+  const userObject = user.toObject();
+  delete userObject.password;
+  delete userObject.tokens;
+  return userObject;
+};
+
+userSchema.methods.generateAuthToken = async function () {
+  const user = this;
+  const token = jwt.sign(
+    {
+      _id: user._id.toString(),
+      name: user.name
+    },
+    process.env.JWT_SECRET,
+    { expiresIn: '72h' }
+  );
+  user.tokens = user.tokens.concat({ token });
+  await user.save();
+  return token;
+};
+
+userSchema.statics.findByCredentials = async (email, password) => {
+  // ===========find by email or user_name ????
+  const user = await User.findOne({ email });
+  if (!user) throw new Error('User email not found');
+  const isMatch = await bcrypt.compare(password, user.password);
+  if (!isMatch) throw new Error('Invalid password, try again.');
+  return user;
+};
 
 const User = mongoose.model('User', userSchema);
 
