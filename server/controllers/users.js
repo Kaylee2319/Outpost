@@ -23,8 +23,8 @@ exports.createUser = async (req, res) => {
       secure: process.env.NODE_ENV !== 'production' ? false : true
     });
     res.status(201).json(user);
-  } catch (e) {
-    res.status(400).json({ error: e.toString() });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
   }
 };
 
@@ -40,14 +40,46 @@ exports.loginUser = async (req, res) => {
       secure: process.env.NODE_ENV !== 'production' ? false : true
     });
     res.json(user);
-  } catch (e) {
-    res.status(400).json({ error: e.toString() });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
   }
 };
 
 // Password Change Request requestPasswordReset
+exports.requestPasswordReset = async (req, res) => {
+  try {
+    const { email } = req.query;
+    const user = await User.findOne({ email });
+    if (!user) throw new Error('User not found');
+    const token = jwt.sign(
+      { _id: user._id.toString(), name: user.user_name },
+      process.env.JWT_SECRET,
+      { expiresIn: '10m' }
+    );
+    forgotPasswordEmail(email, token);
+    res.json({ message: 'reset password email sent!' });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
 
 // Password Change Page passwordRedirect
+exports.passwordRedirect = async (req, res) => {
+  const { token } = req.params;
+  try {
+    jwt.verify(token, process.env.JWT_SECRET, function (err) {
+      if (error) throw new Error(error.message);
+    });
+    res.cookie('jwt', token, {
+      httpOnly: true,
+      maxAge: 600000,
+      sameSite: 'Strict'
+    });
+    res.redirect(process.env.URL + '/update-password');
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
 
 // ==  SECURE ROUTES  ==
 
@@ -103,6 +135,16 @@ exports.uploadAvatar = async (req, res) => {
 };
 
 // Update Password updatePassword
+exports.updatePassword = async (req, res) => {
+  try {
+    req.user.password = req.body.password;
+    await req.user.save();
+    res.clearCookie('jwt');
+    res.status(200).json({ message: 'password updated successfully!' });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
 
 // Logout User logoutUser
 exports.logoutUser = async (req, res) => {

@@ -3,9 +3,6 @@ const mongoose = require('mongoose');
 const validator = require('validator');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
-const ChatMessage = require('./chatMessages');
-const Chatrooms = require('chatrooms');
-const DirectMessage = require('directMessages');
 
 const userSchema = new mongoose.Schema(
   {
