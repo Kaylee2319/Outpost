@@ -137,6 +137,7 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+  padding-left: 10px;
 }
 .events .item {
   height: 70px;
@@ -193,6 +194,7 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
+  padding-left: 10px;
 }
 .thePerks .perk {
   height: 70px;
@@ -1337,11 +1339,11 @@
     font-size: 20px;
   }
   .events {
-    width: 100%;
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
-    height: 15rem;
+    height: 15.75rem;
+    padding-left: 3rem;
   }
   .events .item {
     height: 220px;
@@ -1359,6 +1361,7 @@
     padding-bottom: 1rem;
     margin-bottom: 2rem;
     margin-top: -1rem;
+    padding-left: 2rem;
   }
   .friends .friend {
     height: 270px;
@@ -1377,6 +1380,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 2rem;
+    padding-left: 3rem;
   }
   .thePerks .perk {
     height: 220px;

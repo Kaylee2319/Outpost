@@ -37,14 +37,17 @@ const Footer = () => {
 
         <div className="icon-bar">
           <p className="follow">Follow Us</p>
-          <a href="https://www.facebook.com/wyncode/" class="facebook">
-            <i class="fa fa-facebook"></i>
+          <a href="https://www.facebook.com/wyncode/" className="facebook">
+            <i className="fa fa-facebook"></i>
           </a>
-          <a href="https://twitter.com/wyncode?lang=en" class="twitter">
-            <i class="fa fa-twitter"></i>
+          <a href="https://twitter.com/wyncode?lang=en" className="twitter">
+            <i className="fa fa-twitter"></i>
           </a>
-          <a href="https://www.instagram.com/wyncode/?hl=en" class="instagram">
-            <i class="fa fa-instagram"></i>
+          <a
+            href="https://www.instagram.com/wyncode/?hl=en"
+            className="instagram"
+          >
+            <i className="fa fa-instagram"></i>
           </a>
         </div>
       </div>
