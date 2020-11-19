@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+/* iPhone 4 (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .name {
+    font-size: 3rem;
+    font-family: 'Unica One', cursive;
+    font-weight: 0.25rem;
+  }
+}
+/* iPhone 6 7 8 (portrait) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .name {
+    font-size: 3.5rem;
+    font-family: 'Unica One', cursive;
+    font-weight: 0.25rem;
+  }
+}
+/* iPhone 6+ (portrait) ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .name {
+    font-size: 3.75rem;
+    font-family: 'Unica One', cursive;
+    font-weight: 0.25rem;
+  }
+}
+/* Samsung Galaxy S3 (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .name {
+    font-size: 3rem;
+    font-family: 'Unica One', cursive;
+    font-weight: 0.25rem;
+  }
+}
