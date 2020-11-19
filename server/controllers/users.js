@@ -1,7 +1,11 @@
 const User = require('../db/models/user');
 const cloudinary = require('cloudinary').v2,
-  { sendWelcomeEmail, sendCancellationEmail } = require('../emails/index');
-
+  {
+    sendWelcomeEmail,
+    sendCancellationEmail,
+    forgotPasswordEmail
+  } = require('../emails/index');
+const jwt = require('jsonwebtoken');
 // ==  OPEN ROUTES  ==
 
 // Need to generate a user_id...
@@ -40,8 +44,8 @@ exports.loginUser = async (req, res) => {
       secure: process.env.NODE_ENV !== 'production' ? false : true
     });
     res.json(user);
-  } catch (error) {
-    res.status(400).json({ error: error.message });
+  } catch (e) {
+    res.status(400).json({ error: e.toString() });
   }
 };
 

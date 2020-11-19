@@ -8,7 +8,7 @@ const chatroomSchema = new mongoose.Schema(
       required: true,
       trim: true
     },
-    user_id: {
+    user_name: {
       type: ObjectId,
       required: true,
       trim: true,

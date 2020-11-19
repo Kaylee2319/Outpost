@@ -8,13 +8,13 @@ const directMessagesSchema = new mongoose.Schema(
       required: true,
       trim: true
     },
-    user_id_from: {
+    user_name_from: {
       type: ObjectId,
       required: true,
       trim: true, //needed?
       unique: true
     },
-    user_id_to: {
+    user_name_to: {
       type: ObjectId,
       required: true,
       trim: true, //needed?
