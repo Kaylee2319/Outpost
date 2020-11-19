@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+/* iPhone 6 7 8 (portrait) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
+}
+
+/* iPhone 6 7 8+ (portrait) ----------- */
+@media only screen and (device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
+}
+
+/* iPhone 11 (portrait) ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
+}
+
+/* iPhone pro 11 (portrait) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
+}
+/* iPhone 11 pro max (portrait) ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
+}
+
+/* iPhone 12 (portrait) ----------- */
+@media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
+}
+/* iPhone 12 pro max (portrait) ----------- */
+@media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
+}
+/* iPhone 12 mini (portrait) ----------- */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
+}
+
+/* Samsung Galaxy S3 (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
+}
+/* Samsung Galaxy S4 (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
+}
+
+/* Samsung Galaxy S5 (portrait) ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
+}

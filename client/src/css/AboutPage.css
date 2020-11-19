@@ -1,73 +1,237 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
-
-/* iPhone 5 (portrait) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
-  .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-family: 'Unica One';
-    margin-top: -0.75rem;
-    height: 6rem;
-    width: 100%;
-    background-color: lightgray;
-  }
-
-  .ourstory {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-  }
-  p {
-    margin: 0.75rem;
-  }
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Unica One';
+  margin-top: -0.75rem;
+  height: 6rem;
+  width: 100%;
+  background-color: lightgray;
+}
+span {
+  font-size: 2rem;
+}
+.ourstory {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+p {
+  margin: 0.75rem;
 }
 /* iPhone 6 7 8 (portrait) ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    font-family: 'Unica One';
     margin-top: -0.75rem;
     height: 6rem;
-    width: 100%;
-    background-color: lightgray;
   }
-
-  .ourstory {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
-  }
-  p {
-    margin: 0.75rem;
-  }
-}
-/* iPhone 6+ (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
-  .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.75rem;
-    font-family: 'Unica One';
-    margin-top: -0.75rem;
-    height: 6rem;
-    width: 100%;
-    background-color: lightgray;
+  span {
+    font-size: 2.5rem;
   }
   .story {
-    height: 26.25rem;
+    margin: 0.5rem;
   }
   .ourstory {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+}
+/* iPhone 6 7 8+ (portrait) ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
+  .title {
+    margin-top: -0.75rem;
+    height: 6rem;
+  }
+  span {
+    font-size: 2.75rem;
+  }
+  .story {
+    margin: 0.25rem;
+    margin-bottom: 5.25rem;
+  }
+  .ourstory {
+    font-size: 1.5rem;
+  }
+}
+
+/* iPhone 11 (portrait) ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
+  .title {
+    margin-top: -0.75rem;
+    height: 6rem;
+  }
+  span {
+    font-size: 2.75rem;
+  }
+  .story {
+    margin: 1.5rem;
+    margin-bottom: 3rem;
   }
   p {
-    margin: 0.75rem;
+    font-size: 20.5px;
+  }
+}
+
+/* iPhone pro 11 (portrait) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
+  .title {
+    margin-top: -0.75rem;
+    height: 6rem;
+  }
+  span {
+    font-size: 2.75rem;
+  }
+  .story {
+    margin: 0.25rem;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-size: 18.52px;
+  }
+}
+
+/* iPhone 12 (portrait) ----------- */
+@media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
+  .title {
+    margin-top: -0.75rem;
+    height: 6rem;
+  }
+  span {
+    font-size: 2.75rem;
+  }
+  .story {
+    margin: 1rem;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-size: 19px;
+  }
+}
+/* iPhone 12 pro max (portrait) ----------- */
+@media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
+  .title {
+    margin-top: -0.75rem;
+    height: 7rem;
+  }
+  span {
+    font-size: 3rem;
+  }
+  .story {
+    margin: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  p {
+    font-size: 21px;
+  }
+}
+
+/* Samsung Galaxy S3 (portrait) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
+  .title {
+    margin-top: -0.75rem;
+    height: 6rem;
+  }
+  span {
+    font-size: 2.5rem;
+  }
+  .story {
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Samsung Galaxy S5 (portrait) ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
+  .title {
+    margin-top: -0.75rem;
+    height: 6rem;
+  }
+  span {
+    font-size: 2.5rem;
+  }
+  .story {
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+/* Samsung Galaxy note 20 ------------*/
+@media only screen and (min-device-width: 412px) and (max-device-height: 767px) and (orientation: portrait) {
+  .title {
+    margin-top: -0.75rem;
+    height: 6rem;
+  }
+  span {
+    font-size: 2.5rem;
+  }
+  .story {
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 19px;
+  }
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
+  .title {
+    margin-top: -0.75rem;
+    height: 6rem;
+  }
+  span {
+    font-size: 3rem;
+  }
+  .story {
+    margin: 5rem;
+  }
+  p {
+    font-size: 20px;
+    margin: 2.95rem;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  .title {
+    margin-top: -0.75rem;
+    height: 10rem;
+  }
+  span {
+    font-size: 3.75rem;
+  }
+  .story {
+    margin-top: 4.5rem;
+    margin-left: 32.75rem;
+    margin-right: 32.75rem;
+    margin-bottom: 4.5rem;
+  }
+  p {
+    font-size: 22px;
+    margin: 1.86rem;
+  }
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  .title {
+    margin-top: -0.75rem;
+    height: 10rem;
+  }
+  span {
+    font-size: 3.75rem;
+  }
+  .story {
+    margin-top: 4.5rem;
+    margin-left: 32.75rem;
+    margin-right: 32.75rem;
+    margin-bottom: 4.5rem;
+  }
+  p {
+    font-size: 22px;
+    margin: 1.86rem;
   }
 }
