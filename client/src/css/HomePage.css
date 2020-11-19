@@ -133,16 +133,15 @@
   flex-direction: row;
   overflow-x: scroll;
   width: 100%;
-  background-color: lightgrey;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
   padding-left: 10px;
 }
 .events .item {
-  height: 70px;
-  min-width: 70px;
-  max-width: 70px;
+  height: 120px;
+  min-width: 90px;
+  max-width: 90px;
   margin: 5px;
   border: 1px black solid;
   font-size: 10px;
@@ -153,27 +152,39 @@
   font-family: 'Cabin', sans-serif;
 }
 .currentTitle {
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 0.25rem;
 }
 .friends {
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
-  margin-top: -1rem;
+  margin-top: 0.75rem;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
 }
 .friends .friend {
-  height: 90px;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
   min-width: 70px;
   max-width: 70px;
   margin: 5px;
   border: 1px black solid;
   font-size: 10px;
   background-color: darkgray;
+  border-radius: 50%;
+}
+.friendName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .perks {
   display: flex;
@@ -188,44 +199,45 @@
 .thePerks {
   display: flex;
   flex-direction: row;
-  overflow-x: scroll;
+  justify-content: center;
+  align-items: baseline;
   width: 100%;
-  background-color: lightgrey;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 2rem;
-  padding-left: 10px;
+  margin-bottom: 1rem;
 }
 .thePerks .perk {
-  height: 70px;
-  min-width: 70px;
-  max-width: 70px;
+  display: flex;
+  height: 120px;
+  min-width: 140px;
+  max-width: 140px;
   margin: 5px;
-  border: 1px black solid;
-  font-size: 10px;
+  font-size: 15px;
   background-color: darkgray;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Cabin', sans-serif;
 }
 .instaWins {
   display: flex;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
   font-family: 'Cabin', sans-serif;
 }
 .instaTitle {
   font-size: 18px;
+  margin-left: 1rem;
 }
 .theWins {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: lightgrey;
   padding-top: 1rem;
   padding-bottom: 1rem;
   margin-bottom: 6rem;
-  justify-content: center;
   align-items: center;
+  overflow-x: scroll;
 }
 .theWins .instaWin {
   height: 92px;
@@ -238,20 +250,27 @@
 }
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
-  .instaWins {
-    justify-content: space-evenly;
-    margin-bottom: 1.5rem;
+  .events .item {
+    height: 160px;
+    min-width: 120px;
+    max-width: 120px;
+    margin: 5px;
   }
-  .theWins {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 6rem;
+  .friends .friend {
+    height: 80px;
+    min-width: 80px;
+    max-width: 80px;
+  }
+  .thePerks .perk {
+    height: 140px;
+    min-width: 170px;
+    max-width: 170px;
+    font-size: 18px;
   }
   .theWins .instaWin {
-    height: 108px;
-    min-width: 108px;
-    max-width: 108px;
-    margin: 8px;
+    height: 112px;
+    min-width: 112px;
+    max-width: 112px;
   }
 }
 
@@ -260,7 +279,6 @@
   .Join {
     height: 10rem;
   }
-
   .about {
     font-size: 22px;
   }
@@ -319,62 +337,29 @@
   .viewAll {
     font-size: 17px;
   }
-  .events {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
   .events .item {
+    height: 180px;
+    min-width: 140px;
+    max-width: 140px;
+    margin: 5px;
+  }
+  .friends .friend {
     height: 100px;
     min-width: 100px;
     max-width: 100px;
-    margin: 6px;
-    font-size: 15px;
-  }
-  .currentTitle {
-    font-size: 17px;
-    margin-left: 0.25rem;
-  }
-
-  .friends .friend {
-    height: 115px;
-    min-width: 100px;
-    max-width: 100px;
-    margin: 5px;
-    font-size: 10px;
-  }
-  .perksTitle {
-    font-size: 20px;
-  }
-  .thePerks {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
   .thePerks .perk {
-    height: 100px;
-    min-width: 100px;
-    max-width: 100px;
-    margin: 8px;
-    font-size: 17px;
-  }
-  .instaWins {
-    margin-bottom: 1.7rem;
-  }
-  .instaTitle {
-    font-size: 22px;
-  }
-  .theWins {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    height: 140px;
+    min-width: 170px;
+    max-width: 170px;
+    font-size: 18px;
   }
   .theWins .instaWin {
-    height: 120px;
-    min-width: 120px;
-    max-width: 120px;
-    margin: 7px;
-    font-size: 15px;
+    height: 112px;
+    min-width: 112px;
+    max-width: 112px;
   }
 }
-
 /* iPhone 11 (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
   .Join {
@@ -439,59 +424,27 @@
   .viewAll {
     font-size: 17px;
   }
-  .events {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .friends .friend {
+    height: 100px;
+    min-width: 100px;
+    max-width: 100px;
   }
   .events .item {
-    height: 100px;
-    min-width: 100px;
-    max-width: 100px;
-    margin: 6px;
-    font-size: 15px;
-  }
-  .currentTitle {
-    font-size: 17px;
-    margin-left: 0.25rem;
-  }
-
-  .friends .friend {
-    height: 115px;
-    min-width: 100px;
-    max-width: 100px;
+    height: 160px;
+    min-width: 120px;
+    max-width: 120px;
     margin: 5px;
-    font-size: 10px;
-  }
-  .perksTitle {
-    font-size: 20px;
-  }
-  .thePerks {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
   .thePerks .perk {
-    height: 100px;
-    min-width: 100px;
-    max-width: 100px;
-    margin: 8px;
-    font-size: 17px;
-  }
-  .instaWins {
-    margin-bottom: 1.7rem;
-  }
-  .instaTitle {
-    font-size: 22px;
-  }
-  .theWins {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    height: 150px;
+    min-width: 190px;
+    max-width: 190px;
+    font-size: 18px;
   }
   .theWins .instaWin {
     height: 120px;
     min-width: 120px;
     max-width: 120px;
-    margin: 7px;
-    font-size: 15px;
   }
 }
 
@@ -564,51 +517,26 @@
     padding-bottom: 1.5rem;
   }
   .events .item {
+    height: 180px;
+    min-width: 140px;
+    max-width: 140px;
+    margin: 5px;
+  }
+  .friends .friend {
     height: 80px;
     min-width: 80px;
     max-width: 80px;
-    font-size: 17px;
-  }
-  .currentTitle {
-    font-size: 17px;
-    margin-left: 0.25rem;
-  }
-
-  .friends .friend {
-    height: 115px;
-    min-width: 100px;
-    max-width: 100px;
-    margin: 5px;
-    font-size: 10px;
-  }
-  .perksTitle {
-    font-size: 20px;
-  }
-  .thePerks {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
   .thePerks .perk {
-    height: 80px;
-    min-width: 80px;
-    max-width: 80px;
-    font-size: 17px;
-  }
-  .instaWins {
-    margin-bottom: 1.7rem;
-  }
-  .instaTitle {
-    font-size: 22px;
-  }
-  .theWins {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    height: 140px;
+    min-width: 170px;
+    max-width: 170px;
+    font-size: 18px;
   }
   .theWins .instaWin {
-    height: 102px;
-    min-width: 102px;
-    max-width: 102px;
-    font-size: 15px;
+    height: 112px;
+    min-width: 112px;
+    max-width: 112px;
   }
 }
 
@@ -676,57 +604,27 @@
   .viewAll {
     font-size: 17px;
   }
-  .events {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
   .events .item {
+    height: 180px;
+    min-width: 140px;
+    max-width: 140px;
+    margin: 5px;
+  }
+  .friends .friend {
     height: 80px;
     min-width: 80px;
     max-width: 80px;
-    font-size: 17px;
-  }
-  .currentTitle {
-    font-size: 17px;
-    margin-left: 0.25rem;
-  }
-
-  .friends .friend {
-    height: 115px;
-    min-width: 100px;
-    max-width: 100px;
-    margin: 5px;
-    font-size: 10px;
-  }
-  .perksTitle {
-    font-size: 20px;
-  }
-  .thePerks {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
   .thePerks .perk {
-    height: 80px;
-    min-width: 80px;
-    max-width: 80px;
-    font-size: 17px;
-  }
-  .instaWins {
-    margin-bottom: 1.7rem;
-  }
-  .instaTitle {
-    font-size: 22px;
-  }
-  .theWins {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    height: 140px;
+    min-width: 170px;
+    max-width: 170px;
+    font-size: 18px;
   }
   .theWins .instaWin {
     height: 112px;
     min-width: 112px;
     max-width: 112px;
-    margin: 6px;
-    font-size: 15px;
   }
 }
 /* iPhone 12 pro max (portrait) ----------- */
@@ -793,94 +691,53 @@
   .viewAll {
     font-size: 17px;
   }
-  .events {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
   .events .item {
-    height: 80px;
-    min-width: 80px;
-    max-width: 80px;
-    font-size: 17px;
+    height: 180px;
+    min-width: 140px;
+    max-width: 140px;
+    margin: 5px;
   }
-  .currentTitle {
-    font-size: 17px;
-    margin-left: 0.25rem;
-  }
-
   .friends .friend {
-    height: 115px;
+    height: 100px;
     min-width: 100px;
     max-width: 100px;
-    margin: 5px;
-    font-size: 10px;
-  }
-  .perksTitle {
-    font-size: 20px;
-  }
-  .thePerks {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
   }
   .thePerks .perk {
-    height: 80px;
-    min-width: 80px;
-    max-width: 80px;
-    font-size: 17px;
-  }
-  .instaWins {
-    margin-bottom: 1.7rem;
-  }
-  .instaTitle {
-    font-size: 22px;
-  }
-  .theWins {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    height: 140px;
+    min-width: 190px;
+    max-width: 190px;
+    font-size: 18px;
   }
   .theWins .instaWin {
-    height: 123px;
-    min-width: 123px;
-    max-width: 123px;
-    margin: 8px;
-    font-size: 15px;
-  }
-}
-/* iPhone 12 mini (portrait) ----------- */
-@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
-  .instaWins {
-    justify-content: space-evenly;
-    margin-bottom: 1.5rem;
-  }
-  .theWins {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 6rem;
-  }
-  .theWins .instaWin {
-    height: 102px;
-    min-width: 102px;
-    max-width: 102px;
-    margin: 9px;
+    height: 120px;
+    min-width: 120px;
+    max-width: 120px;
   }
 }
 
 /* Samsung Galaxy S5 (portrait) ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
-  .instaWins {
-    justify-content: space-evenly;
-    margin-bottom: 1.5rem;
+  .events .item {
+    height: 180px;
+    min-width: 140px;
+    max-width: 140px;
+    margin: 5px;
   }
-  .theWins {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 6rem;
+  .friends .friend {
+    height: 80px;
+    min-width: 80px;
+    max-width: 80px;
+  }
+  .thePerks .perk {
+    height: 135px;
+    min-width: 165px;
+    max-width: 165px;
+    font-size: 18px;
   }
   .theWins .instaWin {
-    height: 97px;
-    min-width: 97px;
-    max-width: 97px;
-    margin: 8px;
+    height: 112px;
+    min-width: 112px;
+    max-width: 112px;
   }
 }
 
@@ -948,56 +805,27 @@
   .viewAll {
     font-size: 17px;
   }
-  .events {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-  }
   .events .item {
-    height: 80px;
-    min-width: 80px;
-    max-width: 80px;
-    font-size: 17px;
-  }
-  .currentTitle {
-    font-size: 17px;
-    margin-left: 0.25rem;
-  }
-
-  .friends .friend {
-    height: 115px;
-    min-width: 100px;
-    max-width: 100px;
+    height: 180px;
+    min-width: 140px;
+    max-width: 140px;
     margin: 5px;
-    font-size: 10px;
   }
-  .perksTitle {
-    font-size: 20px;
-  }
-  .thePerks {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .friends .friend {
+    height: 90px;
+    min-width: 90px;
+    max-width: 90px;
   }
   .thePerks .perk {
-    height: 80px;
-    min-width: 80px;
-    max-width: 80px;
-    font-size: 17px;
-  }
-  .instaWins {
-    margin-bottom: 1.7rem;
-  }
-  .instaTitle {
-    font-size: 22px;
-  }
-  .theWins {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    height: 150px;
+    min-width: 190px;
+    max-width: 190px;
+    font-size: 18px;
   }
   .theWins .instaWin {
-    height: 119px;
-    min-width: 118px;
-    max-width: 118px;
-    font-size: 15px;
+    height: 125px;
+    min-width: 125px;
+    max-width: 125px;
   }
 }
 /* iPads (portrait) ----------- */
@@ -1064,58 +892,27 @@
   .viewAll {
     font-size: 20px;
   }
-  .events {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
   .events .item {
-    height: 125px;
-    min-width: 125px;
-    max-width: 125px;
-    font-size: 17px;
-  }
-  .currentTitle {
-    font-size: 20px;
-    margin-left: 0.5rem;
-  }
-
-  .friends .friend {
-    height: 150px;
-    min-width: 130px;
-    max-width: 130px;
+    height: 280px;
+    min-width: 250px;
+    max-width: 250px;
     margin: 5px;
-    font-size: 15px;
   }
-  .perksTitle {
-    font-size: 25px;
-  }
-  .thePerks {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+  .friends .friend {
+    height: 110px;
+    min-width: 110px;
+    max-width: 110px;
   }
   .thePerks .perk {
-    height: 125px;
-    min-width: 125px;
-    max-width: 125px;
-    font-size: 17px;
-  }
-  .instaWins {
-    margin-bottom: 1.7rem;
-  }
-  .instaTitle {
-    font-size: 30px;
-  }
-  .theWins {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    height: 18rem;
+    height: 190px;
+    min-width: 350px;
+    max-width: 350px;
+    font-size: 18px;
   }
   .theWins .instaWin {
-    height: 232px;
-    min-width: 232px;
-    max-width: 232px;
-    margin: 7px;
-    font-size: 15px;
+    height: 200px;
+    min-width: 200px;
+    max-width: 200px;
   }
 }
 
@@ -1125,7 +922,6 @@
     height: 12rem;
     background-color: lightgray;
   }
-
   .about {
     margin-left: 5.5rem;
     margin-right: 5.5rem;
@@ -1194,73 +990,46 @@
   .viewAll {
     font-size: 20px;
   }
-  .events {
-    width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    height: 15rem;
-  }
-  .events .item {
-    height: 220px;
-    min-width: 220px;
-    max-width: 220px;
-    margin: 6px;
-    font-size: 25px;
-  }
-  .currentTitle {
-    font-size: 25px;
-    margin-left: 0.25rem;
-  }
-  .friends {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    margin-top: -1rem;
-  }
-  .friends .friend {
-    height: 270px;
-    min-width: 220px;
-    max-width: 220px;
-    margin: 5px;
-    font-size: 10px;
-  }
   .perks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 1.5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
   .perksTitle {
     font-size: 25px;
   }
-  .thePerks {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
+  .currentTitle {
+    font-size: 25px;
+    margin-left: 15rem;
+  }
+  .events .item {
+    height: 280px;
+    min-width: 250px;
+    max-width: 250px;
+    margin: 5px;
+  }
+  .friends .friend {
+    height: 110px;
+    min-width: 110px;
+    max-width: 110px;
   }
   .thePerks .perk {
+    height: 190px;
+    min-width: 350px;
+    max-width: 350px;
+    font-size: 18px;
+  }
+  .theWins .instaWin {
     height: 220px;
     min-width: 220px;
     max-width: 220px;
-    margin: 6px;
-    font-size: 25px;
-  }
-  .instaWins {
-    margin-bottom: 1.5rem;
   }
   .instaTitle {
-    font-size: 35px;
-  }
-  .theWins {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 6rem;
-    height: 18rem;
-  }
-  .theWins .instaWin {
-    height: 280px;
-    min-width: 280px;
-    max-width: 280px;
-    margin: 10px;
-    font-size: 10px;
+    font-size: 25px;
+    margin-left: 5rem;
   }
 }
 /* Large screens ----------- */
@@ -1269,7 +1038,6 @@
     height: 12rem;
     background-color: lightgray;
   }
-
   .about {
     margin-left: 5.5rem;
     margin-right: 5.5rem;
@@ -1338,74 +1106,45 @@
   .viewAll {
     font-size: 20px;
   }
-  .events {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    height: 15.75rem;
-    padding-left: 3rem;
-  }
-  .events .item {
-    height: 220px;
-    min-width: 220px;
-    max-width: 220px;
-    margin: 6px;
-    font-size: 25px;
-  }
-  .currentTitle {
-    font-size: 25px;
-    margin-left: 0.25rem;
-  }
-  .friends {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    margin-top: -1rem;
-    padding-left: 2rem;
-  }
-  .friends .friend {
-    height: 270px;
-    min-width: 220px;
-    max-width: 220px;
-    margin: 5px;
-    font-size: 10px;
-  }
   .perks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 1.5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
   }
   .perksTitle {
     font-size: 25px;
   }
-  .thePerks {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
-    padding-left: 3rem;
+  .currentTitle {
+    font-size: 25px;
+    margin-left: 15rem;
+  }
+  .events .item {
+    height: 280px;
+    min-width: 250px;
+    max-width: 250px;
+    margin: 5px;
+  }
+  .friends .friend {
+    height: 110px;
+    min-width: 110px;
+    max-width: 110px;
   }
   .thePerks .perk {
+    height: 190px;
+    min-width: 350px;
+    max-width: 350px;
+    font-size: 18px;
+  }
+  .theWins .instaWin {
     height: 220px;
     min-width: 220px;
     max-width: 220px;
-    margin: 6px;
-    font-size: 25px;
-  }
-  .instaWins {
-    margin-bottom: 1.5rem;
   }
   .instaTitle {
-    font-size: 35px;
-  }
-  .theWins {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    margin-bottom: 6rem;
-    height: 18rem;
-  }
-  .theWins .instaWin {
-    height: 280px;
-    min-width: 280px;
-    max-width: 280px;
-    margin: 10px;
-    font-size: 10px;
+    font-size: 25px;
+    margin-left: 5rem;
   }
 }
