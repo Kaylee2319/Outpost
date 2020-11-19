@@ -10,7 +10,7 @@ const router = require('express').Router(),
 
 router.get('/profile', getUserProfile);
 router.patch('/profile', updateUserProfile);
-router.post('/avatar', uploadAvatar); // maybe move to /profile/avatar
+router.post('/profile/avatar', uploadAvatar);
 router.put('/password', updatePassword);
 router.post('/logout', logoutUser);
 router.delete('/', deleteUser);

@@ -1,15 +1,20 @@
-require('./db/config');
+require('./db/config/index');
 const express = require('express'),
   path = require('path'),
-  openRoutes = require('./routes/open');
+  openRoutes = require('./routes/open/users'),
+  passport = require('./middleware/authentication/index'),
+  cookieParser = require('cookie-parser'),
+  userRouter = require('./routes/secure/users');
 
 const app = express();
 
 //Middleware
 app.use(express.json());
 
+app.use(cookieParser());
+
 // Unauthenticated routes
-app.use(openRoutes);
+app.use('/api', openRoutes);
 
 // Serve any static files
 if (process.env.NODE_ENV === 'production') {
@@ -17,11 +22,16 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 // Any authentication middleware and related routing would be here.
+app.use('/api/*', passport.authenticate('jwt', { session: false }));
+
+app.use('/api/users', userRouter);
 
 // Handle React routing, return all requests to React app
 if (process.env.NODE_ENV === 'production') {
   app.get('*', (request, response) => {
-    response.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+    response.sendFile(
+      path.join(__dirname, '..', 'client', 'build', 'index.html')
+    );
   });
 }
 module.exports = app;

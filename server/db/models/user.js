@@ -6,11 +6,6 @@ const jwt = require('jsonwebtoken');
 
 const userSchema = new mongoose.Schema(
   {
-    user_id: {
-      type: ObjectId,
-      required: true,
-      unique: true
-    },
     user_name: {
       type: String,
       required: true,
@@ -96,21 +91,21 @@ const userSchema = new mongoose.Schema(
 //Create a relationship between User to DirectMessage
 userSchema.virtual('directMessages', {
   ref: 'DirectMessage',
-  localField: 'user_id',
+  localField: '_id',
   foreignField: 'dm_id'
 });
 
 //Create a relationship between User to ChatMessage
 userSchema.virtual('chatMessages', {
   ref: 'ChatMessage',
-  localField: 'user_id',
+  localField: '_id',
   foreignField: 'message_id'
 });
 
 //Create a relationship between User to Chatrooms
 userSchema.virtual('chatrooms', {
   ref: 'Chatrooms',
-  localField: 'user_id',
+  localField: '_id',
   foreignField: 'chat_id'
 });
 
@@ -127,7 +122,7 @@ userSchema.methods.generateAuthToken = async function () {
   const token = jwt.sign(
     {
       _id: user._id.toString(),
-      name: user.name
+      name: user.user_name
     },
     process.env.JWT_SECRET,
     { expiresIn: '72h' }
@@ -138,13 +133,19 @@ userSchema.methods.generateAuthToken = async function () {
 };
 
 userSchema.statics.findByCredentials = async (email, password) => {
-  // ===========find by email or user_name ????
   const user = await User.findOne({ email });
   if (!user) throw new Error('User email not found');
   const isMatch = await bcrypt.compare(password, user.password);
   if (!isMatch) throw new Error('Invalid password, try again.');
   return user;
 };
+
+userSchema.pre('save', async function (next) {
+  const user = this;
+  if (user.isModified('password'))
+    user.password = await bcrypt.hash(user.password, 8);
+  next();
+});
 
 const User = mongoose.model('User', userSchema);
 

@@ -14,7 +14,7 @@ const chatMessagesSchema = new mongoose.Schema(
       trim: true,
       unique: true
     },
-    user_id: {
+    user_name: {
       type: ObjectId,
       required: true,
       trim: true,
