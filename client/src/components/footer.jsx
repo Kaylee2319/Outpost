@@ -36,19 +36,23 @@ const Footer = () => {
         </div>
 
         <div className="icon-bar">
-          <p className="follow">Follow Us</p>
-          <a href="https://www.facebook.com/wyncode/" className="facebook">
-            <i className="fa fa-facebook"></i>
-          </a>
-          <a href="https://twitter.com/wyncode?lang=en" className="twitter">
-            <i className="fa fa-twitter"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/wyncode/?hl=en"
-            className="instagram"
-          >
-            <i className="fa fa-instagram"></i>
-          </a>
+          <div>
+            <p className="follow">Follow Us</p>
+          </div>
+          <div className="social">
+            <a href="https://www.facebook.com/wyncode/" className="facebook">
+              <i className="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/wyncode?lang=en" className="twitter">
+              <i className="fa fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/wyncode/?hl=en"
+              className="instagram"
+            >
+              <i className="fa fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </>
