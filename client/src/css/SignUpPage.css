@@ -1,5 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
+.signupTitle {
+  font-size: 1.75rem;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+.signInLink {
+  font-size: 20px;
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+.signUpForm {
+  font-size: 17px;
+  font-family: 'Cabin', sans-serif;
+  margin-left: 1rem;
+  line-height: 2rem;
+}
+.emailSignUp {
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+}
+.firstName {
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+}
+.lastName {
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+}
+.Birthday {
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+}
+.emailSignUp {
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.178),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.11);
+  margin-bottom: 15px;
+}
+.passwordSignUp {
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.322),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+}
+.conditions {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -0.25rem;
+  margin-right: 1rem;
+}
+.signButton {
+  display: flex;
+  justify-content: center;
+  margin-left: -1rem;
+  margin-bottom: 2rem;
+}
+.signUpButton {
+  height: 40px;
+  width: 280px;
+  background-color: #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: none;
+}
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
 }

@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import { BsPeople } from 'react-icons/bs';
 import { IoIosSearch } from 'react-icons/io';
 import { FaRegHandshake } from 'react-icons/fa';
-import Content from '../images/Content.png';
 const HomePage = () => {
   return (
     <>
