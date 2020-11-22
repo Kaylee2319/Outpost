@@ -8,60 +8,14 @@
   justify-content: space-between;
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 .name {
-  font-size: 3rem;
   font-family: 'Unica One', cursive;
-  font-weight: 0.25rem;
-}
-
-/* iPhone 6 7 8 (portrait) ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
-  .name {
-    font-size: 3.5rem;
-  }
-}
-/* iPhone 6 7 8+ (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
-  .name {
-    font-size: 3.5rem;
-  }
-}
-
-/* iPhone 11 (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-  .navbar {
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
-  }
-
-  .name {
-    font-size: 3.75rem;
-  }
-}
-
-/* iPhone pro 11 (portrait) ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
-  .navbar {
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
-  }
-
-  .name {
-    font-size: 3.75rem;
-  }
-}
-/* iPhone 11 pro max (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-  .navbar {
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
-  }
-
-  .name {
-    font-size: 3.85rem;
-  }
+  font-size: 2.65rem;
+  color: rgba(5, 95, 158, 1);
+  text-decoration: none;
 }
 
 /* iPhone 12 (portrait) ----------- */
@@ -70,44 +24,21 @@
     margin-left: 1.75rem;
     margin-right: 1.75rem;
   }
-
-  .name {
-    font-size: 3.85rem;
-  }
 }
-/* iPhone 12 pro max (portrait) ----------- */
-@media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
-  .navbar {
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
-  }
 
-  .name {
-    font-size: 4rem;
-  }
-}
 /* iPhone 12 mini (portrait) ----------- */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
   .navbar {
     margin-left: 1.75rem;
     margin-right: 1.75rem;
   }
-
-  .name {
-    font-size: 3.85rem;
-  }
 }
 
 /* Samsung Galaxy S3 (portrait) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
-  .navbar {
+  */ .navbar {
     margin-left: 1rem;
     margin-right: 1rem;
-  }
-
-  .name {
-    font-size: 3.5rem;
-    font-weight: 0.25rem;
   }
 }
 /* Samsung Galaxy S5 (portrait) ----------- */
@@ -116,13 +47,9 @@
     margin-left: 1.75rem;
     margin-right: 1.75rem;
   }
-
-  .name {
-    font-size: 3.95rem;
-  }
 }
 
-/* Samsung Galaxy note 20 ------------*/
+/* Samsung Galaxy note 20 ------------ */
 @media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
   .navbar {
     margin-left: 1.75rem;
@@ -130,7 +57,7 @@
   }
 
   .name {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 /* iPads (portrait) ----------- */
@@ -150,12 +77,11 @@
     margin-left: 6rem;
     margin-right: 6rem;
   }
-
   .name {
-    font-size: 8rem;
+    font-size: 5rem;
   }
 }
-/* Large screens ----------- */
+/* Large screens -----------  */
 @media only screen and (min-width: 2000px) {
   .navbar {
     margin-left: 7rem;
@@ -163,6 +89,6 @@
   }
 
   .name {
-    font-size: 10rem;
+    font-size: 7rem;
   }
 }

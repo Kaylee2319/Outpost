@@ -19,7 +19,6 @@ const LoginPage = () => {
           <input className="emailBox" type="email" />
           <p className="password">Password:</p>
           <input className="passwordBox" type="password" />
-          {/* <textarea value={this.state.value} onChange={this.handleChange} /> */}
         </label>
         <input className="loginButton" type="submit" value="Sign In" />
       </form>

@@ -43,5 +43,6 @@
     "dev": "concurrently --kill-others-on-fail \"yarn run server\" \"yarn run client\"",
     "heroku-postbuild": "cd client && yarn && yarn run build",
     "prettify": "prettier '*/**/*.js' '*/**/*.jsx' '*/**/*.html' '*/**/*.css' --write"
-  }
+  },
+  "repository": "git@github.com:wyncode/c39_armed_forces.git"
 }

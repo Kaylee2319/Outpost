@@ -4,9 +4,8 @@ import NavBar from './NavBar';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
 import { BsPeople } from 'react-icons/bs';
-import { HiOutlineSearch } from 'react-icons/hi';
+import { IoIosSearch } from 'react-icons/io';
 import { FaRegHandshake } from 'react-icons/fa';
-
 const HomePage = () => {
   return (
     <>
@@ -15,7 +14,7 @@ const HomePage = () => {
         <span className="about">
           Connect with veterans & play your favorite game.
         </span>
-        <button className="joinButton">Link Up</button>
+        <button className="joinButton">LINK UP</button>
       </div>
       <div className="HowItWorks">
         <span className="HowTitle">How it Works</span>
@@ -23,16 +22,16 @@ const HomePage = () => {
       </div>
       <div className="iconbar">
         <div className="search">
-          <HiOutlineSearch size={45} style={{ color: 'black' }} />
           Search
+          <IoIosSearch size={45} style={{ color: 'black' }} />
         </div>
         <div className="connect">
-          <BsPeople size={45} style={{ color: 'black' }} />
           Connect
+          <BsPeople size={45} style={{ color: 'black' }} />
         </div>
         <div className="gameOn">
+          Game On!
           <FaRegHandshake size={45} style={{ color: 'black' }} />
-          Game On
         </div>
       </div>
       <div className="explore">
@@ -43,7 +42,7 @@ const HomePage = () => {
         <div className="video">video goes here</div>
       </div>
       <div className="upcomingEvents">
-        <span className="eventTitle">Upcoming Events</span>
+        <span className="eventTitle">Online Game Chats</span>
         <Link to="/event" className="eventLink">
           <span className="viewAll">View All</span>
         </Link>
@@ -80,7 +79,7 @@ const HomePage = () => {
       </div>
       <div className="perks">
         <span className="perksTitle">Veteran Programs</span>
-        <Link to="/event" className="eventLink">
+        <Link to="/veteranprograms" className="eventLink">
           <span className="viewAll">View All</span>
         </Link>
       </div>
@@ -95,21 +94,12 @@ const HomePage = () => {
         </div>
       </div>
       <div className="instaWins">
-        <span className="instaTitle">Check out our Instagram</span>
+        <span className="instaTitle">Seen on Instagram</span>
       </div>
       <div className="theWins">
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
-        <h1 className="instaWin">instaWin</h1>
+        <h1 className="insta1"></h1>
+        <h1 className="insta2"></h1>
+        <h1 className="instaWin"></h1>
       </div>
       <Footer />
     </>
