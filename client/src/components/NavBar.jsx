@@ -8,11 +8,13 @@ const NavBar = () => {
     <>
       <div className="navbar">
         <Link to="/menu" className="menu">
-          <FiMenu size={30} style={{ color: 'black' }} />
+          <FiMenu size={30} style={{ color: '055F9E' }} />
         </Link>
-        <p className="name">Outpost</p>
+        <Link to="/" className="name">
+          Outpost
+        </Link>
         <Link to="/profile" className="profile">
-          <MdPersonPin size={30} style={{ color: 'black' }} />
+          <MdPersonPin size={27} style={{ color: '055F9E' }} />
         </Link>
       </div>
     </>

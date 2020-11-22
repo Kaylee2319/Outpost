@@ -1,46 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 .Join {
-  height: 9rem;
+  height: 15rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: -1rem;
-  background-color: lightgray;
+  background-image: url('../images/outposthmpg_edited.jpg');
+  background-size: 175%;
 }
 
 .about {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
   margin-bottom: 0.65rem;
-  margin-top: 0.65rem;
-  font-size: 16px;
+  margin-top: 3rem;
+  font-size: 22px;
+  font-weight: 500;
   font-family: 'Cabin', sans-serif;
+  color: white;
 }
 .joinButton {
-  height: 1.75rem;
-  width: 6rem;
-  border-radius: 15%;
-  background-color: gray;
-  font-family: 'Montserrat', sans-serif;
+  height: 40px;
+  width: 155px;
+  margin-top: 2.5rem;
+  background-color: #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: none;
 }
 .HowItWorks {
-  height: 8rem;
+  height: 7rem;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
   text-align: center;
-  line-height: 1.75rem;
+  line-height: 2.5rem;
 }
 .HowTitle {
   font-size: 20px;
   font-family: 'Cabin', sans-serif;
+  color: #ffac4f;
 }
 .works {
   font-size: 15px;
@@ -51,25 +60,29 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cabin', sans-serif;
 }
 .search {
   font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: black;
+  font-weight: 600;
 }
 .connect {
   font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: 600;
 }
 .gameOn {
   font-size: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-weight: 600;
 }
 .explore {
   height: 3rem;
@@ -82,36 +95,34 @@
 }
 .exploreButton {
   background-color: white;
-  height: 1.75rem;
-  width: 8rem;
-  border-radius: 15%;
-  font-family: 'Montserrat', sans-serif;
+  height: 40px;
+  width: 170px;
+  border: 1px solid #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
 }
 .howvideo {
   height: 9rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-top: -1rem;
 }
 .howvideotitle {
-  font-size: 14px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: lightgrey;
-  line-height: 3rem;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(5, 95, 158, 1);
+  margin-left: 1.5rem;
   font-family: 'Cabin', sans-serif;
 }
 .video {
-  height: 8rem;
+  height: 15rem;
   display: flex;
   justify-content: center;
   background-color: lightgrey;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   margin-bottom: 3rem;
 }
 .upcomingEvents {
@@ -122,7 +133,9 @@
   font-family: 'Cabin', sans-serif;
 }
 .eventTitle {
-  font-size: 18px;
+  font-size: 23px;
+  font-weight: 600;
+  color: rgba(5, 95, 158, 1);
 }
 .viewAll {
   font-size: 12px;
@@ -152,8 +165,9 @@
   font-family: 'Cabin', sans-serif;
 }
 .currentTitle {
-  font-size: 18px;
-  margin-left: 0.25rem;
+  font-size: 23px;
+  font-weight: 600;
+  color: rgba(5, 95, 158, 1);
 }
 .friends {
   display: flex;
@@ -194,7 +208,9 @@
   font-family: 'Cabin', sans-serif;
 }
 .perksTitle {
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 600;
+  color: rgba(5, 95, 158, 1);
 }
 .thePerks {
   display: flex;
@@ -212,8 +228,10 @@
   min-width: 140px;
   max-width: 140px;
   margin: 5px;
-  font-size: 15px;
-  background-color: darkgray;
+  font-size: 19px;
+  font-weight: 500;
+  background-image: url('../images/outposthmpg_edited.jpg');
+  background-size: 300%;
   margin-bottom: 10px;
   justify-content: center;
   align-items: center;
@@ -222,12 +240,13 @@
 }
 .instaWins {
   display: flex;
-  margin-bottom: 0.75rem;
   font-family: 'Cabin', sans-serif;
 }
 .instaTitle {
-  font-size: 18px;
-  margin-left: 1rem;
+  font-size: 23px;
+  font-weight: 600;
+  color: rgba(5, 95, 158, 1);
+  margin-left: 1.5rem;
 }
 .theWins {
   display: flex;
@@ -235,27 +254,36 @@
   width: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 6rem;
+  margin-bottom: 2rem;
   align-items: center;
   overflow-x: scroll;
 }
 .theWins .instaWin {
-  height: 92px;
-  min-width: 92px;
-  max-width: 92px;
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
   margin: 3px;
-  border: 1px black solid;
-  font-size: 10px;
-  background-color: darkgray;
+  background-image: url('../images/Gamer.png');
+  background-size: cover;
+}
+.theWins .insta1 {
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 3px;
+  background-image: url('../images/maxresdefault.png');
+  background-size: cover;
+}
+.theWins .insta2 {
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 3px;
+  background-image: url('../images/Content.png');
+  background-size: cover;
 }
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
-  .events .item {
-    height: 160px;
-    min-width: 120px;
-    max-width: 120px;
-    margin: 5px;
-  }
   .friends .friend {
     height: 80px;
     min-width: 80px;
@@ -268,74 +296,31 @@
     font-size: 18px;
   }
   .theWins .instaWin {
-    height: 112px;
-    min-width: 112px;
-    max-width: 112px;
+    height: 125px;
+    min-width: 125px;
+    max-width: 125px;
+  }
+  .theWins .insta1 {
+    height: 125px;
+    min-width: 125px;
+    max-width: 125px;
+  }
+  .theWins .insta2 {
+    height: 125px;
+    min-width: 125px;
+    max-width: 125px;
   }
 }
 
 /* iPhone 6 7 8+ (portrait) ----------- */
 @media only screen and (device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
-  .Join {
-    height: 10rem;
-  }
-  .about {
-    font-size: 22px;
-  }
-  .joinButton {
-    height: 2rem;
-    width: 7rem;
-  }
-  .HowItWorks {
-    height: 9rem;
-    line-height: 2.25rem;
-  }
-  .HowTitle {
-    font-size: 22px;
-  }
-  .works {
-    font-size: 17px;
-  }
-  .iconbar {
-    height: 6rem;
-  }
-  .search {
-    font-size: 17px;
-  }
-  .connect {
-    font-size: 17px;
-  }
-  .gameOn {
-    font-size: 17px;
-  }
-  .explore {
-    height: 3.5rem;
-    margin-bottom: 2rem;
-  }
-  .exploreButton {
-    height: 2.25rem;
-    width: 9rem;
-  }
-  .howvideo {
-    height: 11rem;
-  }
-  .howvideotitle {
-    font-size: 18px;
-    line-height: 3.5rem;
-  }
   .video {
-    height: 10rem;
+    height: 20rem;
     margin-left: 3rem;
     margin-right: 3rem;
   }
   .upcomingEvents {
     margin-bottom: 1rem;
-  }
-  .eventTitle {
-    font-size: 22px;
-  }
-  .viewAll {
-    font-size: 17px;
   }
   .events .item {
     height: 180px;
@@ -349,102 +334,25 @@
     max-width: 100px;
   }
   .thePerks .perk {
-    height: 140px;
-    min-width: 170px;
-    max-width: 170px;
-    font-size: 18px;
-  }
-  .theWins .instaWin {
-    height: 112px;
-    min-width: 112px;
-    max-width: 112px;
-  }
-}
-/* iPhone 11 (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-  .Join {
-    height: 10rem;
-  }
-
-  .about {
-    font-size: 22px;
-  }
-  .joinButton {
-    height: 2rem;
-    width: 7rem;
-  }
-  .HowItWorks {
-    height: 9rem;
-    line-height: 2.25rem;
-  }
-  .HowTitle {
-    font-size: 22px;
-  }
-  .works {
-    font-size: 17px;
-  }
-  .iconbar {
-    height: 6rem;
-  }
-  .search {
-    font-size: 17px;
-  }
-  .connect {
-    font-size: 17px;
-  }
-  .gameOn {
-    font-size: 17px;
-  }
-  .explore {
-    height: 3.5rem;
-    margin-bottom: 2rem;
-  }
-  .exploreButton {
-    height: 2.25rem;
-    width: 9rem;
-  }
-  .howvideo {
-    height: 11rem;
-  }
-  .howvideotitle {
-    font-size: 18px;
-    line-height: 3.5rem;
-  }
-  .video {
-    height: 10rem;
-    margin-left: 3rem;
-    margin-right: 3rem;
-  }
-  .upcomingEvents {
-    margin-bottom: 1rem;
-  }
-  .eventTitle {
-    font-size: 22px;
-  }
-  .viewAll {
-    font-size: 17px;
-  }
-  .friends .friend {
-    height: 100px;
-    min-width: 100px;
-    max-width: 100px;
-  }
-  .events .item {
-    height: 160px;
-    min-width: 120px;
-    max-width: 120px;
-    margin: 5px;
-  }
-  .thePerks .perk {
     height: 150px;
     min-width: 190px;
     max-width: 190px;
     font-size: 18px;
   }
   .theWins .instaWin {
-    height: 120px;
-    min-width: 120px;
-    max-width: 120px;
+    height: 135px;
+    min-width: 135px;
+    max-width: 135px;
+  }
+  .theWins .insta1 {
+    height: 135px;
+    min-width: 135px;
+    max-width: 135px;
+  }
+  .theWins .insta2 {
+    height: 135px;
+    min-width: 135px;
+    max-width: 135px;
   }
 }
 
@@ -534,72 +442,28 @@
     font-size: 18px;
   }
   .theWins .instaWin {
-    height: 112px;
-    min-width: 112px;
-    max-width: 112px;
+    height: 135px;
+    min-width: 135px;
+    max-width: 135px;
+  }
+  .theWins .insta1 {
+    height: 135px;
+    min-width: 135px;
+    max-width: 135px;
+  }
+  .theWins .insta2 {
+    height: 135px;
+    min-width: 135px;
+    max-width: 135px;
   }
 }
 
 /* iPhone 12 (portrait) ----------- */
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
-  .Join {
-    height: 10rem;
-  }
-
-  .about {
-    font-size: 22px;
-  }
-  .joinButton {
-    height: 2rem;
-    width: 7rem;
-  }
-  .HowItWorks {
-    height: 9rem;
-    line-height: 2.25rem;
-  }
-  .HowTitle {
-    font-size: 22px;
-  }
-  .works {
-    font-size: 17px;
-  }
-  .iconbar {
-    height: 6rem;
-  }
-  .search {
-    font-size: 17px;
-  }
-  .connect {
-    font-size: 17px;
-  }
-  .gameOn {
-    font-size: 17px;
-  }
-  .explore {
-    height: 3.5rem;
-    margin-bottom: 2rem;
-  }
-  .exploreButton {
-    height: 2.25rem;
-    width: 9rem;
-  }
-  .howvideo {
-    height: 11rem;
-  }
-  .howvideotitle {
-    font-size: 18px;
-    line-height: 3.5rem;
-  }
   .video {
-    height: 10rem;
+    height: 18rem;
     margin-left: 3rem;
     margin-right: 3rem;
-  }
-  .upcomingEvents {
-    margin-bottom: 1rem;
-  }
-  .eventTitle {
-    font-size: 22px;
   }
   .viewAll {
     font-size: 17px;
@@ -616,77 +480,33 @@
     max-width: 80px;
   }
   .thePerks .perk {
-    height: 140px;
-    min-width: 170px;
-    max-width: 170px;
+    height: 145px;
+    min-width: 180px;
+    max-width: 180px;
     font-size: 18px;
   }
   .theWins .instaWin {
-    height: 112px;
-    min-width: 112px;
-    max-width: 112px;
+    height: 125px;
+    min-width: 125px;
+    max-width: 125px;
+  }
+  .theWins .insta1 {
+    height: 125px;
+    min-width: 125px;
+    max-width: 125px;
+  }
+  .theWins .insta2 {
+    height: 125px;
+    min-width: 125px;
+    max-width: 125px;
   }
 }
 /* iPhone 12 pro max (portrait) ----------- */
 @media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
-  .Join {
-    height: 10rem;
-  }
-
-  .about {
-    font-size: 22px;
-  }
-  .joinButton {
-    height: 2rem;
-    width: 7rem;
-  }
-  .HowItWorks {
-    height: 9rem;
-    line-height: 2.25rem;
-  }
-  .HowTitle {
-    font-size: 22px;
-  }
-  .works {
-    font-size: 17px;
-  }
-  .iconbar {
-    height: 6rem;
-  }
-  .search {
-    font-size: 17px;
-  }
-  .connect {
-    font-size: 17px;
-  }
-  .gameOn {
-    font-size: 17px;
-  }
-  .explore {
-    height: 3.5rem;
-    margin-bottom: 2rem;
-  }
-  .exploreButton {
-    height: 2.25rem;
-    width: 9rem;
-  }
-  .howvideo {
-    height: 11rem;
-  }
-  .howvideotitle {
-    font-size: 18px;
-    line-height: 3.5rem;
-  }
   .video {
-    height: 11rem;
+    height: 20rem;
     margin-left: 3rem;
     margin-right: 3rem;
-  }
-  .upcomingEvents {
-    margin-bottom: 1rem;
-  }
-  .eventTitle {
-    font-size: 22px;
   }
   .viewAll {
     font-size: 17px;
@@ -704,14 +524,24 @@
   }
   .thePerks .perk {
     height: 140px;
-    min-width: 190px;
-    max-width: 190px;
+    min-width: 185px;
+    max-width: 185px;
     font-size: 18px;
   }
   .theWins .instaWin {
-    height: 120px;
-    min-width: 120px;
-    max-width: 120px;
+    height: 140px;
+    min-width: 140px;
+    max-width: 140px;
+  }
+  .theWins .insta1 {
+    height: 140px;
+    min-width: 140px;
+    max-width: 140px;
+  }
+  .theWins .insta2 {
+    height: 140px;
+    min-width: 140px;
+    max-width: 140px;
   }
 }
 
@@ -724,83 +554,46 @@
     margin: 5px;
   }
   .friends .friend {
-    height: 80px;
-    min-width: 80px;
-    max-width: 80px;
+    height: 100px;
+    min-width: 100px;
+    max-width: 100px;
   }
   .thePerks .perk {
-    height: 135px;
-    min-width: 165px;
-    max-width: 165px;
+    height: 130px;
+    min-width: 155px;
+    max-width: 155px;
     font-size: 18px;
   }
   .theWins .instaWin {
-    height: 112px;
-    min-width: 112px;
-    max-width: 112px;
+    height: 115px;
+    min-width: 115px;
+    max-width: 115px;
+  }
+  .theWins .insta1 {
+    height: 115px;
+    min-width: 115px;
+    max-width: 115px;
+  }
+  .theWins .insta2 {
+    height: 115px;
+    min-width: 115px;
+    max-width: 115px;
   }
 }
 
-/* Samsung Galaxy note 20 ------------*/
+/* Samsung Galaxy note 20 ------------ */
 @media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
   .Join {
-    height: 10rem;
-  }
-
-  .about {
-    font-size: 22px;
-  }
-  .joinButton {
-    height: 2rem;
-    width: 7rem;
-  }
-  .HowItWorks {
-    height: 9rem;
-    line-height: 2.25rem;
-  }
-  .HowTitle {
-    font-size: 22px;
-  }
-  .works {
-    font-size: 17px;
-  }
-  .iconbar {
-    height: 6rem;
-  }
-  .search {
-    font-size: 17px;
-  }
-  .connect {
-    font-size: 17px;
-  }
-  .gameOn {
-    font-size: 17px;
-  }
-  .explore {
-    height: 3.5rem;
-    margin-bottom: 2rem;
-  }
-  .exploreButton {
-    height: 2.25rem;
-    width: 9rem;
-  }
-  .howvideo {
-    height: 11rem;
+    height: 15rem;
   }
   .howvideotitle {
     font-size: 18px;
     line-height: 3.5rem;
   }
   .video {
-    height: 11rem;
+    height: 20rem;
     margin-left: 3rem;
     margin-right: 3rem;
-  }
-  .upcomingEvents {
-    margin-bottom: 1rem;
-  }
-  .eventTitle {
-    font-size: 22px;
   }
   .viewAll {
     font-size: 17px;
@@ -823,17 +616,27 @@
     font-size: 18px;
   }
   .theWins .instaWin {
-    height: 125px;
-    min-width: 125px;
-    max-width: 125px;
+    height: 135px;
+    min-width: 135px;
+    max-width: 135px;
+  }
+  .theWins .insta1 {
+    height: 135px;
+    min-width: 135px;
+    max-width: 135px;
+  }
+  .theWins .insta2 {
+    height: 135px;
+    min-width: 135px;
+    max-width: 135px;
   }
 }
+
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .Join {
-    height: 14rem;
+    height: 15rem;
   }
-
   .about {
     font-size: 26px;
   }
@@ -879,7 +682,7 @@
     line-height: 5.5rem;
   }
   .video {
-    height: 16rem;
+    height: 28rem;
     margin-left: 7rem;
     margin-right: 7rem;
   }
@@ -910,17 +713,26 @@
     font-size: 18px;
   }
   .theWins .instaWin {
-    height: 200px;
-    min-width: 200px;
-    max-width: 200px;
+    height: 250px;
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .theWins .insta1 {
+    height: 250px;
+    min-width: 250px;
+    max-width: 250px;
+  }
+  .theWins .insta2 {
+    height: 250px;
+    min-width: 250px;
+    max-width: 250px;
   }
 }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   .Join {
-    height: 12rem;
-    background-color: lightgray;
+    height: 15rem;
   }
   .about {
     margin-left: 5.5rem;
@@ -1031,8 +843,8 @@
     font-size: 25px;
     margin-left: 5rem;
   }
-}
-/* Large screens ----------- */
+} /*
+Large screens -----------
 @media only screen and (min-width: 1824px) {
   .Join {
     height: 12rem;
@@ -1147,4 +959,4 @@
     font-size: 25px;
     margin-left: 5rem;
   }
-}
+} */
