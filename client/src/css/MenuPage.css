@@ -1,5 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
+.menuHeader {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+}
+.menuTitle {
+  font-family: 'Cabin', sans-serif;
+  color: rgba(5, 95, 158, 1);
+  margin-left: 1.5rem;
+  font-size: 25px;
+  font-weight: 500;
+}
+.searchBar {
+  font-family: 'Cabin', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+.searchMenu {
+  font-family: 'Cabin', sans-serif;
+  height: 25px;
+  width: 80%;
+  border: none;
+  height: 25px;
+  width: 90%;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+}
+
+.line1 {
+  display: flex;
+  font-size: 25px;
+  font-weight: 500;
+}
+.line2 {
+  display: flex;
+  font-size: 25px;
+  font-weight: 500;
+}
+.line3 {
+  display: flex;
+  font-size: 25px;
+  font-weight: 500;
+}
+.menuProfile {
+  font-family: 'Cabin', sans-serif;
+  color: rgba(5, 95, 158, 1);
+  text-decoration: none;
+  border-top: 1px solid rgba(141, 146, 64, 0.75);
+  border-bottom: 1px solid rgba(141, 146, 64, 0.75);
+  border-right: 1px solid rgba(141, 146, 64, 0.75);
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuAbout {
+  font-family: 'Cabin', sans-serif;
+  color: rgba(5, 95, 158, 1);
+  text-decoration: none;
+  border-top: 1px solid rgba(141, 146, 64, 0.75);
+  border-bottom: 1px solid rgba(141, 146, 64, 0.75);
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuChat {
+  font-family: 'Cabin', sans-serif;
+  color: rgba(5, 95, 158, 1);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(141, 146, 64, 0.75);
+  border-right: 1px solid rgba(141, 146, 64, 0.75);
+  width: 50%;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menuEvent {
+  font-family: 'Cabin', sans-serif;
+  color: rgba(5, 95, 158, 1);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(141, 146, 64, 0.75);
+  width: 50%;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.MenuPolicy {
+  font-family: 'Cabin', sans-serif;
+  color: rgba(5, 95, 158, 1);
+  text-decoration: none;
+  border-right: 1px solid rgba(141, 146, 64, 0.75);
+  width: 50%;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.menuVa {
+  font-family: 'Cabin', sans-serif;
+  color: rgba(5, 95, 158, 1);
+  text-decoration: none;
+  width: 50%;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
 }
