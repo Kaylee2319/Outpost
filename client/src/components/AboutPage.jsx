@@ -34,36 +34,36 @@ const AboutPage = () => {
         <h1 className="ourTeam1">Our Team</h1>
         <div className="webDev">
           <div>
-            <h1 className="William"></h1>
+            <div className="William"></div>
             <h1>William Dillard</h1>
             <h2>Web Developer</h2>
           </div>
           <div>
-            <h1 className="kaylee"></h1>
+            <div className="kaylee"></div>
             <h1>Kaylee Harding</h1>
             <h2>Web Developer</h2>
           </div>
         </div>
         <div className="uxui1">
           <div>
-            <h1 className="phil"></h1>
+            <div className="phil"></div>
             <h1>Phillip Goncalves</h1>
             <h2>Web Developer</h2>
           </div>
           <div>
-            <h1 className="Gyovany"></h1>
+            <div className="Gyovany"></div>
             <h1>Gyovany Munoz</h1>
             <h2>UX UI Designer</h2>
           </div>
         </div>
         <div className="uxui2">
           <div>
-            <h1 className="Jorge"></h1>
+            <div className="Jorge"></div>
             <h1>Jorge Silva</h1>
             <h2>UX UI Designer</h2>
           </div>
           <div>
-            <h1 className="Maria"></h1>
+            <div className="Maria"></div>
             <h1>Maria Suarez</h1>
             <h2>UX UI Designer</h2>
           </div>

@@ -48,32 +48,31 @@ const HomePage = () => {
         </Link>
       </div>
       <div className="events">
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
-        <h1 className="item">event</h1>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
+        <div className="item">event</div>
       </div>
       <div className="currentlyOnline">
         <span className="currentTitle">Currently Online</span>
         <div className="friends">
           <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
+            <div className="friend">friend</div>john doe
           </div>
           <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
+            <div className="friend">friend</div>john doe
           </div>
           <div className="friendName">
-            <h1 className="friend">friend</h1>john doe
+            <div className="friend">friend</div>john doe
           </div>
         </div>
       </div>
@@ -97,9 +96,9 @@ const HomePage = () => {
         <span className="instaTitle">Seen on Instagram</span>
       </div>
       <div className="theWins">
-        <h1 className="insta1">test</h1>
-        <h1 className="insta2">test</h1>
-        <h1 className="instaWin">test</h1>
+        <div className="insta1"></div>
+        <div className="insta2"></div>
+        <div className="instaWin"></div>
       </div>
       <Footer />
     </>
