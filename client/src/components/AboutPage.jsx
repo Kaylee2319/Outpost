@@ -46,9 +46,9 @@ const AboutPage = () => {
         </div>
         <div className="uxui1">
           <div>
-            <h1 className="Jorge"></h1>
-            <h1>Jorge Silva</h1>
-            <h2>UX UI Designer</h2>
+            <h1 className="phil"></h1>
+            <h1>Phillip Goncalves</h1>
+            <h2>Web Developer</h2>
           </div>
           <div>
             <h1 className="Gyovany"></h1>
@@ -57,6 +57,11 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="uxui2">
+          <div>
+            <h1 className="Jorge"></h1>
+            <h1>Jorge Silva</h1>
+            <h2>UX UI Designer</h2>
+          </div>
           <div>
             <h1 className="Maria"></h1>
             <h1>Maria Suarez</h1>

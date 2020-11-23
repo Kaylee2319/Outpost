@@ -70,6 +70,15 @@
   background-position: center;
   background-size: 100%;
 }
+.phil {
+  height: 7rem;
+  min-width: 7rem;
+  max-width: 7rem;
+  border-radius: 50%;
+  background-image: url('../images/phil.png');
+  background-position: center;
+  background-size: 100%;
+}
 .Jorge {
   height: 7rem;
   min-width: 7rem;
