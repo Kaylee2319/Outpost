@@ -95,7 +95,7 @@ const SignUpPage = ({ history }) => {
               <option value="Other">Other</option>
             </select>
             <input
-              id="gamerInput"
+              className="gamerInput"
               value={document.getElementById('gamerTag')}
               type="type"
               placeholder="Gamer-Tag"

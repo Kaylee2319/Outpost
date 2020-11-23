@@ -1,5 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
+.policyTitle {
+  font-family: 'Cabin', sans-serif;
+  margin-left: 1rem;
+}
+.policyTitle1 {
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-size: 16px;
+}
+.iconbar2 {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(5, 95, 158, 1);
+}
+.howtoSearch {
+  display: flex;
+  justify-content: space-evenly;
+}
+.howSearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  min-width: 50%;
+  max-width: 50%;
+  font-family: 'Cabin', sans-serif;
+}
+.howSearch1 {
+  font-size: 15px;
+  color: black;
+}
+.howtoconnect {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+.howConnect {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  min-width: 50%;
+  max-width: 50%;
+  font-family: 'Cabin', sans-serif;
+}
+.howConnect1 {
+  font-size: 15px;
+  color: black;
+}
+.howtoGameon {
+  display: flex;
+  justify-content: space-between;
+}
+.howGameOn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 7rem;
+  min-width: 50%;
+  max-width: 50%;
+  font-family: 'Cabin', sans-serif;
+}
+.howGameOn1 {
+  font-size: 15px;
+  color: black;
+}
+.howButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.howtoButton {
+  height: 40px;
+  width: 280px;
+  margin-top: 2.5rem;
+  background-color: #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: none;
+}
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
 }

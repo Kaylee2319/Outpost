@@ -8,27 +8,66 @@ const AboutPage = () => {
     <>
       <NavBar />
       <div className="title">
-        <span>About Us</span>
+        <h2>About Us</h2>
       </div>
       <div className="story">
         <h2 className="ourstory">Our Story</h2>
-        <p>
-          In 1958, Joe Coulombe took over a small chain of convenience stores
-          around the LA area. These were called Pronto Markets. The whole idea
-          was fast. Pronto – quick, right? And they were convenience stores,
-          before we really even know what convenience stores were. The kind of
-          place where you could get anything from, say, a pack of gum to some
-          pantyhose.
+        <p className="ourstory1">
+          We are a team of veterans and students at Wyncode in Miami, FL.
         </p>
 
-        <p>
-          After 10 years of running Pronto Markets, the convenience store
-          formula just didn’t continue to make sense. So, Joe, the classic
-          entrepreneur, took note that the demographics were changing in the
-          United States because of the G.I. Bill of Rights, a large experiment
-          in mass higher education, and identified an opportunity to deliver…
-          something different.
+        <p className="ourstory1">
+          The purpose for <strong className="colorme">Outpost</strong> is to
+          address suicide among veterans which is currently at an average of{' '}
+          <strong className="colorme">22 veterans per day</strong>. With this
+          app, we can help provide a safe space outlet for veterans to come
+          together, schedule gaming days, attend online group chats and talk
+          about whatever is on their mind.
         </p>
+
+        <p className="ourstory1">
+          Additionally, we want to provide resources to other military
+          communities and mental health support/therapy.
+        </p>
+      </div>
+      <div className="ourTeam">
+        <h1 className="ourTeam1">Our Team</h1>
+        <div className="webDev">
+          <div>
+            <h1 className="William"></h1>
+            <h1>William Dillard</h1>
+            <h2>Web Developer</h2>
+          </div>
+          <div>
+            <h1 className="kaylee"></h1>
+            <h1>Kaylee Harding</h1>
+            <h2>Web Developer</h2>
+          </div>
+        </div>
+        <div className="uxui1">
+          <div>
+            <h1 className="phil"></h1>
+            <h1>Phillip Goncalves</h1>
+            <h2>Web Developer</h2>
+          </div>
+          <div>
+            <h1 className="Gyovany"></h1>
+            <h1>Gyovany Munoz</h1>
+            <h2>UX UI Designer</h2>
+          </div>
+        </div>
+        <div className="uxui2">
+          <div>
+            <h1 className="Jorge"></h1>
+            <h1>Jorge Silva</h1>
+            <h2>UX UI Designer</h2>
+          </div>
+          <div>
+            <h1 className="Maria"></h1>
+            <h1>Maria Suarez</h1>
+            <h2>UX UI Designer</h2>
+          </div>
+        </div>
       </div>
       <Footer />
     </>
