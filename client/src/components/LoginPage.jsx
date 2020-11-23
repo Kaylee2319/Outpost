@@ -3,14 +3,11 @@ import '../css/LoginPage.css';
 import NavBar from './NavBar';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
-
 import { FaXbox } from 'react-icons/fa';
 import { FaPlaystation } from 'react-icons/fa';
 import { SiNintendoswitch } from 'react-icons/si';
 import { SiSteam } from 'react-icons/si';
 import { SiTwitch } from 'react-icons/si';
-const LoginPage = () => {
-
 import { AppContext } from '../context/AppContext';
 import axios from 'axios';
 import swal from 'sweetalert';
@@ -35,7 +32,6 @@ const LoginPage = ({ history }) => {
       swal(`Oops!`, 'Something went wrong.');
     }
   };
-
 
   return (
     <>
