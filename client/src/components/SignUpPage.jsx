@@ -7,7 +7,7 @@ import { AppContext } from '../context/AppContext';
 import axios from 'axios';
 import swal from 'sweetalert';
 
-const SignUpPage = () => {
+const SignUpPage = ({ history }) => {
   const { setCurrentUser } = useContext(AppContext);
   const [formData, setFormData] = useState(null);
 
@@ -38,30 +38,51 @@ const SignUpPage = () => {
             Sign In
           </Link>
         </h2>
-        <form className="signUpForm">
+        <form className="signUpForm" onSubmit={handleSignUp}>
           <div>
             <div htmlFor="email">Email Address:</div>
-            <input className="emailSignUp" type="email" name="email" />
+            <input
+              className="emailSignUp"
+              type="email"
+              name="email"
+              onChange={handleChange}
+            />
           </div>
           <div>
             <div htmlFor="outpostId">User ID:</div>
-            <input className="firstName" type="text" name="name" />
+            <input
+              className="firstName"
+              type="text"
+              name="user_name"
+              onChange={handleChange}
+            />
           </div>
           <div>
             <div htmlFor="firstName">First Name:</div>
-            <input className="firstName" type="text" name="name" />
+            <input
+              className="firstName"
+              type="text"
+              name="first_name"
+              onChange={handleChange}
+            />
           </div>
           <div>
             <div htmlFor="lastName">Last Name:</div>
-            <input className="lastName" type="text" name="name" />
+            <input
+              className="lastName"
+              type="text"
+              name="last_name"
+              onChange={handleChange}
+            />
           </div>
           <div>
             <div htmlFor="Birthday">Birthday:</div>
             <input
               className="Birthday"
               type="type"
-              placeholder="MM/DD/YYYY"
-              name="name"
+              placeholder="YYYY-MM-DD"
+              name="birthday"
+              onChange={handleChange}
             />
           </div>
           <div>
@@ -79,13 +100,24 @@ const SignUpPage = () => {
               type="type"
               placeholder="Gamer-Tag"
               name="name"
+              onChange={handleChange}
             />
           </div>
           <div>
             <div htmlFor="passwordSignUp">Password:</div>
-            <input className="password" type="password" name="password" />
+            <input
+              className="password"
+              type="password"
+              name="password"
+              onChange={handleChange}
+            />
             <div htmlFor="password">Re-Enter Password:</div>
-            <input className="passwordSignUp" type="password" name="password" />
+            <input
+              className="passwordSignUp"
+              type="password"
+              name="password"
+              onChange={handleChange}
+            />
           </div>
 
           <div className="terms">

@@ -40,6 +40,21 @@ const userSchema = new mongoose.Schema(
     birthday: {
       type: Date
     },
+    avatar: {
+      type: String
+    },
+    first_name: {
+      type: String
+    },
+    last_name: {
+      type: String
+    },
+    service_branch: {
+      type: String
+    },
+    location: {
+      type: String
+    },
     gamer_tags: [
       {
         xbox: {
@@ -66,22 +81,7 @@ const userSchema = new mongoose.Schema(
           required: true
         }
       }
-    ],
-    avatar: {
-      type: String
-    },
-    first_name: {
-      type: String
-    },
-    last_name: {
-      type: String
-    },
-    service_branch: {
-      type: String
-    },
-    location: {
-      type: String
-    }
+    ]
   },
   {
     timestamps: true
