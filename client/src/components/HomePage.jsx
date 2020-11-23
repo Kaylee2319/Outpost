@@ -97,9 +97,9 @@ const HomePage = () => {
         <span className="instaTitle">Seen on Instagram</span>
       </div>
       <div className="theWins">
-        <h1 className="insta1"></h1>
-        <h1 className="insta2"></h1>
-        <h1 className="instaWin"></h1>
+        <h1 className="insta1">test</h1>
+        <h1 className="insta2">test</h1>
+        <h1 className="instaWin">test</h1>
       </div>
       <Footer />
     </>
