@@ -1,13 +1,32 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import '../css/SignUpPage.css';
 import NavBar from './NavBar';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
+import { AppContext } from '../context/AppContext';
+import axios from 'axios';
+import swal from 'sweetalert';
+
 const SignUpPage = () => {
-  // console.log(document.getElementById('gamerInput').value);
-  // function handleClick() {
-  //   console.log('The link was clicked.');
-  // }
+  const { setCurrentUser } = useContext(AppContext);
+  const [formData, setFormData] = useState(null);
+
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/api', formData);
+      sessionStorage.setItem('user', response.data);
+      setCurrentUser(response.data.user);
+      history.push('/');
+    } catch (error) {
+      swal('SignUp Error: ', error.toString());
+    }
+  };
+
   return (
     <>
       <NavBar />
