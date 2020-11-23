@@ -1,14 +1,42 @@
-import React from 'react';
+import React, { useState, useContext } from 'react';
 import '../css/LoginPage.css';
 import NavBar from './NavBar';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
+
 import { FaXbox } from 'react-icons/fa';
 import { FaPlaystation } from 'react-icons/fa';
 import { SiNintendoswitch } from 'react-icons/si';
 import { SiSteam } from 'react-icons/si';
 import { SiTwitch } from 'react-icons/si';
 const LoginPage = () => {
+
+import { AppContext } from '../context/AppContext';
+import axios from 'axios';
+import swal from 'sweetalert';
+
+const LoginPage = ({ history }) => {
+  const { setCurrentUser } = useContext(AppContext);
+  const [formData, setFormData] = useState(null);
+
+  const handleChange = (event) => {
+    setFormData({ ...formData, [event.target.user_name]: event.target.value });
+    console.log(formData);
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('/api/login', formData);
+      setCurrentUser(response.data);
+      sessionStorage.setItem('user', response.data);
+      history.push('/');
+    } catch (error) {
+      swal(`Oops!`, 'Something went wrong.');
+    }
+  };
+
+
   return (
     <>
       <NavBar />
@@ -38,12 +66,16 @@ const LoginPage = () => {
       <div className="or">
         <p className="or">OR</p>
       </div>
-      <form className="loginForm">
+      <form className="loginForm" onSubmit={handleLogin}>
         <label>
           <p className="email">Email:</p>
-          <input className="emailBox" type="email" />
+          <input className="emailBox" type="email" onChange={handleChange} />
           <p className="password">Password:</p>
-          <input className="passwordBox" type="password" />
+          <input
+            className="passwordBox"
+            type="password"
+            onChange={handleChange}
+          />
         </label>
         <Link to="/forgotpassword" className="forgot">
           <span className="forgotten">Forgot Password?</span>
@@ -54,7 +86,7 @@ const LoginPage = () => {
         <p className="noAccountTitle">Don't have an account?</p>
       </div>
       <div className="signupLink">
-        <Link to="/profile" className="signupLink">
+        <Link to="/signup" className="signupLink">
           <span className="signLink">Sign up</span>
         </Link>
       </div>
