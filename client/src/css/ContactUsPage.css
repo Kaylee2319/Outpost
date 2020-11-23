@@ -1,5 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 
+.contactTitle {
+  margin-left: 0.5rem;
+  font-family: 'Cabin', sans-serif;
+  font-size: 30px;
+}
+.contactTitle1 {
+  margin-left: 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 5px;
+  font-size: 17px;
+}
+.firstNameContact {
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+  margin-top: 0.5rem;
+}
+.lastNameContact {
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+  margin-top: 0.5rem;
+}
+.messageContact {
+  height: 200px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+  margin-top: 0.5rem;
+}
+.contactform {
+  margin-left: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 3rem;
+}
+.sendbutton {
+  display: flex;
+  justify-content: center;
+  margin-left: -1rem;
+}
+.contactSend {
+  height: 40px;
+  width: 300px;
+  margin-top: 2.5rem;
+  background-color: #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: none;
+  margin-bottom: 3rem;
+}
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
 }
