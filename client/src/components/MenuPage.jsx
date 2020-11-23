@@ -2,20 +2,19 @@ import React from 'react';
 import '../css/MenuPage.css';
 import { RiArrowLeftSLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
-const Menu = () => {
-  function goBack() {
-    this.props.history.goBack();
-  }
+
+const Menu = ({ history }) => {
   return (
     <>
       <div className="menuHeader">
         <h1 className="menuTitle">MENU</h1>
-        <a href="javascript:history.back()">
+        <button className="backButton" onClick={() => history.goBack()}>
+          {' '}
           <RiArrowLeftSLine
             size={35}
             style={{ color: 'rgba(5, 95, 158, 1)' }}
           />
-        </a>
+        </button>
       </div>
       <div className="searchBar">
         <input className="searchMenu" type="text" placeholder="Search"></input>

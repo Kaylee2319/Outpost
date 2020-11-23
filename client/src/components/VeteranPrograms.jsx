@@ -7,12 +7,12 @@ const VeteranPrograms = () => {
     <>
       <NavBar />
       <div>
-        <h1 className="VaTitle">Veteran Programs</h1>
+        <div className="VaTitle">Veteran Programs</div>
         <p className="aboutVaPg">Thank you for your service.</p>
         <p className="aboutVaPg">We're here to guide.</p>
       </div>
       <div className="mission22">
-        <h1 className="m22img"></h1>
+        <div className="m22img"></div>
         <div className="aboutMission">
           <p className="aboutMission1">
             Recovery + Resiliency is a 12-month program available to combat
@@ -24,7 +24,7 @@ const VeteranPrograms = () => {
         </div>
       </div>
       <div className="talkspace">
-        <h1 className="talkimg"></h1>
+        <div className="talkimg"></div>
         <div className="aboutTs">
           <p className="aboutTs1">
             TalkSpace: Online Counseling & Therapy for Veterans. HIPPA Compliant
@@ -36,7 +36,7 @@ const VeteranPrograms = () => {
         </div>
       </div>
       <div className="feedvets">
-        <h1 className="feedimg"></h1>
+        <div className="feedimg"></div>
         <div className="aboutFeedvet">
           <p className="aboutFeedvet1">
             Since 2009, Feed Our Vets has provided free food assistance to more
@@ -48,7 +48,7 @@ const VeteranPrograms = () => {
         </div>
       </div>
       <div className="nva">
-        <h1 className="nvaimg"></h1>
+        <div className="nvaimg"></div>
         <div className="aboutNva">
           <p className="aboutNva1">
             {' '}
@@ -61,7 +61,7 @@ const VeteranPrograms = () => {
         </div>
       </div>
       <div className="wounded">
-        <h1 className="woundedimg"></h1>
+        <div className="woundedimg"></div>
         <div className="aboutWounded">
           <p className="aboutWounded1">
             Veterans and service members who incurred a physical or mental

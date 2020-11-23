@@ -18,6 +18,10 @@
   font-size: 25px;
   font-weight: 500;
 }
+.backButton {
+  border: none;
+  background-color: white;
+}
 .searchBar {
   font-family: 'Cabin', sans-serif;
   display: flex;
