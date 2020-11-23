@@ -54,7 +54,7 @@ const LoginPage = () => {
         <p className="noAccountTitle">Don't have an account?</p>
       </div>
       <div className="signupLink">
-        <Link to="/profile" className="signupLink">
+        <Link to="/signup" className="signupLink">
           <span className="signLink">Sign up</span>
         </Link>
       </div>

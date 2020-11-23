@@ -1,24 +1,101 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
 .title {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Unica One';
-  margin-top: -0.75rem;
-  height: 6rem;
+  font-family: 'Cabin', sans-serif;
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+  margin-bottom: -3rem;
   width: 100%;
-  background-color: lightgray;
-}
-span {
-  font-size: 2rem;
 }
 .ourstory {
   display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
+  margin-left: 1rem;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(5, 95, 158, 1);
 }
-p {
-  margin: 0.75rem;
+.ourstory1 {
+  margin: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+.colorme {
+  color: rgba(5, 95, 158, 1);
+}
+.ourTeam1 {
+  margin-left: 1.5rem;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgba(5, 95, 158, 1);
+}
+.webDev {
+  display: flex;
+  font-size: 8px;
+  justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+.uxui1 {
+  display: flex;
+  font-size: 8px;
+  justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+.uxui2 {
+  display: flex;
+  font-size: 8px;
+  justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.William {
+  height: 7rem;
+  min-width: 7rem;
+  max-width: 7rem;
+  border-radius: 50%;
+  background-image: url('../images/will.png');
+  background-position: center;
+  background-size: 100%;
+}
+.kaylee {
+  height: 7rem;
+  min-width: 7rem;
+  max-width: 7rem;
+  border-radius: 50%;
+  background-image: url('../images/kaylee.png');
+  background-position: center;
+  background-size: 100%;
+}
+.Jorge {
+  height: 7rem;
+  min-width: 7rem;
+  max-width: 7rem;
+  border-radius: 50%;
+  background-image: url('../images/jorge.png');
+  background-position: center;
+  background-size: 100%;
+}
+.Gyovany {
+  height: 7rem;
+  min-width: 7rem;
+  max-width: 7rem;
+  border-radius: 50%;
+  background-image: url('../images/Gyovany.png');
+  background-position: center;
+  background-size: 100%;
+}
+.Maria {
+  height: 7rem;
+  min-width: 7rem;
+  max-width: 7rem;
+  border-radius: 50%;
+  background-image: url('../images/maria.png');
+  background-position: center;
+  background-size: 100%;
 }
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
