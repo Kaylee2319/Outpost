@@ -63,8 +63,8 @@ const SignUpPage = () => {
             />
           </div>
           <div>
-            <div htmlFor="passwordSignUp">Password:</div>
-            <input className="password" type="password" name="password" />
+            <div htmlFor="password">Password:</div>
+            <input className="passwordSignUp" type="password" name="password" />
             <div htmlFor="password">Re-Enter Password:</div>
             <input className="passwordSignUp" type="password" name="password" />
           </div>
