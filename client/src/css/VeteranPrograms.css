@@ -1,5 +1,222 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+.mission22 {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: baseline;
+  font-family: 'Montserrat', sans-serif;
+}
+.m22img {
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 3px;
+  background-image: url(../images/mission.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+}
+.aboutMission {
+  display: flex;
+  flex-direction: column;
+}
+.aboutMission1 {
+  margin-right: 1.25rem;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+}
+.missionbutton {
+  background-color: white;
+  height: 35px;
+  width: 120px;
+  border: 1px solid #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffac4f;
+  margin-left: 0.75rem;
+}
+.talkspace {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: baseline;
+  font-family: 'Montserrat', sans-serif;
+}
+.talkimg {
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 3px;
+  background-image: url(../images/talkspace.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: lightblue;
+  margin: 15px;
+}
+.aboutTs {
+  display: flex;
+  flex-direction: column;
+}
+.aboutTs1 {
+  margin-right: 1.25rem;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+}
+.tsbutton {
+  background-color: white;
+  height: 35px;
+  width: 120px;
+  border: 1px solid #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffac4f;
+  margin-left: 0.75rem;
+}
+.feedvets {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: baseline;
+  font-family: 'Montserrat', sans-serif;
+}
+.feedimg {
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 3px;
+  background-image: url(../images/fov.png);
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: lightblue;
+  margin: 15px;
+}
+.aboutFeedvet {
+  display: flex;
+  flex-direction: column;
+}
+.aboutFeedvet1 {
+  margin-right: 1.25rem;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+}
+.feedvetbutton {
+  background-color: white;
+  height: 35px;
+  width: 120px;
+  border: 1px solid #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffac4f;
+  margin-left: 0.75rem;
+}
+.nva {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: baseline;
+  font-family: 'Montserrat', sans-serif;
+}
+.nvaimg {
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 3px;
+  background-image: url(../images/nvf.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+}
+.aboutNva {
+  display: flex;
+  flex-direction: column;
+}
+.aboutNva1 {
+  margin-right: 1.25rem;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+}
+.nvabutton {
+  background-color: white;
+  height: 35px;
+  width: 120px;
+  border: 1px solid #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffac4f;
+  margin-left: 0.75rem;
+}
+.wounded {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: baseline;
+  font-family: 'Montserrat', sans-serif;
+}
+.woundedimg {
+  height: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  margin: 3px;
+  background-image: url(../images/wwplogo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 15px;
+}
+.aboutWounded {
+  display: flex;
+  flex-direction: column;
+}
+.aboutWounded1 {
+  margin-right: 1.25rem;
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+}
+.woundedbutton {
+  background-color: white;
+  height: 35px;
+  width: 120px;
+  border: 1px solid #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffac4f;
+  margin-left: 0.75rem;
+  margin-bottom: 3rem;
+}
+.VaTitle {
+  font-family: 'Cabin', sans-serif;
+  margin-left: 1rem;
+  font-size: 28px;
+}
+.aboutVaPg {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 10px;
+  font-size: 17px;
+  font-weight: 600;
+}
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
 }

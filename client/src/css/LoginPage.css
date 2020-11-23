@@ -2,27 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 .topTitle {
-  height: 9rem;
+  height: 2.5rem;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: lightgray;
+  margin-left: 0.75rem;
 }
 .gameUp {
-  font-size: 22px;
+  font-size: 25px;
   font-family: 'Cabin', sans-serif;
+  font-weight: 600;
 }
 .signInTitle {
   height: 3rem;
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: -2rem;
+  margin-left: 0.75rem;
 }
 .signIn {
-  font-size: 21px;
+  font-size: 18px;
   font-family: 'Cabin', sans-serif;
 }
 .loginForm {
@@ -30,8 +27,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-left: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
 .email {
@@ -40,25 +36,38 @@
   font-size: 15px;
 }
 .emailBox {
-  height: 1.5rem;
-  box-shadow: lightgray;
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
 }
 .passwordBox {
-  height: 1.5rem;
-  box-shadow: lightgray;
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
 }
 .password {
   margin-left: -2px;
   margin-bottom: 4px;
   font-size: 15px;
 }
+.forgotten {
+  font-size: 10px;
+}
 .loginButton {
-  margin: 1.5rem;
+  margin-top: 1.5rem;
   height: 2rem;
-  width: 9rem;
-  background-color: darkgray;
+  width: 85%;
+  background-color: #ffac4f;
+  color: white;
+  border-radius: 12px;
   border: none;
-  border-radius: 12%;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 1rem;
 }
 .or {
   height: 1rem;
@@ -67,7 +76,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: -0.5rem;
+  margin-top: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
 .signinWith {
@@ -76,36 +85,36 @@
   align-items: center;
 }
 .signinWith .signButton {
-  height: 2rem;
-  width: 2rem;
-  border: olive 1px solid;
+  height: 3rem;
+  width: 3rem;
+  background-color: #ffac4f;
+  border-radius: 12px;
   font-size: 10px;
   box-shadow: darkgray;
   margin: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .noAccountTitle {
   height: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: 900;
-  margin-top: 0.75rem;
-  /* margin-bottom: 1rem; */
+  margin-left: 0.75rem;
+  margin-top: -0.5rem;
 }
 .signupLink {
   height: 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: 'Montserrat', sans-serif;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 0.75rem;
 }
 .signLink {
   font-size: 12px;

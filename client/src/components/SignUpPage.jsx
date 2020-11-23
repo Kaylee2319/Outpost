@@ -104,6 +104,7 @@ const SignUpPage = ({ history }) => {
             />
           </div>
           <div>
+
             <div htmlFor="passwordSignUp">Password:</div>
             <input
               className="password"
@@ -111,6 +112,7 @@ const SignUpPage = ({ history }) => {
               name="password"
               onChange={handleChange}
             />
+
             <div htmlFor="password">Re-Enter Password:</div>
             <input
               className="passwordSignUp"
