@@ -6,6 +6,9 @@ import NavBar from './NavBar';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
 import { FaRegHandshake } from 'react-icons/fa';
+import { AiOutlineCloudUpload } from 'react-icons/ai';
+import { FiSave } from 'react-icons/fi';
+import { BsTrash } from 'react-icons/bs';
 import { AppContext } from '../context/AppContext';
 
 const ProfilePage = ({ history: { push } }) => {
@@ -72,16 +75,12 @@ const ProfilePage = ({ history: { push } }) => {
       swal(`Oops!`, 'Something went wrong.');
     }
   };
-
   return (
     <>
       <NavBar />
       <div className="pic">
-        <div className="saved">
-          <FaRegHandshake size={30} style={{ color: 'black' }} />
-          Saved
-        </div>
         <img
+          className="proPic"
           src={
             preview
               ? preview
@@ -90,30 +89,61 @@ const ProfilePage = ({ history: { push } }) => {
               : 'https://files.willkennedy.dev/wyncode/wyncode.png'
           }
           alt="profile"
-          width={250}
-          height={250}
-          roundedCircle
         />
-        <form className="d-flex flex-column" onSubmit={handleSubmit}>
-          <input type="file" accept="image/*" onChange={handleImageSelect} />
-          <button type="submit">Save Image</button>
-        </form>
+        <div className="saved">
+          <FaRegHandshake size={30} style={{ color: 'rgba(5, 95, 158, 1)' }} />
+          Saved
+        </div>
       </div>
-      <div className="named">
-        <p className="usersName">{currentUser?.name}</p>
-        <p className="userName">{currentUser?.user_name}</p>
-        <p className="dutyStatus">{currentUser?.service_branch}</p>
-        <p className="memberSince">Menmber Since:</p>
-        <Link to="/profileedit" className="editLink">
-          <span className="editProfile">Edit Profile</span>
-        </Link>
+      <form className="d-flex flex-column" onSubmit={handleSubmit}>
+        <div className="proForm">
+          <div className="fileInput">
+            <input
+              type="file"
+              className="file"
+              id="file"
+              accept="image/*"
+              onChange={handleImageSelect}
+            />
+            <label htmlFor="file">
+              <AiOutlineCloudUpload
+                size={15}
+                style={{ color: 'rgba(5, 95, 158, 1)' }}
+              />{' '}
+              Profile Photo{' '}
+            </label>
+          </div>
+          <button className="saveButton" type="submit">
+            <FiSave size={15} style={{ color: 'rgba(5, 95, 158, 1)' }} /> Save
+            Image
+          </button>
+        </div>
+      </form>
+      <div className="namedPlayer">
+        <div className="nameEdit">
+          <h2 className="usersName">Kaylee Harding{currentUser?.name}</h2>
+          <Link to="/profileedit" className="editLink">
+            <span className="editProfile">Edit Profile</span>
+          </Link>
+        </div>
+        <h3 className="dutyStatus">
+          Coast Guard Veteran{currentUser?.service_branch}
+        </h3>
+        <h4 className="userName">Kaylee2319{currentUser?.user_name}</h4>
+        <a href="/dms">
+          <button className="messageButton">Messages</button>
+        </a>
       </div>
       <div className="favGames">
         <p className="consoles">Find me on:</p>
         <p className="userGames">Favorite Games:</p>
       </div>
-      <button onClick={handleDelete}>Delete Account</button>
-
+      <div className="trash">
+        <button className="deleteAcc" onClick={handleDelete}>
+          <BsTrash size={15} style={{ color: 'rgba(5, 95, 158, 1)' }} /> Delete
+          Account
+        </button>
+      </div>
       <Footer />
     </>
   );

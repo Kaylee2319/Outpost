@@ -6,7 +6,13 @@ import { Link } from 'react-router-dom';
 import { BsPeople } from 'react-icons/bs';
 import { IoIosSearch } from 'react-icons/io';
 import { FaRegHandshake } from 'react-icons/fa';
-const HomePage = () => {
+const HomePage = ({ history }) => {
+  const handleClick = () => {
+    history.push('/signup');
+  };
+  const handleClick1 = () => {
+    history.push('/policy');
+  };
   return (
     <>
       <NavBar />
@@ -14,7 +20,9 @@ const HomePage = () => {
         <span className="about">
           Connect with veterans & play your favorite game.
         </span>
-        <button className="joinButton">LINK UP</button>
+        <button onClick={handleClick} className="joinButton">
+          LINK UP
+        </button>
       </div>
       <div className="HowItWorks">
         <span className="HowTitle">How it Works</span>
@@ -35,7 +43,9 @@ const HomePage = () => {
         </div>
       </div>
       <div className="explore">
-        <button className="exploreButton">Explore More</button>
+        <button onClick={handleClick1} className="exploreButton">
+          Explore More
+        </button>
       </div>
       <div className="howVideo">
         <h3 className="howvideotitle">Watch how it works</h3>
