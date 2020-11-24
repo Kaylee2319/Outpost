@@ -4,10 +4,21 @@
 .pic {
   height: 10rem;
   width: 100%;
-  background-color: grey;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-top: -1rem;
+}
+.proPic {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  border: 2px rgba(141, 146, 64, 0.75) solid;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Cabin', sans-serif;
 }
 .saved {
   display: flex;
@@ -15,34 +26,23 @@
   align-items: center;
   position: absolute;
   top: 6rem;
-  left: 1.5rem;
+  right: 1.5rem;
   font-family: 'Cabin', sans-serif;
 }
-.profilePic {
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
-  border: 1px black solid;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  font-family: 'Cabin', sans-serif;
-}
-.named {
+.namedPlayer {
   font-family: 'Cabin', sans-serif;
   height: 9rem;
   width: 100%;
+  line-height: 0px;
   display: flex;
-  line-height: 0%;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
-  background-color: lightgray;
+  margin-left: 1rem;
 }
-.usersName {
-  font-weight: 1000;
-  font-size: 25px;
+.userName {
+  margin-top: 10px;
+}
+.dutyStatus {
+  margin-top: 10px;
 }
 .editProfile {
   font-size: 12px;
@@ -52,6 +52,102 @@
 .favGames {
   margin-left: 1rem;
   font-family: 'Cabin', sans-serif;
+  color: rgba(5, 95, 158, 1);
+}
+.proForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.fileInput label {
+  background: rgba(141, 146, 64, 0.75);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  outline: none;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+}
+.fileInput :hover {
+  background-color: darken(#f15d22, 10%);
+}
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.saveButton {
+  background: rgba(141, 146, 64, 0.75);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  outline: none;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+}
+.trash {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.deleteAcc {
+  background: rgba(141, 146, 64, 0.75);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  outline: none;
+  height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+}
+.nameEdit {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  align-items: baseline;
+}
+.messageButton {
+  background-color: rgba(5, 95, 158, 1);
+  height: 30px;
+  width: 100px;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+  color: white;
 }
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {

@@ -79,7 +79,7 @@ const SignUpPage = ({ history }) => {
             <div htmlFor="Birthday">Birthday:</div>
             <input
               className="Birthday"
-              type="type"
+              type="date"
               placeholder="YYYY-MM-DD"
               name="birthday"
               onChange={handleChange}
@@ -96,15 +96,13 @@ const SignUpPage = ({ history }) => {
             </select>
             <input
               className="gamerInput"
-              value={document.getElementById('gamerTag')}
-              type="type"
+              type="text"
               placeholder="Gamer-Tag"
               name="name"
               onChange={handleChange}
             />
           </div>
           <div>
-
             <div htmlFor="passwordSignUp">Password:</div>
             <input
               className="password"
