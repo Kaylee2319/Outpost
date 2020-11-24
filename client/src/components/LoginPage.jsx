@@ -17,8 +17,9 @@ const LoginPage = ({ history }) => {
   const [formData, setFormData] = useState(null);
 
   const handleChange = (event) => {
-    setFormData({ ...formData, [event.target.user_name]: event.target.value });
+    setFormData({ ...formData, [event.target.name]: event.target.value });
     console.log(formData);
+    console.log(event);
   };
 
   const handleLogin = async (e) => {
@@ -63,16 +64,21 @@ const LoginPage = ({ history }) => {
         <p className="or">OR</p>
       </div>
       <form className="loginForm" onSubmit={handleLogin}>
-        <label>
-          <p className="email">Email:</p>
-          <input className="emailBox" type="email" onChange={handleChange} />
-          <p className="password">Password:</p>
-          <input
-            className="passwordBox"
-            type="password"
-            onChange={handleChange}
-          />
-        </label>
+        <p className="email">Email:</p>
+        <input
+          className="emailBox"
+          id="email"
+          type="email"
+          name="email"
+          onChange={handleChange}
+        />
+        <p className="password">Password:</p>
+        <input
+          className="passwordBox"
+          type="password"
+          name="password"
+          onChange={handleChange}
+        />
         <Link to="/forgotpassword" className="forgot">
           <span className="forgotten">Forgot Password?</span>
         </Link>
