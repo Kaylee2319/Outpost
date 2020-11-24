@@ -121,15 +121,13 @@ const ProfilePage = ({ history: { push } }) => {
       </form>
       <div className="namedPlayer">
         <div className="nameEdit">
-          <h2 className="usersName">Kaylee Harding{currentUser?.name}</h2>
+          <h2 className="usersName">{currentUser?.name}</h2>
           <Link to="/profileedit" className="editLink">
             <span className="editProfile">Edit Profile</span>
           </Link>
         </div>
-        <h3 className="dutyStatus">
-          Coast Guard Veteran{currentUser?.service_branch}
-        </h3>
-        <h4 className="userName">Kaylee2319{currentUser?.user_name}</h4>
+        <h3 className="dutyStatus">{currentUser?.service_branch}</h3>
+        <h4 className="userName">{currentUser?.user_name}</h4>
         <a href="/dms">
           <button className="messageButton">Messages</button>
         </a>
