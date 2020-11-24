@@ -128,7 +128,7 @@ const ProfilePage = ({ history: { push } }) => {
         </div>
         <h3 className="dutyStatus">{currentUser?.service_branch}</h3>
         <h4 className="userName">{currentUser?.user_name}</h4>
-        <a href="/dms">
+        <a href="/chatroom">
           <button className="messageButton">Messages</button>
         </a>
       </div>

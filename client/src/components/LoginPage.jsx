@@ -11,17 +11,14 @@ import { SiTwitch } from 'react-icons/si';
 import { AppContext } from '../context/AppContext';
 import axios from 'axios';
 import swal from 'sweetalert';
-
 const LoginPage = ({ history }) => {
   const { setCurrentUser } = useContext(AppContext);
   const [formData, setFormData] = useState(null);
-
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
     console.log(formData);
     console.log(event);
   };
-
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -33,7 +30,6 @@ const LoginPage = ({ history }) => {
       swal(`Oops!`, 'Something went wrong.');
     }
   };
-
   return (
     <>
       <NavBar />
@@ -96,5 +92,4 @@ const LoginPage = ({ history }) => {
     </>
   );
 };
-
 export default LoginPage;
