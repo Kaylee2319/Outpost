@@ -14,6 +14,7 @@ import PolicyGuide from './components/PolicyGuide';
 import VeteranPrograms from './components/VeteranPrograms';
 import ContactUs from './components/ContactUsPage';
 import Menu from './components/MenuPage';
+import Events from './components/Events';
 import './App.css';
 function App() {
   return (
@@ -28,10 +29,12 @@ function App() {
           <Route exact path="/veteranprograms" component={VeteranPrograms} />
           <Route exact path="/contactus" component={ContactUs} />
           <Route exact path="/menu" component={Menu} />
+          <Route exact path="/event" component={Events} />
           <SecureRoute exact path="/chatroom" component={Chatroom} />
           <SecureRoute exact path="/dms" component={DmPage} />
           <SecureRoute exact path="/profile" component={ProfilePage} />
           <SecureRoute exact path="/profileedit" component={ProfileEdit} />
+
         </Switch>
       </BrowserRouter>
     </AppContextProvider>
