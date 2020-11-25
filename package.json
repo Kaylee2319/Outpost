@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@fullcalendar/daygrid": "^5.4.0",
+    "@fullcalendar/react": "^5.4.0",
     "@sendgrid/mail": "^7.4.0",
     "bcryptjs": "^2.4.3",
     "chatrooms": "^0.0.7",
@@ -19,6 +21,7 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "socket.io": "^3.0.2",
