@@ -4,6 +4,7 @@ const express = require('express'),
   openRoutes = require('./routes/open/users'),
   passport = require('./middleware/authentication/index'),
   cookieParser = require('cookie-parser'),
+  fileUpload = require('express-fileupload'),
   userRouter = require('./routes/secure/users');
 
 const app = express();
@@ -20,6 +21,13 @@ app.use('/api', openRoutes);
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
+
+app.use(
+  fileUpload({
+    useTempFiles: true,
+    tempFileDir: '/tmp/images'
+  })
+);
 
 // Any authentication middleware and related routing would be here.
 app.use('/api/*', passport.authenticate('jwt', { session: false }));

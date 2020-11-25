@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/PolicyGuide.css';
 import NavBar from './NavBar';
-import Footer from './footer';
+import Footer from './Footer';
 import { BsPeople } from 'react-icons/bs';
 import { IoIosSearch } from 'react-icons/io';
 import { FaRegHandshake } from 'react-icons/fa';
