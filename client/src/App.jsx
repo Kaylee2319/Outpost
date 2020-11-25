@@ -30,10 +30,9 @@ function App() {
           <Route exact path="/menu" component={Menu} />
           <Route exact path="/event" component={Events} />
           <SecureRoute exact path="/chatroom" component={Chatroom} />
-          <SecureRoute exact path="/dms" component={DmPage} />
+
           <SecureRoute exact path="/profile" component={ProfilePage} />
           <SecureRoute exact path="/profileedit" component={ProfileEdit} />
-
         </Switch>
       </BrowserRouter>
     </AppContextProvider>
