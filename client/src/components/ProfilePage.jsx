@@ -3,11 +3,12 @@ import axios from 'axios';
 import swal from 'sweetalert';
 import '../css/ProfilePage.css';
 import NavBar from './NavBar';
-import Footer from './footer';
+import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import { AiOutlineCloudUpload } from 'react-icons/ai';
 import { FiSave } from 'react-icons/fi';
 import { BsTrash } from 'react-icons/bs';
+import { VscSignOut } from 'react-icons/vsc';
 import { AppContext } from '../context/AppContext';
 
 const ProfilePage = ({ history: { push } }) => {
@@ -23,18 +24,18 @@ const ProfilePage = ({ history: { push } }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const avatar = new FormData();
-    avatar.append('avatar', image, image.user_name);
+    avatar.append('avatar', image, image.name);
     try {
       const updatedUser = await axios({
         method: 'POST',
-        url: '/api/users/profile/avatar',
+        url: '/api/users/avatar',
         data: avatar,
         headers: {
           'Content-Type': 'multipart/form-data'
         }
       });
       setCurrentUser({ ...currentUser, avatar: updatedUser.data.secure_url });
-      swal('Sweet!', 'Your image has been updated!', 'success');
+      swal('Your image has been updated!', 'success');
     } catch (error) {
       swal('Error', 'Oops, something went wrong.');
     }
@@ -57,7 +58,7 @@ const ProfilePage = ({ history: { push } }) => {
             url: '/api/users',
             withCredentials: true
           });
-          swal('Poof! Your account has been deleted!', {
+          swal('Your account has been deleted!', {
             icon: 'success'
           });
           setLoading(false);
@@ -74,6 +75,26 @@ const ProfilePage = ({ history: { push } }) => {
       swal(`Oops!`, 'Something went wrong.');
     }
   };
+
+  const handleLogout = async () => {
+    try {
+      await axios({
+        method: 'POST',
+        url: '/api/users/logout',
+        withCredentials: true
+      });
+      swal('You have been logged out!', {
+        icon: 'success'
+      });
+      setLoading(false);
+      sessionStorage.removeItem('user');
+      setCurrentUser(null);
+      push('/login');
+    } catch (error) {
+      swal(`Oops!`, 'Something went wrong.');
+    }
+  };
+
   return (
     <>
       <NavBar />
@@ -116,14 +137,16 @@ const ProfilePage = ({ history: { push } }) => {
       </form>
       <div className="namedPlayer">
         <div className="nameEdit">
-          <h2 className="usersName">{currentUser?.name}</h2>
+          <h2 className="usersName">{currentUser?.user_name}</h2>
           <Link to="/profileedit" className="editLink">
             <span className="editProfile">Edit Profile</span>
           </Link>
         </div>
         <h3 className="dutyStatus">{currentUser?.service_branch}</h3>
+
         <h4 className="userName">{currentUser?.user_name}</h4>
-        <a href="/dms">
+        <a href="/chatroom">
+
           <button className="messageButton">Messages</button>
         </a>
       </div>
@@ -135,6 +158,10 @@ const ProfilePage = ({ history: { push } }) => {
         <button className="deleteAcc" onClick={handleDelete}>
           <BsTrash size={15} style={{ color: 'rgba(5, 95, 158, 1)' }} /> Delete
           Account
+        </button>
+        <button className="logout" onClick={handleLogout}>
+          <VscSignOut size={15} style={{ color: 'rgba(5, 95, 158, 1)' }} />{' '}
+          Logout
         </button>
       </div>
       <Footer />

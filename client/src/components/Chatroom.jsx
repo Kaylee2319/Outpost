@@ -1,10 +1,18 @@
 import React from 'react';
 
+import '../css/Chatroom.css';
+import Chat from './chat';
+import NavBar from './NavBar';
+import Footer from './footer';
 const Chatroom = () => {
   return (
-    <div>
-      <h1>This is the chatroom.</h1>
-    </div>
+    <>
+      <NavBar />
+      <div>
+        <Chat />
+      </div>
+      <Footer />
+    </>
   );
 };
 

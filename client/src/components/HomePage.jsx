@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/HomePage.css';
 import NavBar from './NavBar';
-import Footer from './footer';
+import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import { BsPeople } from 'react-icons/bs';
 import { IoIosSearch } from 'react-icons/io';

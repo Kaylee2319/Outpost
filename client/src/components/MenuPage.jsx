@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../css/MenuPage.css';
 import { RiArrowLeftSLine } from 'react-icons/ri';
+import { AppContext } from '../context/AppContext';
 import { Link } from 'react-router-dom';
 
 const Menu = ({ history }) => {
+  const { currentUser } = useContext(AppContext);
+
   return (
     <>
       <div className="menuHeader">
@@ -21,17 +24,31 @@ const Menu = ({ history }) => {
       </div>
       <div className="menuLinks">
         <div className="line1">
-          <Link to="/profile" className="menuProfile">
-            PROFILE
-          </Link>
+          {!currentUser ? (
+            <Link to="/login" className="menuProfile">
+              LOGIN
+            </Link>
+          ) : (
+            <Link to="/profile" className="menuProfile">
+              PROFILE
+            </Link>
+          )}
           <Link to="/about" className="menuAbout">
             ABOUT
           </Link>
         </div>
         <div className="line2">
-          <Link to="/chatroom" className="menuChat">
-            Chat Now
-          </Link>
+
+          {!currentUser ? (
+            <Link to="/login" className="menuChat">
+              Chat Now
+            </Link>
+          ) : (
+            <Link to="/chats" className="menuChat">
+              Chat Now
+            </Link>
+          )}
+
           <Link to="/event" className="menuEvent">
             Events
           </Link>

@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AppContext } from '../context/AppContext';
 import '../css/NavBar.css';
 import { FiMenu } from 'react-icons/fi';
 import { MdPersonPin } from 'react-icons/md';
+import { AiOutlineUserAdd } from 'react-icons/ai';
+
 const NavBar = () => {
+  const { currentUser } = useContext(AppContext);
+
   return (
     <>
       <div className="navbar">
@@ -13,9 +18,17 @@ const NavBar = () => {
         <Link to="/" className="name">
           Outpost
         </Link>
-        <Link to="/profile" className="profile">
-          <MdPersonPin size={27} style={{ color: '055F9E' }} />
-        </Link>
+        <div>
+          {!currentUser ? (
+            <Link to="/login" className="signup">
+              <AiOutlineUserAdd size={27} style={{ color: '055F9E' }} />
+            </Link>
+          ) : (
+            <Link to="/profile" className="profile">
+              <MdPersonPin size={27} style={{ color: '055F9E' }} />
+            </Link>
+          )}
+        </div>
       </div>
     </>
   );
