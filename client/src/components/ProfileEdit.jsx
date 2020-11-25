@@ -16,7 +16,7 @@ const EditUser = ({ history }) => {
   const handleUpDate = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.patch('/api/usres/profile', formData);
+      const response = await axios.patch('/api/users/profile', formData);
       sessionStorage.setItem('user', response.data);
       setCurrentUser(response.data.user);
       history.push('/');
