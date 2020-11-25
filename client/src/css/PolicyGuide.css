@@ -37,6 +37,7 @@
 .howSearch1 {
   font-size: 15px;
   color: black;
+  margin-right: 0.75rem;
 }
 .howtoconnect {
   display: flex;
@@ -56,6 +57,7 @@
 .howConnect1 {
   font-size: 15px;
   color: black;
+  margin-left: 1rem;
 }
 .howtoGameon {
   display: flex;
@@ -74,6 +76,7 @@
 .howGameOn1 {
   font-size: 15px;
   color: black;
+  margin-right: 1rem;
 }
 .howButton {
   width: 100%;
@@ -93,56 +96,4 @@
   font-size: 15px;
   letter-spacing: 2px;
   border: none;
-}
-/* iPhone 6 7 8 (portrait) ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
-}
-
-/* iPhone 6 7 8+ (portrait) ----------- */
-@media only screen and (device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
-}
-
-/* iPhone 11 (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-}
-
-/* iPhone pro 11 (portrait) ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
-}
-/* iPhone 11 pro max (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-}
-
-/* iPhone 12 (portrait) ----------- */
-@media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
-}
-/* iPhone 12 pro max (portrait) ----------- */
-@media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
-}
-/* iPhone 12 mini (portrait) ----------- */
-@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
-}
-
-/* Samsung Galaxy S3 (portrait) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
-}
-/* Samsung Galaxy S4 (portrait) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
-}
-
-/* Samsung Galaxy S5 (portrait) ----------- */
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
-}
-
-/* Samsung Galaxy note 20 ------------*/
-@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
-}
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-}
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-}
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
 }

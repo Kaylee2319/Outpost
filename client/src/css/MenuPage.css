@@ -125,42 +125,178 @@
   justify-content: center;
   text-align: center;
 }
+.searchMenu {
+  font-size: 20px;
+}
 /* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
-}
-
-/* iPhone 6 7 8+ (portrait) ----------- */
-@media only screen and (device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
+  .menuTitle {
+    font-size: 35px;
+  }
+  .menuProfile {
+    height: 70px;
+  }
+  .menuAbout {
+    height: 70px;
+  }
+  .menuChat {
+    height: 250px;
+  }
+  .menuEvent {
+    height: 250px;
+  }
+  .MenuPolicy {
+    height: 250px;
+  }
+  .menuVa {
+    height: 250px;
+  }
 }
 
 /* iPhone 11 (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-}
-
-/* iPhone pro 11 (portrait) ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
-}
-/* iPhone 11 pro max (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
+  .menuTitle {
+    font-size: 35px;
+  }
+  .menuProfile {
+    height: 90px;
+  }
+  .menuAbout {
+    height: 90px;
+  }
+  .menuChat {
+    height: 275px;
+  }
+  .menuEvent {
+    height: 275px;
+  }
+  .MenuPolicy {
+    height: 275px;
+  }
+  .menuVa {
+    height: 275px;
+  }
 }
 
 /* iPhone 12 (portrait) ----------- */
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
+  .menuTitle {
+    font-size: 35px;
+  }
+  .menuProfile {
+    height: 95px;
+  }
+  .menuAbout {
+    height: 95px;
+  }
+  .menuChat {
+    height: 280px;
+  }
+  .menuEvent {
+    height: 280px;
+  }
+  .MenuPolicy {
+    height: 280px;
+  }
+  .menuVa {
+    height: 280px;
+  }
 }
 /* iPhone 12 pro max (portrait) ----------- */
 @media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
+  .menuTitle {
+    font-size: 35px;
+  }
+  .menuProfile {
+    height: 80px;
+  }
+  .menuAbout {
+    height: 80px;
+  }
+  .menuChat {
+    height: 260px;
+  }
+  .menuEvent {
+    height: 260px;
+  }
+  .MenuPolicy {
+    height: 260px;
+  }
+  .menuVa {
+    height: 260px;
+  }
 }
 /* iPhone 12 mini (portrait) ----------- */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
+  .menuTitle {
+    font-size: 35px;
+  }
+  .menuProfile {
+    height: 95px;
+  }
+  .menuAbout {
+    height: 95px;
+  }
+  .menuChat {
+    height: 280px;
+  }
+  .menuEvent {
+    height: 280px;
+  }
+  .MenuPolicy {
+    height: 280px;
+  }
+  .menuVa {
+    height: 280px;
+  }
 }
 
-/* Samsung Galaxy S3 (portrait) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
-}
-/* Samsung Galaxy S4 (portrait) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
+/* Samsung Galaxy note 20 ------------ */
+@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
+  .menuTitle {
+    font-size: 35px;
+  }
+  .menuProfile {
+    height: 80px;
+  }
+  .menuAbout {
+    height: 80px;
+  }
+  .menuChat {
+    height: 260px;
+  }
+  .menuEvent {
+    height: 260px;
+  }
+  .MenuPolicy {
+    height: 260px;
+  }
+  .menuVa {
+    height: 260px;
+  }
 }
 
 /* Samsung Galaxy S5 (portrait) ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
+  .menuTitle {
+    font-size: 25px;
+  }
+  .menuProfile {
+    height: 70px;
+  }
+  .menuAbout {
+    height: 70px;
+  }
+  .menuChat {
+    height: 230px;
+  }
+  .menuEvent {
+    height: 230px;
+  }
+  .MenuPolicy {
+    height: 230px;
+  }
+  .menuVa {
+    height: 230px;
+  }
 }

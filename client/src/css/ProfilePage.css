@@ -20,15 +20,6 @@
   align-items: center;
   font-family: 'Cabin', sans-serif;
 }
-.saved {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 6rem;
-  right: 1.5rem;
-  font-family: 'Cabin', sans-serif;
-}
 .namedPlayer {
   font-family: 'Cabin', sans-serif;
   height: 9rem;
@@ -166,14 +157,13 @@
   font-size: 15px;
   color: white;
 }
-/* iPhone 6 7 8 (portrait) ----------- */
+
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   .favGames {
     height: 9rem;
   }
 }
 
-/* iPhone 6 7 8+ (portrait) ----------- */
 @media only screen and (device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
   .favGames {
     height: 9rem;
@@ -190,7 +180,6 @@
   }
 }
 
-/* iPhone 11 (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
   .favGames {
     height: 19rem;
@@ -207,7 +196,6 @@
   }
 }
 
-/* iPhone pro 11 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   .favGames {
     height: 14rem;
@@ -223,7 +211,7 @@
     width: 9rem;
   }
 }
-/* iPhone 12 (portrait) ----------- */
+
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
   .favGames {
     height: 16rem;
@@ -239,7 +227,7 @@
     width: 9rem;
   }
 }
-/* iPhone 12 pro max (portrait) ----------- */
+
 @media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
   .favGames {
     height: 21rem;
@@ -255,7 +243,7 @@
     width: 9rem;
   }
 }
-/* iPhone 12 mini (portrait) ----------- */
+
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
   .favGames {
     height: 15rem;
@@ -271,22 +259,22 @@
     width: 9rem;
   }
 }
-/* Samsung Galaxy S4 (portrait) ----------- */
+
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
   .favGames {
     height: 8rem;
   }
 }
-/* Samsung Galaxy note 20 ------------*/
+
 @media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
   .favGames {
     height: 11rem;
   }
 }
-/* iPads (portrait) ----------- */
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
 }
-/* Desktops and laptops ----------- */
+
 @media only screen and (min-width: 1224px) {
   .favGames {
     height: 15rem;
@@ -301,7 +289,4 @@
     height: 9rem;
     width: 9rem;
   }
-}
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
 }

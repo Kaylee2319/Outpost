@@ -6,7 +6,6 @@ import HomePage from './components/HomePage';
 import LoginPage from './components/LoginPage';
 import SignUpPage from './components/SignUpPage';
 import Chatroom from './components/Chatroom';
-import DmPage from './components/DmPage';
 import ProfilePage from './components/ProfilePage';
 import ProfileEdit from './components/ProfileEdit';
 import AboutPage from './components/AboutPage';

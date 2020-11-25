@@ -106,7 +106,6 @@
   background-position: center;
   background-size: 100%;
 }
-/* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -122,7 +121,6 @@
     font-size: 1.5rem;
   }
 }
-/* iPhone 6 7 8+ (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -140,7 +138,6 @@
   }
 }
 
-/* iPhone 11 (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -157,8 +154,6 @@
     font-size: 20.5px;
   }
 }
-
-/* iPhone pro 11 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -175,8 +170,6 @@
     font-size: 18.52px;
   }
 }
-
-/* iPhone 12 (portrait) ----------- */
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -193,7 +186,6 @@
     font-size: 19px;
   }
 }
-/* iPhone 12 pro max (portrait) ----------- */
 @media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -210,8 +202,6 @@
     font-size: 21px;
   }
 }
-
-/* Samsung Galaxy S3 (portrait) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -228,8 +218,6 @@
     font-size: 18px;
   }
 }
-
-/* Samsung Galaxy S5 (portrait) ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -246,8 +234,6 @@
     font-size: 18px;
   }
 }
-
-/* Samsung Galaxy note 20 ------------*/
 @media only screen and (min-device-width: 412px) and (max-device-height: 767px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -264,7 +250,6 @@
     font-size: 19px;
   }
 }
-/* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-height: 1024px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
@@ -281,7 +266,6 @@
     margin: 2.95rem;
   }
 }
-/* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   .title {
     margin-top: -0.75rem;
@@ -301,7 +285,6 @@
     margin: 1.86rem;
   }
 }
-/* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   .title {
     margin-top: -0.75rem;

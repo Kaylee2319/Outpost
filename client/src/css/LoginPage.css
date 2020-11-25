@@ -49,7 +49,7 @@
   box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
     inset 2px 2px 4px rgba(170, 170, 204, 0.25);
 }
-.password {
+.passwords {
   margin-left: -2px;
   margin-bottom: 4px;
   font-size: 15px;
@@ -120,218 +120,281 @@
   font-size: 12px;
 }
 
-/* iPhone 11 (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
   .topTitle {
-    height: 10rem;
+    height: 3.5rem;
   }
   .signInTitle {
-    margin-top: 1rem;
+    height: 4rem;
+  }
+  .loginForm {
+    height: 18rem;
   }
 
-  .loginForm {
-    height: 17rem;
+  .loginButton {
+    height: 2.5rem;
   }
   .or {
-    height: 1.5rem;
-    margin-top: -0.5rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+  }
+  .signinWith {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .signinWith .signButton {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .noAccountTitle {
+    font-size: 15px;
+  }
+  .signupLink {
+    margin-bottom: 4rem;
   }
   .signLink {
     font-size: 13px;
   }
+  .emailBox {
+    height: 30px;
+  }
+  .passwordBox {
+    height: 30px;
+  }
+  .passwords {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+  .forgotten {
+    font-size: 13px;
+  }
+  .email {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
 }
-/* iPhone 12 (portrait) ----------- */
+
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
   .topTitle {
-    height: 10rem;
+    height: 3.5rem;
   }
   .signInTitle {
-    margin-top: 1.3rem;
+    height: 4rem;
+  }
+  .loginForm {
+    height: 18rem;
+  }
+
+  .loginButton {
+    height: 2.5rem;
+  }
+  .or {
+    margin-top: 1.5rem;
+  }
+  .signinWith {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .signinWith .signButton {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .noAccountTitle {
+    font-size: 15px;
+  }
+  .signupLink {
+    margin-bottom: 4rem;
   }
   .signLink {
     font-size: 13px;
   }
+  .emailBox {
+    height: 30px;
+  }
+  .passwordBox {
+    height: 30px;
+  }
+  .passwords {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+  .forgotten {
+    font-size: 13px;
+  }
+  .email {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
 }
-/* iPhone 12 pro max (portrait) ----------- */
+
 @media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
   .topTitle {
-    height: 10rem;
+    height: 3.5rem;
   }
   .signInTitle {
-    margin-top: 1rem;
+    height: 4rem;
+  }
+  .loginForm {
+    height: 18rem;
   }
 
-  .loginForm {
-    height: 17rem;
+  .loginButton {
+    height: 2.5rem;
   }
   .or {
-    height: 1.5rem;
-    margin-top: 0.25rem;
-    margin-bottom: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .signinWith {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .signinWith .signButton {
-    height: 3rem;
-    width: 3rem;
+    height: 3.5rem;
+    width: 3.5rem;
+  }
+  .noAccountTitle {
+    font-size: 15px;
+  }
+  .signupLink {
+    margin-bottom: 4rem;
   }
   .signLink {
     font-size: 13px;
   }
+  .emailBox {
+    height: 30px;
+  }
+  .passwordBox {
+    height: 30px;
+  }
+  .passwords {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+  .forgotten {
+    font-size: 13px;
+  }
+  .email {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
 }
-/* iPhone 12 mini (portrait) ----------- */
+
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
-  .loginForm {
-    height: 16.25rem;
-  }
-}
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .topTitle {
-    height: 10rem;
+    height: 3.5rem;
   }
   .signInTitle {
-    margin-top: 1rem;
+    height: 4rem;
+  }
+  .loginForm {
+    height: 18rem;
   }
 
-  .loginForm {
-    height: 17rem;
+  .loginButton {
+    height: 2.5rem;
   }
   .or {
-    height: 1.5rem;
-    margin-top: 0.25rem;
-    margin-bottom: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .signinWith {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .signinWith .signButton {
-    height: 3rem;
-    width: 3rem;
-  }
-  .signLink {
-    font-size: 13px;
-  }
-}
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  .topTitle {
-    height: 9rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray;
-  }
-  .gameUp {
-    font-size: 22px;
-    font-family: 'Cabin', sans-serif;
-  }
-  .signInTitle {
-    height: 3rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -2rem;
-  }
-  .signIn {
-    font-size: 21px;
-    font-family: 'Cabin', sans-serif;
-  }
-  .loginForm {
-    height: 15rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
-  }
-  .or {
-    height: 1rem;
-    margin-top: 0.5rem;
-  }
-  .signinWith .signButton {
-    height: 2rem;
-    width: 2rem;
-    margin: 6px;
+    height: 3.5rem;
+    width: 3.5rem;
   }
   .noAccountTitle {
-    height: 1rem;
-    font-size: 13px;
-    font-weight: 900;
-    margin-top: 0.75rem;
+    font-size: 15px;
   }
   .signupLink {
-    height: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 7rem;
   }
   .signLink {
-    font-size: 14px;
+    font-size: 13px;
+  }
+  .emailBox {
+    height: 30px;
+  }
+  .passwordBox {
+    height: 30px;
+  }
+  .passwords {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+  .forgotten {
+    font-size: 13px;
+  }
+  .email {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
   }
 }
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
+@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
   .topTitle {
-    height: 9rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgray;
-  }
-  .gameUp {
-    font-size: 22px;
-    font-family: 'Cabin', sans-serif;
+    height: 3.5rem;
   }
   .signInTitle {
-    height: 3rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: -2rem;
-  }
-  .signIn {
-    font-size: 21px;
-    font-family: 'Cabin', sans-serif;
+    height: 4rem;
   }
   .loginForm {
-    height: 15rem;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
+    height: 18rem;
+  }
+
+  .loginButton {
+    height: 2.5rem;
   }
   .or {
-    height: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .signinWith {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .signinWith .signButton {
-    height: 3rem;
-    width: 3rem;
-    margin: 6px;
+    height: 3.5rem;
+    width: 3.5rem;
   }
   .noAccountTitle {
-    height: 1rem;
-    font-size: 13px;
-    font-weight: 900;
-    margin-top: 0.75rem;
+    font-size: 15px;
   }
   .signupLink {
-    height: 1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
   }
   .signLink {
-    font-size: 14px;
+    font-size: 13px;
+  }
+  .emailBox {
+    height: 30px;
+  }
+  .passwordBox {
+    height: 30px;
+  }
+  .passwords {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
+  }
+  .forgotten {
+    font-size: 13px;
+  }
+  .email {
+    margin-left: -2px;
+    margin-bottom: 4px;
+    font-size: 20px;
   }
 }

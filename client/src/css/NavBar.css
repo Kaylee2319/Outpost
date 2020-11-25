@@ -21,7 +21,7 @@
   border: none;
   background-color: white;
 }
-/* iPhone 12 (portrait) ----------- */
+
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
   .navbar {
     margin-left: 1.75rem;
@@ -29,7 +29,6 @@
   }
 }
 
-/* iPhone 12 mini (portrait) ----------- */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
   .navbar {
     margin-left: 1.75rem;
@@ -37,14 +36,13 @@
   }
 }
 
-/* Samsung Galaxy S3 (portrait) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
   */ .navbar {
     margin-left: 1rem;
     margin-right: 1rem;
   }
 }
-/* Samsung Galaxy S5 (portrait) ----------- */
+
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
   .navbar {
     margin-left: 1.75rem;
@@ -52,7 +50,6 @@
   }
 }
 
-/* Samsung Galaxy note 20 ------------ */
 @media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
   .navbar {
     margin-left: 1.75rem;
@@ -63,7 +60,7 @@
     font-size: 3rem;
   }
 }
-/* iPads (portrait) ----------- */
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .navbar {
     margin-left: 5rem;
@@ -74,7 +71,7 @@
     font-size: 5rem;
   }
 }
-/* Desktops and laptops ----------- */
+
 @media only screen and (min-width: 1224px) {
   .navbar {
     margin-left: 6rem;
@@ -84,7 +81,7 @@
     font-size: 5rem;
   }
 }
-/* Large screens -----------  */
+
 @media only screen and (min-width: 2000px) {
   .navbar {
     margin-left: 7rem;

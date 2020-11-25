@@ -38,6 +38,7 @@ const Menu = ({ history }) => {
           </Link>
         </div>
         <div className="line2">
+
           {!currentUser ? (
             <Link to="/login" className="menuChat">
               Chat Now
@@ -47,6 +48,7 @@ const Menu = ({ history }) => {
               Chat Now
             </Link>
           )}
+
           <Link to="/event" className="menuEvent">
             Events
           </Link>

@@ -52,7 +52,7 @@ const HomePage = ({ history }) => {
         <div className="video">video goes here</div>
       </div>
       <div className="upcomingEvents">
-        <span className="eventTitle">Online Game Chats</span>
+        <span className="eventTitle">Upcoming Events</span>
         <Link to="/event" className="eventLink">
           <span className="viewAll">View All</span>
         </Link>
