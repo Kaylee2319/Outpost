@@ -8,6 +8,7 @@ import SignUpPage from './components/SignUpPage';
 import Chatroom from './components/Chatroom';
 import DmPage from './components/DmPage';
 import ProfilePage from './components/ProfilePage';
+import ProfileEdit from './components/ProfileEdit';
 import AboutPage from './components/AboutPage';
 import PolicyGuide from './components/PolicyGuide';
 import VeteranPrograms from './components/VeteranPrograms';
@@ -30,6 +31,7 @@ function App() {
           <SecureRoute exact path="/chatroom" component={Chatroom} />
           <SecureRoute exact path="/dms" component={DmPage} />
           <SecureRoute exact path="/profile" component={ProfilePage} />
+          <SecureRoute exact path="/profileedit" component={ProfileEdit} />
         </Switch>
       </BrowserRouter>
     </AppContextProvider>

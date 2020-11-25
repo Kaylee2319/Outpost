@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import '../css/SignUpPage.css';
 import NavBar from './NavBar';
-import Footer from './footer';
+import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import axios from 'axios';
@@ -75,33 +75,24 @@ const SignUpPage = ({ history }) => {
               onChange={handleChange}
             />
           </div>
-          {/* <div>
-            <div htmlFor="Birthday">Birthday:</div>
-            <input
-              className="Birthday"
-              type="date"
-              placeholder="YYYY-MM-DD"
-              name="birthday"
-              onChange={handleChange}
-            />
-          </div> */}
-          {/* <div>
-            <label htmlFor="gamerTag">Gamer-Tag:</label>
-            <select name="gamerTag" id="gamerTag">
-              <option value="xbox">Xbox</option>
-              <option value="Playstation">Playstation</option>
-              <option value="Nintendo">Nintendo</option>
-              <option value="PC">PC</option>
-              <option value="Other">Other</option>
-            </select>
-            <input
-              className="gamerInput"
-              type="text"
-              placeholder="Gamer-Tag"
-              name="xbox"
-              onChange={handleChange}
-            />
-          </div> */}
+          <div>
+            <form>
+              <label htmlFor="gamerTag">Gamer-Tag:</label>
+              <select name="gamer_tags" id="gamerTag" onChange={handleChange}>
+                <option value="xbox">Xbox</option>
+                <option value="Playstation">Playstation</option>
+                <option value="Nintendo">Nintendo</option>
+                <option value="PC">PC</option>
+                <option value="Other">Other</option>
+              </select>
+              <input
+                className="gamerInput"
+                type="text"
+                placeholder="Gamer-Tag"
+                name="gamer_tags"
+              />
+            </form>
+          </div>
           <div>
             <div htmlFor="passwordSignUp">Password:</div>
             <input
@@ -110,23 +101,21 @@ const SignUpPage = ({ history }) => {
               name="password"
               onChange={handleChange}
             />
-
-            {/* <div htmlFor="password">Re-Enter Password:</div>
+            <div htmlFor="password">Re-Enter Password:</div>
             <input
               className="passwordSignUp"
               type="password"
               name="password"
               onChange={handleChange}
-            /> */}
+            />
           </div>
-
           <div className="terms">
-            {/* <p className="conditions">
+            <p className="conditions">
               {' '}
               By checking sign up, I accept{' '}
               <strong>OUTPOST’s TERMS OF USE</strong> and acknowledge having
               read its Privay Policy and Etiquette Policy
-            </p> */}
+            </p>
           </div>
           <div className="signButton">
             <button className="signUpButton" type="submit">
