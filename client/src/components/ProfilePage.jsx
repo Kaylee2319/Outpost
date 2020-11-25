@@ -3,7 +3,7 @@ import axios from 'axios';
 import swal from 'sweetalert';
 import '../css/ProfilePage.css';
 import NavBar from './NavBar';
-import Footer from './footer';
+import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import { FaRegHandshake } from 'react-icons/fa';
 import { AiOutlineCloudUpload } from 'react-icons/ai';

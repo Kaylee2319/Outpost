@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import '../css/LoginPage.css';
 import NavBar from './NavBar';
-import Footer from './footer';
+import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import { FaXbox } from 'react-icons/fa';
 import { FaPlaystation } from 'react-icons/fa';
