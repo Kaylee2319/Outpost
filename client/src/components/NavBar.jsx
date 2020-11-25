@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AppContext } from '../context/AppContext';
 import '../css/NavBar.css';
 import { FiMenu } from 'react-icons/fi';
-import { MdPersonPin, MdStayCurrentLandscape } from 'react-icons/md';
+import { MdPersonPin } from 'react-icons/md';
 import { AiOutlineUserAdd } from 'react-icons/ai';
 
 const NavBar = () => {
