@@ -42,7 +42,7 @@ const Chat = () => {
                 alt="profile"
               />
               <p className="theoutput">
-                <strong>{currentUser?.name}Kaylee</strong>: {chat.message}
+                <strong>{currentUser?.name}</strong>: {chat.message}
               </p>
             </div>
           );
