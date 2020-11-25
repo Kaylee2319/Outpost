@@ -21,7 +21,7 @@ const SignUpPage = ({ history }) => {
       const response = await axios.post('/api', formData);
       sessionStorage.setItem('user', response.data);
       setCurrentUser(response.data.user);
-      history.push('/');
+      history.push('/profile');
     } catch (error) {
       swal('SignUp Error: ', error.toString());
     }
@@ -75,7 +75,7 @@ const SignUpPage = ({ history }) => {
               onChange={handleChange}
             />
           </div>
-          <div>
+          {/* <div>
             <div htmlFor="Birthday">Birthday:</div>
             <input
               className="Birthday"
@@ -84,8 +84,8 @@ const SignUpPage = ({ history }) => {
               name="birthday"
               onChange={handleChange}
             />
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <label htmlFor="gamerTag">Gamer-Tag:</label>
             <select name="gamerTag" id="gamerTag">
               <option value="xbox">Xbox</option>
@@ -98,35 +98,35 @@ const SignUpPage = ({ history }) => {
               className="gamerInput"
               type="text"
               placeholder="Gamer-Tag"
-              name="name"
+              name="xbox"
               onChange={handleChange}
             />
-          </div>
+          </div> */}
           <div>
             <div htmlFor="passwordSignUp">Password:</div>
-            <input
-              className="password"
-              type="password"
-              name="password"
-              onChange={handleChange}
-            />
-
-            <div htmlFor="password">Re-Enter Password:</div>
             <input
               className="passwordSignUp"
               type="password"
               name="password"
               onChange={handleChange}
             />
+
+            {/* <div htmlFor="password">Re-Enter Password:</div>
+            <input
+              className="passwordSignUp"
+              type="password"
+              name="password"
+              onChange={handleChange}
+            /> */}
           </div>
 
           <div className="terms">
-            <p className="conditions">
+            {/* <p className="conditions">
               {' '}
               By checking sign up, I accept{' '}
               <strong>OUTPOST’s TERMS OF USE</strong> and acknowledge having
               read its Privay Policy and Etiquette Policy
-            </p>
+            </p> */}
           </div>
           <div className="signButton">
             <button className="signUpButton" type="submit">

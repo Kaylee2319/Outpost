@@ -124,7 +124,7 @@ exports.updateUserProfile = async (req, res) => {
   }
 };
 
-// Update User Avatar uploadAvatar -------------------------------------------- +++NEED CLOUDINARY+++
+// Update User Avatar uploadAvatar
 exports.uploadAvatar = async (req, res) => {
   try {
     const response = await cloudinary.uploader.upload(
