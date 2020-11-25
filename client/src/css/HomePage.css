@@ -282,7 +282,7 @@
   background-image: url('../images/Content.png');
   background-size: cover;
 }
-/* iPhone 6 7 8 (portrait) ----------- */
+
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   .friends .friend {
     height: 80px;
@@ -312,7 +312,6 @@
   }
 }
 
-/* iPhone 6 7 8+ (portrait) ----------- */
 @media only screen and (device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
   .video {
     height: 20rem;
@@ -356,12 +355,7 @@
   }
 }
 
-/* iPhone pro 11 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
-  .Join {
-    height: 10rem;
-  }
-
   .about {
     font-size: 22px;
   }
@@ -458,7 +452,6 @@
   }
 }
 
-/* iPhone 12 (portrait) ----------- */
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
   .video {
     height: 18rem;
@@ -501,7 +494,7 @@
     max-width: 125px;
   }
 }
-/* iPhone 12 pro max (portrait) ----------- */
+
 @media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
   .video {
     height: 20rem;
@@ -545,7 +538,6 @@
   }
 }
 
-/* Samsung Galaxy S5 (portrait) ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
   .events .item {
     height: 180px;
@@ -581,11 +573,7 @@
   }
 }
 
-/* Samsung Galaxy note 20 ------------ */
 @media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
-  .Join {
-    height: 15rem;
-  }
   .howvideotitle {
     font-size: 18px;
     line-height: 3.5rem;
@@ -632,7 +620,6 @@
   }
 }
 
-/* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .Join {
     height: 15rem;
@@ -729,7 +716,6 @@
   }
 }
 
-/* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   .Join {
     height: 15rem;
@@ -843,12 +829,11 @@
     font-size: 25px;
     margin-left: 5rem;
   }
-} /*
-Large screens -----------
+}
+
 @media only screen and (min-width: 1824px) {
   .Join {
     height: 12rem;
-    background-color: lightgray;
   }
   .about {
     margin-left: 5.5rem;
@@ -959,4 +944,4 @@ Large screens -----------
     font-size: 25px;
     margin-left: 5rem;
   }
-} */
+}

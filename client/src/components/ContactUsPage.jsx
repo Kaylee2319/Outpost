@@ -11,7 +11,11 @@ const ContactUs = () => {
         <h3 className="contactTitle1">Have a question or feedback?</h3>
         <h3 className="contactTitle1">Leave us a message!</h3>
       </div>
-      <form className="contactform">
+      <form
+        className="contactform"
+        action="https://formspree.io/f/meqplaao"
+        method="POST"
+      >
         <div>
           <div htmlFor="firstName">First Name:</div>
           <input className="firstNameContact" type="text" name="name" />

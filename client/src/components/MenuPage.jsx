@@ -29,7 +29,7 @@ const Menu = ({ history }) => {
           </Link>
         </div>
         <div className="line2">
-          <Link to="/chats" className="menuChat">
+          <Link to="/chatroom" className="menuChat">
             Chat Now
           </Link>
           <Link to="/event" className="menuEvent">

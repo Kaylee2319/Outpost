@@ -5,7 +5,6 @@ import '../css/ProfilePage.css';
 import NavBar from './NavBar';
 import Footer from './footer';
 import { Link } from 'react-router-dom';
-import { FaRegHandshake } from 'react-icons/fa';
 import { AiOutlineCloudUpload } from 'react-icons/ai';
 import { FiSave } from 'react-icons/fi';
 import { BsTrash } from 'react-icons/bs';
@@ -90,10 +89,6 @@ const ProfilePage = ({ history: { push } }) => {
           }
           alt="profile"
         />
-        <div className="saved">
-          <FaRegHandshake size={30} style={{ color: 'rgba(5, 95, 158, 1)' }} />
-          Saved
-        </div>
       </div>
       <form className="d-flex flex-column" onSubmit={handleSubmit}>
         <div className="proForm">

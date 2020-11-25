@@ -72,7 +72,7 @@ const LoginPage = ({ history }) => {
           name="email"
           onChange={handleChange}
         />
-        <p className="password">Password:</p>
+        <p className="passwords">Password:</p>
         <input
           className="passwordBox"
           type="password"
