@@ -1,9 +1,8 @@
 import React from 'react';
 
-
 import Chat from './chat';
 import NavBar from './NavBar';
-import Footer from './footer';
+import Footer from './Footer';
 const Chatroom = () => {
   return (
     <>

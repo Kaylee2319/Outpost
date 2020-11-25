@@ -32,7 +32,6 @@ function App() {
           <SecureRoute exact path="/chatroom" component={Chatroom} />
           <SecureRoute exact path="/profile" component={ProfilePage} />
           <SecureRoute exact path="/profileedit" component={ProfileEdit} />
-
         </Switch>
       </BrowserRouter>
     </AppContextProvider>
