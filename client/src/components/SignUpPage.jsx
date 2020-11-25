@@ -18,10 +18,10 @@ const SignUpPage = ({ history }) => {
   const handleSignUp = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api', formData);
+      const response = await axios.post('/api/signup', formData);
       sessionStorage.setItem('user', response.data);
       setCurrentUser(response.data.user);
-      history.push('/profile');
+      history.push('/');
     } catch (error) {
       swal('SignUp Error: ', error.toString());
     }
