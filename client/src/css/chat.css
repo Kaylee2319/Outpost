@@ -6,13 +6,7 @@
   display: flex;
   justify-content: baseline;
 }
-.inputBox {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  align-items: center;
-  margin-bottom: 2rem;
-}
+
 .messages {
   height: 20rem;
   margin-left: 1.5rem;
@@ -24,6 +18,30 @@
   overflow-y: auto;
   scroll-behavior: smooth;
 }
+.messagePic {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.theoutput {
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  width: inherit;
+  padding: 0.5rem;
+  margin-left: 5px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-family: 'Cabin', sans-serif;
+}
+.messageOutput {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  width: inherit;
+  margin-left: 0.75rem;
+}
+
 .sendButton {
   border: none;
   position: absolute;
@@ -35,7 +53,14 @@
   justify-content: center;
   align-items: center;
 }
-.messageInput {
+.inputBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.form-control {
   border: 1px solid rgba(141, 146, 64, 0.75);
   height: 35px;
   width: 200px;
@@ -45,36 +70,4 @@
   margin-bottom: 15px;
   margin-top: 15px;
   background-color: lightblue;
-}
-.messagePic {
-  height: 2.5rem;
-  width: 2.5rem;
-}
-.messageOutput {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  align-items: center;
-  width: inherit;
-  margin-left: 0.75rem;
-}
-.theoutput {
-  display: flex;
-  flex-direction: column;
-  background-color: lightblue;
-  padding: 0.5rem;
-  margin-left: 5px;
-  border-radius: 15px;
-  font-size: 13px;
-  font-family: 'Cabin', sans-serif;
-}
-.messageOutput1 {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(139, 247, 139);
-  padding: 0.5rem;
-  margin-left: 5px;
-  border-radius: 15px;
-  font-size: 13px;
-  font-family: 'Cabin', sans-serif;
 }

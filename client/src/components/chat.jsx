@@ -3,10 +3,8 @@ import socketIo from '../utils/socket-io';
 import { AppContext } from '../context/AppContext';
 import '../css/chat.css';
 import { RiSendPlaneFill } from 'react-icons/ri';
-import { Timestamp } from 'mongodb';
 
 const Chat = () => {
-  const [username, setUsername] = useState('');
   const [message, setMessage] = useState('');
   const [chats, setChats] = useState([]);
   const { currentUser, setCurrentUser, setLoading } = useContext(AppContext);
@@ -24,19 +22,16 @@ const Chat = () => {
 
   const sendMessage = (e) => {
     e.preventDefault();
-    socketIo.emit('send message', { author: username, message: message });
+    socketIo.emit('send message', { author: currentUser, message: message });
     setMessage('');
+    console.log('message was sent');
   };
-  let isSentByCurrentUser = false;
 
-  if (currentUser === currentUser) {
-    isSentByCurrentUser = true;
-  }
   return (
     <div className="container">
       <div className="messages">
-        {chats.map((chat) => {
-          return isSentByCurrentUser ? (
+        {chats.map((chats) => {
+          return (
             <div className="messageOutput">
               <img
                 className="messagePic"
@@ -48,24 +43,7 @@ const Chat = () => {
                 alt="profile"
               />
               <p className="theoutput">
-                <strong>{currentUser?.name}Kaylee:</strong>
-                {chat.message}
-              </p>
-            </div>
-          ) : (
-            <div className="messageOutput1">
-              <img
-                className="messagePic"
-                src={
-                  currentUser?.avatar
-                    ? currentUser?.avatar
-                    : 'https://files.willkennedy.dev/wyncode/wyncode.png'
-                }
-                alt="profile"
-              />
-              <p className="theoutput">
-                <strong>{currentUser?.name}Kaylee:</strong>
-                {chat.message}
+                <strong>{chats.author}:</strong> {chats.message}
               </p>
             </div>
           );
@@ -73,13 +51,13 @@ const Chat = () => {
       </div>
       <div className="inputBox">
         <div className="card-footer">
-          <h3>{currentUser?.name}</h3>
+          <div>{chats.author}</div>
           <input
-            className="messageInput"
             type="text"
-            name="messages"
-            placeholder="Messages"
+            placeholder="Message"
+            value={message}
             onChange={(e) => setMessage(e.target.value)}
+            className="form-control"
           />
           <button className="sendButton" onClick={sendMessage}>
             <RiSendPlaneFill
