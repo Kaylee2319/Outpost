@@ -15,6 +15,7 @@ import ContactUs from './components/ContactUsPage';
 import Menu from './components/MenuPage';
 import Events from './components/Events';
 import './App.css';
+
 function App() {
   return (
     <AppContextProvider>
