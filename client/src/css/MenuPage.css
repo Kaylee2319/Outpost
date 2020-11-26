@@ -128,7 +128,6 @@
 .searchMenu {
   font-size: 20px;
 }
-/* iPhone 6 7 8 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   .menuTitle {
     font-size: 35px;
@@ -153,7 +152,6 @@
   }
 }
 
-/* iPhone 11 (portrait) ----------- */
 @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
   .menuTitle {
     font-size: 35px;
@@ -178,7 +176,6 @@
   }
 }
 
-/* iPhone 12 (portrait) ----------- */
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
   .menuTitle {
     font-size: 35px;
@@ -202,7 +199,6 @@
     height: 280px;
   }
 }
-/* iPhone 12 pro max (portrait) ----------- */
 @media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
   .menuTitle {
     font-size: 35px;
@@ -226,7 +222,6 @@
     height: 260px;
   }
 }
-/* iPhone 12 mini (portrait) ----------- */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
   .menuTitle {
     font-size: 35px;
@@ -250,33 +245,29 @@
     height: 280px;
   }
 }
-
-/* Samsung Galaxy note 20 ------------ */
-@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
+@media only screen and (min-device-width: 412px) and (max-device-width: 869px) and (orientation: portrait) {
   .menuTitle {
     font-size: 35px;
   }
   .menuProfile {
-    height: 80px;
+    height: 100px;
   }
   .menuAbout {
-    height: 80px;
+    height: 100px;
   }
   .menuChat {
-    height: 260px;
+    height: 300px;
   }
   .menuEvent {
-    height: 260px;
+    height: 300px;
   }
   .MenuPolicy {
-    height: 260px;
+    height: 300px;
   }
   .menuVa {
-    height: 260px;
+    height: 300px;
   }
 }
-
-/* Samsung Galaxy S5 (portrait) ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
   .menuTitle {
     font-size: 25px;

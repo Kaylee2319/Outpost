@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+.editForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-family: 'Cabin', sans-serif;
+}
+.editFormUn {
+  height: 25px;
+  width: 90%;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(141, 146, 64, 0.75);
+  background-color: beige;
+}
+.editFormButton {
+  height: 40px;
+  width: 155px;
+  margin-top: 1rem;
+  background-color: #ffac4f;
+  border-radius: 10px;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 2px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}

@@ -30,10 +30,10 @@
   margin-left: 1rem;
 }
 .userName {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .dutyStatus {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .editProfile {
   font-size: 12px;
@@ -43,12 +43,23 @@
 .favGames {
   margin-left: 1rem;
   font-family: 'Cabin', sans-serif;
-  color: rgba(5, 95, 158, 1);
+  color: black;
 }
 .proForm {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+.mygameTags {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+.consoles {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 1px;
+  margin-bottom: 3px;
+  color: rgba(5, 95, 158, 1);
 }
 .fileInput label {
   background: rgba(141, 146, 64, 0.75);
@@ -57,7 +68,7 @@
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-size: 12px;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -79,14 +90,14 @@
   justify-content: center;
   align-items: center;
 }
-.saveButton {
+.ProfileButtons {
   background: rgba(141, 146, 64, 0.75);
   border: none;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-size: 12px;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -94,53 +105,20 @@
   height: 20px;
   padding-left: 5px;
   padding-right: 5px;
-  position: relative;
-  transition: all 0.3s;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .trash {
+  margin-top: 1rem;
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  align-self: center;
 }
-.deleteAcc {
-  background: rgba(141, 146, 64, 0.75);
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Rubik', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  outline: none;
-  height: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  position: relative;
-  transition: all 0.3s;
-  vertical-align: middle;
-}
-.logout {
-  background: rgba(141, 146, 64, 0.75);
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Rubik', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  margin-bottom: 1rem;
-  outline: none;
-  height: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
-  position: relative;
-  transition: all 0.3s;
-  vertical-align: middle;
-}
+
 .nameEdit {
   display: flex;
   justify-content: space-between;
@@ -154,10 +132,15 @@
   border: none;
   border-radius: 15px;
   font-family: 'Cabin', sans-serif;
-  font-size: 15px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
-
+.messageButton1 {
+  font-size: 15px;
+}
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
   .favGames {
     height: 9rem;
@@ -266,9 +249,9 @@
   }
 }
 
-@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
+@media only screen and (min-device-width: 412px) and (max-device-width: 869px) and (orientation: portrait) {
   .favGames {
-    height: 11rem;
+    height: 13rem;
   }
 }
 
