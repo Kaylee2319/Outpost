@@ -15,9 +15,6 @@
 /* iPhone pro 11 (portrait) ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
 }
-/* iPhone 11 pro max (portrait) ----------- */
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-}
 
 /* iPhone 12 (portrait) ----------- */
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
@@ -29,9 +26,6 @@
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
 }
 
-/* Samsung Galaxy S3 (portrait) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
-}
 /* Samsung Galaxy S4 (portrait) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) {
 }
@@ -41,7 +35,7 @@
 }
 
 /* Samsung Galaxy note 20 ------------*/
-@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
+@media only screen and (min-device-width: 412px) and (max-device-width: 869px) and (orientation: portrait) {
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {

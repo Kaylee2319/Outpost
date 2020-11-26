@@ -147,23 +147,6 @@
   }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
-  .footer {
-    height: 8rem;
-    font-size: 16px;
-  }
-
-  .follow {
-    font-size: 16px;
-  }
-
-  .icon-bar a {
-    margin: 5px;
-    margin-top: 2px;
-    font-size: 17px;
-  }
-}
-
 @media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
   .footer {
     height: 8rem;
@@ -232,7 +215,7 @@
   }
 }
 
-@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
+@media only screen and (min-device-width: 412px) and (max-device-width: 869px) and (orientation: portrait) {
   .footer {
     height: 8rem;
     font-size: 18px;

@@ -42,7 +42,7 @@ const SignUpPage = ({ history }) => {
           <div>
             <div htmlFor="email">Email Address:</div>
             <input
-              className="emailSignUp"
+              className="signUpF"
               type="email"
               name="email"
               onChange={handleChange}
@@ -51,7 +51,7 @@ const SignUpPage = ({ history }) => {
           <div>
             <div htmlFor="outpostId">User ID:</div>
             <input
-              className="firstName"
+              className="signUpF"
               type="text"
               name="user_name"
               onChange={handleChange}
@@ -60,50 +60,74 @@ const SignUpPage = ({ history }) => {
           <div>
             <div htmlFor="firstName">First Name:</div>
             <input
-              className="firstName"
+              className="signUpF"
               type="text"
               name="first_name"
               onChange={handleChange}
             />
           </div>
           <div>
-            <div htmlFor="lastName">Last Name:</div>
+            <div htmlFor="signUpF">Last Name:</div>
             <input
-              className="lastName"
+              className="signUpF"
               type="text"
               name="last_name"
               onChange={handleChange}
             />
           </div>
           <div>
-            <form>
-              <label htmlFor="gamerTag">Gamer-Tag:</label>
-              <select name="gamer_tags" id="gamerTag" onChange={handleChange}>
-                <option value="xbox">Xbox</option>
-                <option value="Playstation">Playstation</option>
-                <option value="Nintendo">Nintendo</option>
-                <option value="PC">PC</option>
-                <option value="Other">Other</option>
-              </select>
+            <form className="gtForm">
+              <label className="gamerTag" htmlFor="gamerTag">
+                Gamer-Tags:
+              </label>
+              <label>XBOX: </label>
               <input
-                className="gamerInput"
+                className="gtInput"
                 type="text"
-                placeholder="Gamer-Tag"
-                name="gamer_tags"
+                name="xbox"
+                onChange={handleChange}
+              />
+              <label>Playstation: </label>
+              <input
+                className="gtInput"
+                type="text"
+                name="psn"
+                onChange={handleChange}
+              />
+              <label>Nintendo: </label>
+              <input
+                className="gtInput"
+                type="text"
+                name="nes"
+                onChange={handleChange}
+              />
+              <label>PC: </label>
+              <input
+                className="gtInput"
+                type="text"
+                name="pc"
+                onChange={handleChange}
+              />
+              <label>Other: </label>
+              <input
+                className="gtInput"
+                type="text"
+                name="other"
+                onChange={handleChange}
               />
             </form>
           </div>
           <div>
             <div htmlFor="passwordSignUp">Password:</div>
             <input
-              className="passwordSignUp"
+              className="signUpF"
               type="password"
               name="password"
               onChange={handleChange}
             />
             <div htmlFor="password">Re-Enter Password:</div>
             <input
-              className="passwordSignUp"
+              className="signUpF"
               type="password"
               name="password"
               onChange={handleChange}

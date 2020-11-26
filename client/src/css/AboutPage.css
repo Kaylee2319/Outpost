@@ -234,7 +234,7 @@
     font-size: 18px;
   }
 }
-@media only screen and (min-device-width: 412px) and (max-device-height: 767px) and (orientation: portrait) {
+@media only screen and (min-device-width: 412px) and (max-device-height: 869px) and (orientation: portrait) {
   .title {
     margin-top: -0.75rem;
     height: 6rem;

@@ -10,6 +10,9 @@ import { FiSave } from 'react-icons/fi';
 import { BsTrash } from 'react-icons/bs';
 import { VscSignOut } from 'react-icons/vsc';
 import { AppContext } from '../context/AppContext';
+import { MdComputer, MdDevicesOther } from 'react-icons/md';
+import { FaXbox, FaPlaystation } from 'react-icons/fa';
+import { SiNintendoswitch } from 'react-icons/si';
 
 const ProfilePage = ({ history: { push } }) => {
   const { currentUser, setCurrentUser, setLoading } = useContext(AppContext);
@@ -129,7 +132,7 @@ const ProfilePage = ({ history: { push } }) => {
               Profile Photo{' '}
             </label>
           </div>
-          <button className="saveButton" type="submit">
+          <button className="ProfileButtons" type="submit">
             <FiSave size={15} style={{ color: 'rgba(5, 95, 158, 1)' }} /> Save
             Image
           </button>
@@ -137,33 +140,52 @@ const ProfilePage = ({ history: { push } }) => {
       </form>
       <div className="namedPlayer">
         <div className="nameEdit">
-          <h2 className="usersName">{currentUser?.user_name}</h2>
+          <h2 className="usersName">
+            {currentUser?.first_name} {currentUser?.last_name}
+          </h2>
           <Link to="/profileedit" className="editLink">
             <span className="editProfile">Edit Profile</span>
           </Link>
         </div>
-        <h3 className="dutyStatus">{currentUser?.service_branch}</h3>
 
-        <h4 className="userName">{currentUser?.user_name}</h4>
-        <a href="/chatroom">
+        <h3 className="userName">{currentUser?.user_name}</h3>
+        <h4 className="dutyStatus">{currentUser?.service_branch}</h4>
 
-          <button className="messageButton">Messages</button>
-        </a>
+        <Link to="/chats" className="messageButton">
+          <span className="messageButton1">Messages</span>
+        </Link>
       </div>
       <div className="favGames">
         <p className="consoles">Find me on:</p>
-        <p className="userGames">Favorite Games:</p>
+        <div className="mygameTags">
+          <div>
+            <FaXbox /> <strong>Xbox:</strong> {currentUser?.xbox}{' '}
+          </div>
+          <div>
+            <FaPlaystation /> <strong>Playstation:</strong> {currentUser?.PNS}
+          </div>
+          <div>
+            <SiNintendoswitch /> <strong>Nintendo:</strong> {currentUser?.NES}
+          </div>
+          <div>
+            <MdComputer /> <strong>PC:</strong> {currentUser?.PC}
+          </div>
+          <div>
+            <MdDevicesOther /> <strong>Other:</strong> {currentUser?.Other}
+          </div>
+        </div>
       </div>
       <div className="trash">
-        <button className="deleteAcc" onClick={handleDelete}>
+        <button className="ProfileButtons" onClick={handleDelete}>
           <BsTrash size={15} style={{ color: 'rgba(5, 95, 158, 1)' }} /> Delete
           Account
         </button>
-        <button className="logout" onClick={handleLogout}>
+        <button className="ProfileButtons" onClick={handleLogout}>
           <VscSignOut size={15} style={{ color: 'rgba(5, 95, 158, 1)' }} />{' '}
           Logout
         </button>
       </div>
+
       <Footer />
     </>
   );
