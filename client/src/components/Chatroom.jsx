@@ -5,7 +5,7 @@ import ChatMessage from './ChatMessage';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import '../css/Chat.css';
-const URL = 'wss://outpostgaming.herokuapp.com/chats';
+const URL = 'wss://outpostgaming.herokuapp.com/';
 
 class Chatroom extends Component {
   static contextType = AppContext;
