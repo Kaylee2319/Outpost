@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-
+import Chat from '../css/Chat.css';
 class ChatInput extends Component {
   static propTypes = {
     onSubmitMessage: PropTypes.func.isRequired
@@ -19,13 +19,16 @@ class ChatInput extends Component {
           this.setState({ message: '' });
         }}
       >
-        <input
-          type="text"
-          placeholder={'Enter message...'}
-          value={this.state.message}
-          onChange={(e) => this.setState({ message: e.target.value })}
-        />
-        <input type="submit" value={'Send'} />
+        <div className="messForm">
+          <input
+            className="form-control"
+            type="text"
+            placeholder={'Enter message...'}
+            value={this.state.message}
+            onChange={(e) => this.setState({ message: e.target.value })}
+          />
+        </div>
+        <input className="sendButton" type="submit" value={'➤'} />
       </form>
     );
   }

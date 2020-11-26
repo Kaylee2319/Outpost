@@ -35,7 +35,7 @@
 }
 
 /* Samsung Galaxy note 20 ------------*/
-@media only screen and (min-device-width: 412px) and (max-device-width: 869px) and (orientation: portrait) {
+@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {

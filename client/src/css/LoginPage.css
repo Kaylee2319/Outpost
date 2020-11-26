@@ -343,7 +343,7 @@
     font-size: 20px;
   }
 }
-@media only screen and (min-device-width: 412px) and (max-device-width: 869px) and (orientation: portrait) {
+@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
   .topTitle {
     height: 3.5rem;
   }
