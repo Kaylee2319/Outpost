@@ -10,6 +10,7 @@ const Events = () => {
   return (
     <React.Fragment>
       <NavBar />
+      <div>Home</div>
       <div>
         <FullCalendar plugins={[dayGridPlugin]} initialView="dayGridMonth" />
       </div>
