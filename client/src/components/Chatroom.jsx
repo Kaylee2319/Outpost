@@ -6,6 +6,7 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 import '../css/Chat.css';
 const URL = 'ws://localhost:3030';
+
 class Chatroom extends Component {
   static contextType = AppContext;
   state = {
@@ -68,4 +69,5 @@ class Chatroom extends Component {
     );
   }
 }
+
 export default Chatroom;

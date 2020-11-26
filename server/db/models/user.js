@@ -37,9 +37,6 @@ const userSchema = new mongoose.Schema(
         }
       }
     },
-    birthday: {
-      type: Date
-    },
     avatar: {
       type: String
     },
@@ -52,28 +49,21 @@ const userSchema = new mongoose.Schema(
     service_branch: {
       type: String
     },
-    location: {
+    xbox: {
       type: String
     },
-    gamer_tags: [
-      {
-        xbox: {
-          type: String
-        },
-        PSN: {
-          type: String
-        },
-        NES: {
-          type: String
-        },
-        PC: {
-          type: String
-        },
-        Other: {
-          type: String
-        }
-      }
-    ],
+    PSN: {
+      type: String
+    },
+    NES: {
+      type: String
+    },
+    PC: {
+      type: String
+    },
+    Other: {
+      type: String
+    },
     tokens: [
       {
         token: {
