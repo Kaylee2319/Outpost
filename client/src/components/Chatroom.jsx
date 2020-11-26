@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import { AppContext } from '../context/AppContext';
 import ChatInput from './ChatInput';
 import ChatMessage from './ChatMessage';
 
 const URL = 'ws://localhost:3030';
 
-class Chat extends Component {
+class Chatroom extends Component {
+  static contextType = AppContext;
   state = {
-    name: 'Bob',
+    name: {},
     messages: []
   };
 
@@ -44,18 +46,9 @@ class Chat extends Component {
   };
 
   render() {
+    const { currentUser } = this.context;
     return (
       <div>
-        <label htmlFor="name">
-          Name:&nbsp;
-          <input
-            type="text"
-            id={'name'}
-            placeholder={'Enter your name...'}
-            value={this.state.name}
-            onChange={(e) => this.setState({ name: e.target.value })}
-          />
-        </label>
         <ChatInput
           ws={this.ws}
           onSubmitMessage={(messageString) => this.submitMessage(messageString)}
@@ -64,7 +57,7 @@ class Chat extends Component {
           <ChatMessage
             key={index}
             message={message.message}
-            name={message.name}
+            name={currentUser.user_name}
           />
         ))}
       </div>
@@ -72,4 +65,4 @@ class Chat extends Component {
   }
 }
 
-export default Chat;
+export default Chatroom;
