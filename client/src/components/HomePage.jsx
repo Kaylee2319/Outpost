@@ -1,11 +1,11 @@
 import React from 'react';
 import '../css/HomePage.css';
 import NavBar from './NavBar';
-import Footer from './Footer';
 import { Link } from 'react-router-dom';
 import { BsPeople } from 'react-icons/bs';
 import { IoIosSearch } from 'react-icons/io';
 import { FaRegHandshake } from 'react-icons/fa';
+import Footer from './Footer';
 const HomePage = ({ history }) => {
   const handleClick = () => {
     history.push('/signup');
