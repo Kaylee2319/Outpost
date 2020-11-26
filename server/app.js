@@ -9,6 +9,10 @@ const express = require('express'),
 
 const app = express();
 
+const WebSocket = require('ws');
+
+const wss = new WebSocket.Server({ port: 3030 });
+
 //Middleware
 app.use(express.json());
 
@@ -43,3 +47,13 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 module.exports = app;
+
+wss.on('connection', function connection(ws) {
+  ws.on('message', function incoming(data) {
+    wss.clients.forEach(function each(client) {
+      if (client !== ws && client.readyState === WebSocket.OPEN) {
+        client.send(data);
+      }
+    });
+  });
+});
