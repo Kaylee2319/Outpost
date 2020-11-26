@@ -5,7 +5,7 @@ import ChatMessage from './ChatMessage';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import '../css/Chat.css';
-const URL = 'ws://outpostgaming.herokuapp.com/chats';
+const URL = 'wss://outpostgaming.herokuapp.com/chats';
 
 class Chatroom extends Component {
   static contextType = AppContext;
@@ -14,7 +14,7 @@ class Chatroom extends Component {
     messages: [],
     avatar: {}
   };
-  ws = new WebSocket(URL);
+  ws = new WebSocket(URL, ['soap', 'wamp']);
   componentDidMount() {
     this.ws.onopen = () => {
       // on connecting, do nothing but log it to the console
