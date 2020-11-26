@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Chat from './chat';
+import Chat from './Chat';
 import NavBar from './NavBar';
 import Footer from './Footer';
 const Chatroom = () => {

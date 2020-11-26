@@ -11,9 +11,11 @@ import { SiTwitch } from 'react-icons/si';
 import { AppContext } from '../context/AppContext';
 import axios from 'axios';
 import swal from 'sweetalert';
+
 const LoginPage = ({ history }) => {
   const { setCurrentUser } = useContext(AppContext);
   const [formData, setFormData] = useState(null);
+
   const handleChange = (event) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
     console.log(formData);
@@ -25,7 +27,7 @@ const LoginPage = ({ history }) => {
       const response = await axios.post('/api/login', formData);
       setCurrentUser(response.data);
       sessionStorage.setItem('user', response.data);
-      history.push('/profile');
+      history.push('/');
     } catch (error) {
       swal(`Oops!`, 'Something went wrong.');
     }
