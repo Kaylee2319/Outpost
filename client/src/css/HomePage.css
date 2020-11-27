@@ -24,6 +24,9 @@
   color: white;
 }
 .joinButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
   width: 155px;
   margin-top: 2.5rem;
@@ -35,6 +38,7 @@
   font-size: 15px;
   letter-spacing: 2px;
   border: none;
+  text-decoration: none;
 }
 .HowItWorks {
   height: 7rem;
@@ -151,14 +155,43 @@
   margin-bottom: 2rem;
   padding-left: 10px;
 }
-.events .item {
+.events #item {
   height: 120px;
   min-width: 90px;
   max-width: 90px;
-  margin: 5px;
-  border: 1px black solid;
+  margin: 3px;
   font-size: 10px;
-  background-color: darkgray;
+  background-size: cover;
+}
+.event1 {
+  background-image: url(../images/AC.jpeg);
+}
+.event2 {
+  background-image: url(../images/zelda.jpeg);
+}
+.event3 {
+  background-image: url(../images/minecraft.jpeg);
+}
+.event4 {
+  background-image: url(../images/COD.jpeg);
+}
+.event5 {
+  background-image: url(../images/GTA.jpeg);
+}
+.event6 {
+  background-image: url(../images/Mario.jpeg);
+}
+.event7 {
+  background-image: url(../images/amongus.jpeg);
+}
+.event8 {
+  background-image: url(../images/pokemon.jpeg);
+}
+.event9 {
+  background-image: url(../images/RDR.jpeg);
+}
+.event10 {
+  background-image: url(../images/fortnite.jpeg);
 }
 .currentlyOnline {
   margin-left: 1rem;
@@ -181,16 +214,15 @@
   align-items: center;
   text-align: center;
 }
-.friends .friend {
+.friends #friend {
   display: flex;
   flex-direction: column;
   height: 70px;
   min-width: 70px;
   max-width: 70px;
   margin: 5px;
-  border: 1px black solid;
   font-size: 10px;
-  background-color: darkgray;
+  background-size: cover;
   border-radius: 50%;
 }
 .friendName {
@@ -199,6 +231,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.friend1 {
+  background-image: url(../images/kaylee.png);
+}
+.friend2 {
+  background-image: url(../images/will.png);
+}
+.friend3 {
+  background-image: url(../images/jorge.png);
 }
 .perks {
   display: flex;
@@ -284,7 +325,7 @@
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
-  .friends .friend {
+  .friends #friend {
     height: 80px;
     min-width: 80px;
     max-width: 80px;
@@ -327,7 +368,7 @@
     max-width: 140px;
     margin: 5px;
   }
-  .friends .friend {
+  .friends #friend {
     height: 100px;
     min-width: 100px;
     max-width: 100px;
@@ -424,7 +465,7 @@
     max-width: 140px;
     margin: 5px;
   }
-  .friends .friend {
+  .friends #friend {
     height: 80px;
     min-width: 80px;
     max-width: 80px;
@@ -467,7 +508,7 @@
     max-width: 140px;
     margin: 5px;
   }
-  .friends .friend {
+  .friends #friend {
     height: 80px;
     min-width: 80px;
     max-width: 80px;
@@ -510,7 +551,7 @@
     max-width: 140px;
     margin: 5px;
   }
-  .friends .friend {
+  .friends #friend {
     height: 100px;
     min-width: 100px;
     max-width: 100px;
@@ -545,7 +586,7 @@
     max-width: 140px;
     margin: 5px;
   }
-  .friends .friend {
+  .friends #friend {
     height: 100px;
     min-width: 100px;
     max-width: 100px;
@@ -592,7 +633,7 @@
     max-width: 140px;
     margin: 5px;
   }
-  .friends .friend {
+  .friends #friend {
     height: 90px;
     min-width: 90px;
     max-width: 90px;
@@ -688,7 +729,7 @@
     max-width: 250px;
     margin: 5px;
   }
-  .friends .friend {
+  .friends #friend {
     height: 110px;
     min-width: 110px;
     max-width: 110px;
@@ -809,7 +850,7 @@
     max-width: 250px;
     margin: 5px;
   }
-  .friends .friend {
+  .friends #friend {
     height: 110px;
     min-width: 110px;
     max-width: 110px;
@@ -924,7 +965,7 @@
     max-width: 250px;
     margin: 5px;
   }
-  .friends .friend {
+  .friends #friend {
     height: 110px;
     min-width: 110px;
     max-width: 110px;
