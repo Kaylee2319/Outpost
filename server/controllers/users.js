@@ -99,13 +99,15 @@ exports.updateUserProfile = async (req, res) => {
     'user_name',
     'email',
     'password',
-    'birthday',
-    'gamer_tags',
     'avatar',
     'first_name',
     'last_name',
     'service_branch',
-    'location'
+    'xbox',
+    'psn',
+    'nes',
+    'pc',
+    'other'
   ];
   const isValidOperation = updates.every((update) =>
     allowedUpdates.includes(update)
