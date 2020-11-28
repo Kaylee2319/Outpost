@@ -77,7 +77,7 @@ const LoginPage = ({ history }) => {
           name="password"
           onChange={handleChange}
         />
-        <Link to="/forgotpassword" className="forgot">
+        <Link to="/passwordreset" className="forgot">
           <span className="forgotten">Forgot Password?</span>
         </Link>
         <input className="loginButton" type="submit" value="SIGN IN" />

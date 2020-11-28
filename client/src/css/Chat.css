@@ -10,7 +10,7 @@
   border: 2px solid rgba(141, 146, 64, 0.75);
   display: flex;
   flex-direction: column-reverse;
-  justify-content: end;
+  justify-content: flex-end;
   overflow-y: auto;
   scroll-behavior: smooth;
 }

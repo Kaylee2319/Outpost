@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { AppContext } from '../context/AppContext';
 import { FiSave } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import axios from 'axios';
@@ -108,6 +109,9 @@ const EditUser = ({ history }) => {
           Info
         </button>
       </form>
+      <Link to="/passwordupdate" className="menuEvent">
+        Update Password
+      </Link>
       <Footer />
     </div>
   );

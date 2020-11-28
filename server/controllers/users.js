@@ -79,7 +79,7 @@ exports.passwordRedirect = async (req, res) => {
       maxAge: 600000,
       sameSite: 'Strict'
     });
-    res.redirect(process.env.URL + '/update-password');
+    res.redirect(process.env.URL + '/passwordupdate');
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
@@ -99,13 +99,15 @@ exports.updateUserProfile = async (req, res) => {
     'user_name',
     'email',
     'password',
-    'birthday',
-    'gamer_tags',
     'avatar',
     'first_name',
     'last_name',
     'service_branch',
-    'location'
+    'xbox',
+    'psn',
+    'nes',
+    'pc',
+    'other'
   ];
   const isValidOperation = updates.every((update) =>
     allowedUpdates.includes(update)
