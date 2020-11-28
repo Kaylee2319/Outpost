@@ -185,7 +185,6 @@ const ProfilePage = ({ history: { push } }) => {
           Logout
         </button>
       </div>
-
       <Footer />
     </>
   );
