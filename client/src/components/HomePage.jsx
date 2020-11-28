@@ -1,16 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../css/HomePage.css';
 import NavBar from './NavBar';
 import { Link } from 'react-router-dom';
 import { BsPeople } from 'react-icons/bs';
 import { IoIosSearch } from 'react-icons/io';
 import { FaRegHandshake } from 'react-icons/fa';
+import { AppContext } from '../context/AppContext';
 import Footer from './Footer';
 const HomePage = ({ history }) => {
+  const { currentUser } = useContext(AppContext);
   const handleClick = () => {
-    history.push('/signup');
-  };
-  const handleClick1 = () => {
     history.push('/policy');
   };
   return (
@@ -20,9 +19,15 @@ const HomePage = ({ history }) => {
         <span className="about">
           Connect with veterans & play your favorite game.
         </span>
-        <button onClick={handleClick} className="joinButton">
-          LINK UP
-        </button>
+        {!currentUser ? (
+          <Link to="/signup" className="joinButton">
+            LINK UP
+          </Link>
+        ) : (
+          <Link to="/chats" className="joinButton">
+            LINK UP
+          </Link>
+        )}
       </div>
       <div className="HowItWorks">
         <span className="HowTitle">How it Works</span>
@@ -43,7 +48,7 @@ const HomePage = ({ history }) => {
         </div>
       </div>
       <div className="explore">
-        <button onClick={handleClick1} className="exploreButton">
+        <button onClick={handleClick} className="exploreButton">
           Explore More
         </button>
       </div>
@@ -58,31 +63,28 @@ const HomePage = ({ history }) => {
         </Link>
       </div>
       <div className="events">
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
-        <div className="item">event</div>
+        <div id="item" className="event1"></div>
+        <div id="item" className="event2"></div>
+        <div id="item" className="event3"></div>
+        <div id="item" className="event4"></div>
+        <div id="item" className="event5"></div>
+        <div id="item" className="event6"></div>
+        <div id="item" className="event7"></div>
+        <div id="item" className="event8"></div>
+        <div id="item" className="event9"></div>
+        <div id="item" className="event10"></div>
       </div>
       <div className="currentlyOnline">
         <span className="currentTitle">Currently Online</span>
         <div className="friends">
           <div className="friendName">
-            <div className="friend">friend</div>john doe
+            <div id="friend" className="friend1"></div>Kaylee2319
           </div>
           <div className="friendName">
-            <div className="friend">friend</div>john doe
+            <div id="friend" className="friend2"></div>Dillardwa
           </div>
           <div className="friendName">
-            <div className="friend">friend</div>john doe
+            <div id="friend" className="friend3"></div>Jorge123
           </div>
         </div>
       </div>
