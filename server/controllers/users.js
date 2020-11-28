@@ -85,22 +85,6 @@ exports.passwordRedirect = async (req, res) => {
 
 //                                                   ====================
 
-// Request all users for search getAllUsers
-exports.getAllUsers = async (req, res) => {
-  if (req.query.user_name) match.user_name = req.query.user_name == '';
-  try {
-    await req.user
-      .populate({
-        path: 'gamer',
-        match
-      })
-      .execPopulate();
-    res.status(200).json(req.user.users);
-  } catch (error) {
-    res.status(400).json({ error: error.message });
-  }
-};
-
 // ==  SECURE ROUTES  ==                           ==================
 
 // User Profile Page getUserProfile
