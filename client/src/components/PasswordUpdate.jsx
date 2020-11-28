@@ -1,7 +1,9 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import swal from 'sweetalert';
-
+import '../css/PasswordUpdate.css';
+import NavBar from './NavBar';
+import Footer from './Footer';
 const PasswordUpdate = ({ history }) => {
   const [password, setPassword] = useState(null);
 
@@ -25,10 +27,12 @@ const PasswordUpdate = ({ history }) => {
   };
   return (
     <div>
-      <h1 className="mb-4">Update Password</h1>
-      <form onSubmit={handleSubmit}>
-        <label>New Password</label>
+      <NavBar />
+      <h1 className="PassUpdate">Update Password</h1>
+      <form className="PassUpdateForm" onSubmit={handleSubmit}>
+        <label>New Password:</label>
         <input
+          className="updatePasses"
           type="password"
           placeholder="Enter new password"
           onChange={handleChange}
@@ -36,8 +40,9 @@ const PasswordUpdate = ({ history }) => {
           autoComplete="off"
           required
         ></input>
-        <label>Confirm Password</label>
+        <label>Confirm Password:</label>
         <input
+          className="updatePasses"
           type="password"
           placeholder="Enter new password"
           onChange={handleChange}
@@ -45,8 +50,11 @@ const PasswordUpdate = ({ history }) => {
           required
           autoComplete="off"
         ></input>
-        <button type="submit">Update Password</button>
+        <button className="updatePassButton" type="submit">
+          Update Password
+        </button>
       </form>
+      <Footer />
     </div>
   );
 };
