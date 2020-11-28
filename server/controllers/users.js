@@ -8,8 +8,6 @@ const cloudinary = require('cloudinary').v2,
 const jwt = require('jsonwebtoken');
 // ==  OPEN ROUTES  ==
 
-// Need to generate a user_id...
-
 // Create a User createuser
 exports.createUser = async (req, res) => {
   const { user_name, email, password } = req.body;
@@ -72,7 +70,7 @@ exports.passwordRedirect = async (req, res) => {
   const { token } = req.params;
   try {
     jwt.verify(token, process.env.JWT_SECRET, function (err) {
-      if (error) throw new Error(error.message);
+      if (err) throw new Error(err.message);
     });
     res.cookie('jwt', token, {
       httpOnly: true,
@@ -85,7 +83,25 @@ exports.passwordRedirect = async (req, res) => {
   }
 };
 
-// ==  SECURE ROUTES  ==
+//                                                   ====================
+
+// Request all users for search getAllUsers
+exports.getAllUsers = async (req, res) => {
+  if (req.query.user_name) match.user_name = req.query.user_name == '';
+  try {
+    await req.user
+      .populate({
+        path: 'gamer',
+        match
+      })
+      .execPopulate();
+    res.status(200).json(req.user.users);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
+
+// ==  SECURE ROUTES  ==                           ==================
 
 // User Profile Page getUserProfile
 exports.getUserProfile = async (req, res) => {
@@ -177,7 +193,3 @@ exports.deleteUser = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
-
-// Send DM                                                    ---------------- Secure Controller?
-
-// Send Chat in Chatroom                                       ---------------- Secure Controller?
