@@ -3,10 +3,12 @@ import socketIo from '../utils/socket-io';
 import { AppContext } from '../context/AppContext';
 import '../css/Chat.css';
 import { RiSendPlaneFill } from 'react-icons/ri';
+
 const Chat = () => {
   const [message, setMessage] = useState('');
   const [chats, setChats] = useState([]);
   const { currentUser } = useContext(AppContext);
+
   useEffect(() => {
     socketIo.on('receive message', (data) => {
       console.log('receive message', data);

@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap&family=Cabin&display=swap&family=Montserrat:wght@300;400&display=swap');
+
 .title {
   display: flex;
   font-family: 'Cabin', sans-serif;

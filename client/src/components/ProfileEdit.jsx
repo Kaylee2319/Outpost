@@ -21,7 +21,7 @@ const EditUser = ({ history }) => {
       const response = await axios.patch('/api/users/profile', formData);
       sessionStorage.setItem('user', response.data);
       setCurrentUser(response.data.user);
-      history.push('/');
+      history.push('/profile');
     } catch (error) {
       swal('SignUp Error: ', error.toString());
     }
