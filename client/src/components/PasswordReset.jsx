@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import axios from 'axios';
 import swal from 'sweetalert';
-
+import '../css/PasswordReset.css';
+import NavBar from './NavBar';
+import Footer from './Footer';
 const ResetPassword = () => {
   const [email, setEmail] = useState('');
 
@@ -24,10 +25,12 @@ const ResetPassword = () => {
   };
   return (
     <div>
-      <h1 className="mb-4">Reset Password</h1>
-      <form onSubmit={handleSubmit}>
-        <label>Email address</label>
+      <NavBar />
+      <h1 className="resetPass">Reset Password</h1>
+      <form className="PassResetForm" onSubmit={handleSubmit}>
+        <label>Email address:</label>
         <input
+          className="passemailReset"
           type="email"
           name="email"
           placeholder="Enter email"
@@ -35,9 +38,11 @@ const ResetPassword = () => {
           autoComplete="off"
           required
         ></input>
-        <button type="submit">Reset Password</button>
+        <button className="resetPassButton" type="submit">
+          Reset Password
+        </button>
       </form>
-      <Link to="/login">Go back</Link>
+      <Footer />
     </div>
   );
 };

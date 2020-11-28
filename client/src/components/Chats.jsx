@@ -4,7 +4,6 @@ import { AppContext } from '../context/AppContext';
 import '../css/Chat.css';
 import { RiSendPlaneFill } from 'react-icons/ri';
 const Chat = () => {
-  const [username, setUsername] = useState('');
   const [message, setMessage] = useState('');
   const [chats, setChats] = useState([]);
   const { currentUser } = useContext(AppContext);
@@ -34,6 +33,12 @@ const Chat = () => {
     });
     setMessage('');
   };
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      sendMessage(e);
+      setMessage('');
+    }
+  };
   return (
     <div className="container">
       <div className="messages">
@@ -49,18 +54,18 @@ const Chat = () => {
         })}
       </div>
       <div className="inputBox">
-        <div className="card-footer">
-          <input
-            className="form-control"
-            type="text"
-            name="messages"
-            placeholder="Messages"
-            onChange={(e) => setMessage(e.target.value)}
-          />
-          <button className="sendButton" onClick={sendMessage}>
-            <RiSendPlaneFill />
-          </button>
-        </div>
+        <input
+          className="form-control"
+          type="text"
+          name="messages"
+          placeholder="Message"
+          value={message}
+          onKeyDown={handleKeyDown}
+          onChange={(e) => setMessage(e.target.value)}
+        />
+        <button className="sendButton" type="submit" onClick={sendMessage}>
+          <RiSendPlaneFill size={30} style={{ color: 'rgba(5, 95, 158, 1)' }} />
+        </button>
       </div>
     </div>
   );
