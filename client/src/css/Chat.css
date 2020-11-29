@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap&family=Montserrat:wght@300;400&display=swap&family=Cabin&display=swap');
 
 .messages {
   height: 20rem;
@@ -19,10 +17,17 @@
   width: 3.5rem;
   border-radius: 50%;
 }
-.theoutput {
+.messageMine {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  width: inherit;
+  margin-left: 0.75rem;
+}
+.messageText {
   display: flex;
   flex-direction: column;
-  background-color: lightblue;
   width: inherit;
   padding: 0.5rem;
   margin-left: 5px;
@@ -30,14 +35,20 @@
   font-size: 13px;
   font-family: 'Cabin', sans-serif;
 }
-.messageOutput {
+.messageMine .messageText {
+  background-color: lightblue;
+}
+.messageTheirs {
   display: flex;
-  justify-content: baseline;
+  justify-content: flex-start;
   align-items: center;
   width: inherit;
   margin-left: 0.75rem;
 }
 
+.messageTheirs .messageText {
+  background-color: rgba(141, 146, 64, 0.75);
+}
 .sendButton {
   border: none;
   border-radius: 8px;
@@ -65,4 +76,70 @@
   background-color: lightblue;
   display: flex;
   justify-content: center;
+}
+
+/* iPhone 6 7 8 (portrait) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
+}
+
+/* iPhone 6 7 8+ (portrait) ----------- */
+@media only screen and (device-width: 414px) and (max-device-height: 736px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
+}
+
+/* iPhone 11 (portrait) ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
+}
+
+/* iPhone pro 11 (portrait) ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
+}
+/* iPhone 11 pro max (portrait) ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
+}
+
+/* iPhone 12 (portrait) ----------- */
+@media only screen and (min-device-width: 390px) and (max-device-height: 844px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
+}
+/* iPhone 12 pro max (portrait) ----------- */
+@media only screen and (min-device-width: 428px) and (max-device-height: 926px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
+}
+/* iPhone 12 mini (portrait) ----------- */
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
+}
+/* Samsung Galaxy S5 (portrait) ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
+}
+
+/* Samsung Galaxy note 20 ------------*/
+@media only screen and (min-device-width: 412px) and (max-device-width: 767px) and (orientation: portrait) {
+  .messages {
+    height: 30rem;
+  }
 }

@@ -76,48 +76,6 @@ const SignUpPage = ({ history }) => {
             />
           </div>
           <div>
-            <form className="gtForm">
-              <label className="gamerTag" htmlFor="gamerTag">
-                Gamer-Tags:
-              </label>
-              <label>XBOX: </label>
-              <input
-                className="gtInput"
-                type="text"
-                name="xbox"
-                onChange={handleChange}
-              />
-              <label>Playstation: </label>
-              <input
-                className="gtInput"
-                type="text"
-                name="psn"
-                onChange={handleChange}
-              />
-              <label>Nintendo: </label>
-              <input
-                className="gtInput"
-                type="text"
-                name="nes"
-                onChange={handleChange}
-              />
-              <label>PC: </label>
-              <input
-                className="gtInput"
-                type="text"
-                name="pc"
-                onChange={handleChange}
-              />
-              <label>Other: </label>
-              <input
-                className="gtInput"
-                type="text"
-                name="other"
-                onChange={handleChange}
-              />
-            </form>
-          </div>
-          <div>
             <div htmlFor="passwordSignUp">Password:</div>
             <input
               className="signUpF"
