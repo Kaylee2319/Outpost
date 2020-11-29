@@ -8,6 +8,7 @@ const AppContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState('');
+  const [gamer, setGamer] = useState([]);
   const [gamers, setGamers] = useState([]);
   const [filteredGamers, setFilteredGamers] = useState([]);
   const user = sessionStorage.getItem('user');
@@ -36,6 +37,8 @@ const AppContextProvider = ({ children }) => {
         setLoading,
         search,
         setSearch,
+        gamer,
+        setGamer,
         gamers,
         setGamers,
         filteredGamers,
