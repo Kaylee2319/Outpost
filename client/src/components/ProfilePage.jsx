@@ -162,16 +162,16 @@ const ProfilePage = ({ history: { push } }) => {
             <FaXbox /> <strong>Xbox:</strong> {currentUser?.xbox}{' '}
           </div>
           <div>
-            <FaPlaystation /> <strong>Playstation:</strong> {currentUser?.PNS}
+            <FaPlaystation /> <strong>Playstation:</strong> {currentUser?.psn}
           </div>
           <div>
-            <SiNintendoswitch /> <strong>Nintendo:</strong> {currentUser?.NES}
+            <SiNintendoswitch /> <strong>Nintendo:</strong> {currentUser?.nes}
           </div>
           <div>
-            <MdComputer /> <strong>PC:</strong> {currentUser?.PC}
+            <MdComputer /> <strong>PC:</strong> {currentUser?.pc}
           </div>
           <div>
-            <MdDevicesOther /> <strong>Other:</strong> {currentUser?.Other}
+            <MdDevicesOther /> <strong>Other:</strong> {currentUser?.other}
           </div>
         </div>
       </div>

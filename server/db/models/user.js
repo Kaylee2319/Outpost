@@ -52,16 +52,16 @@ const userSchema = new mongoose.Schema(
     xbox: {
       type: String
     },
-    PSN: {
+    psn: {
       type: String
     },
-    NES: {
+    nes: {
       type: String
     },
-    PC: {
+    pc: {
       type: String
     },
-    Other: {
+    other: {
       type: String
     },
     tokens: [
