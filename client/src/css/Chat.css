@@ -23,7 +23,7 @@
   justify-content: flex-start;
   align-items: center;
   width: inherit;
-  margin-left: 0.75rem;
+  margin-right: 0.5rem;
 }
 .messageText {
   display: flex;
@@ -43,7 +43,7 @@
   justify-content: flex-start;
   align-items: center;
   width: inherit;
-  margin-left: 0.75rem;
+  margin-left: 0.5rem;
 }
 
 .messageTheirs .messageText {
@@ -58,6 +58,7 @@
   align-items: center;
   font-size: 1.5rem;
   height: 35px;
+  background-color: white;
 }
 .inputBox {
   display: flex;
