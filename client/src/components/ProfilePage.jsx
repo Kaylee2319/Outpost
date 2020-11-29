@@ -152,7 +152,7 @@ const ProfilePage = ({ history: { push } }) => {
         <h4 className="dutyStatus">{currentUser?.service_branch}</h4>
 
         <Link to="/chats" className="messageButton">
-          <span className="messageButton1">Messages</span>
+          <span className="messageButton1">Message</span>
         </Link>
       </div>
       <div className="favGames">

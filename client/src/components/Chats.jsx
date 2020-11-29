@@ -29,7 +29,11 @@ const Chat = () => {
   const sendMessage = (event) => {
     event.preventDefault();
     socketIo.emit('send message', {
-      avatar: `${currentUser.avatar}`,
+      avatar: `${
+        currentUser?.avatar
+          ? currentUser?.avatar
+          : 'https://files.willkennedy.dev/wyncode/wyncode.png'
+      }`,
       author: `${currentUser?.user_name}`,
       message: message
     });

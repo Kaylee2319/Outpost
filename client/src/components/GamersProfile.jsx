@@ -26,12 +26,12 @@ const GamersProfile = ({ match }) => {
         swal(`Oops!`, 'Something went wrong.');
         setLoading(false);
       });
-  }, []);
+  }, [setGamer, match]);
 
   if (loading) return <h1>Loading...</h1>;
 
   return (
-    <div>
+    <>
       <NavBar />
       <div key={gamer?._id}>
         <div className="pic">
@@ -80,9 +80,8 @@ const GamersProfile = ({ match }) => {
           </div>
         </div>
       </div>
-
       <Footer />
-    </div>
+    </>
   );
 };
 
