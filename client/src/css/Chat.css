@@ -30,7 +30,7 @@
 .theoutputFromOtherUser {
   display: flex;
   flex-direction: column;
-  background-color: lightgreen;
+  background-color: rgba(141, 146, 64, 0.75);
   width: inherit;
   padding: 0.5rem;
   margin-left: 5px;
