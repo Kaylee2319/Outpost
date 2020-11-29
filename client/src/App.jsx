@@ -13,9 +13,12 @@ import PolicyGuide from './components/PolicyGuide';
 import VeteranPrograms from './components/VeteranPrograms';
 import ContactUs from './components/ContactUsPage';
 import Events from './components/Events';
+import Gamers from './components/Gamers';
 import Chatroom from './components/Chatroom';
 import ProfilePage from './components/ProfilePage';
 import ProfileEdit from './components/ProfileEdit';
+import GamersList from './components/GamersList';
+import GamersProfile from './components/GamersProfile';
 import './App.css';
 
 function App() {
@@ -34,6 +37,9 @@ function App() {
           <Route exact path="/veteranprograms" component={VeteranPrograms} />
           <Route exact path="/contactus" component={ContactUs} />
           <Route exact path="/event" component={Events} />
+          <Route exact path="/search" component={Gamers} />
+          <Route exact path="/gamers" component={GamersList} />
+          <Route exact path="/gamersprofile" component={GamersProfile} />
           <SecureRoute exact path="/chats" component={Chatroom} />
           <SecureRoute exact path="/profile" component={ProfilePage} />
           <SecureRoute exact path="/profileedit" component={ProfileEdit} />

@@ -7,6 +7,8 @@ const cloudinary = require('cloudinary').v2,
   } = require('../emails/index');
 const jwt = require('jsonwebtoken');
 
+//==OPEN ROUTES==
+
 exports.createUser = async (req, res) => {
   const { user_name, email, password } = req.body;
   try {
@@ -77,6 +79,17 @@ exports.passwordRedirect = async (req, res) => {
     res.status(400).json({ error: error.message });
   }
 };
+
+exports.getAllUsers = async (req, res) => {
+  try {
+    const gamers = await User.find();
+    res.json(gamers);
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
+
+//==SECURE ROUTES==
 
 exports.getUserProfile = async (req, res) => {
   res.json(req.user);

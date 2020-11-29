@@ -26,8 +26,8 @@ const Chat = () => {
     );
   };
 
-  const sendMessage = (e) => {
-    e.preventDefault();
+  const sendMessage = (event) => {
+    event.preventDefault();
     socketIo.emit('send message', {
       avatar: `${currentUser.avatar}`,
       author: `${currentUser?.user_name}`,
@@ -35,9 +35,9 @@ const Chat = () => {
     });
     setMessage('');
   };
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
-      sendMessage(e);
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      sendMessage(event);
       setMessage('');
     }
   };

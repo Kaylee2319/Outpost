@@ -7,6 +7,9 @@ const AppContext = createContext();
 const AppContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
   const [loading, setLoading] = useState(false);
+  const [search, setSearch] = useState('');
+  const [gamers, setGamers] = useState([]);
+  const [filteredGamers, setFilteredGamers] = useState([]);
   const user = sessionStorage.getItem('user');
 
   useEffect(() => {
@@ -30,7 +33,13 @@ const AppContextProvider = ({ children }) => {
         currentUser,
         setCurrentUser,
         loading,
-        setLoading
+        setLoading,
+        search,
+        setSearch,
+        gamers,
+        setGamers,
+        filteredGamers,
+        setFilteredGamers
       }}
     >
       {children}
