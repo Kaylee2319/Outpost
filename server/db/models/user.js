@@ -78,27 +78,6 @@ const userSchema = new mongoose.Schema(
   }
 );
 
-//Create a relationship between User to DirectMessage
-userSchema.virtual('directMessages', {
-  ref: 'DirectMessage',
-  localField: '_id',
-  foreignField: 'dm_id'
-});
-
-//Create a relationship between User to ChatMessage
-userSchema.virtual('chatMessages', {
-  ref: 'ChatMessage',
-  localField: '_id',
-  foreignField: 'message_id'
-});
-
-//Create a relationship between User to Chatrooms
-userSchema.virtual('chatrooms', {
-  ref: 'Chatrooms',
-  localField: '_id',
-  foreignField: 'chat_id'
-});
-
 userSchema.methods.toJSON = function () {
   const user = this;
   const userObject = user.toObject();
