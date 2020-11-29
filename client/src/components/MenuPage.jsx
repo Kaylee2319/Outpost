@@ -19,6 +19,11 @@ const Menu = ({ history }) => {
           />
         </button>
       </div>
+      <div className="line1">
+        <Link className="searchMenu" to="/gamers">
+          SEARCH
+        </Link>
+      </div>
       <div className="menuLinks">
         <div className="line1">
           {!currentUser ? (
