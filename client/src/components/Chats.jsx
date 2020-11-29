@@ -47,18 +47,17 @@ const Chat = () => {
       <div className="messages">
         {chats.map((chat) => {
           let isSentByCurrentUser = chat.author === currentUser.user_name;
-
           return isSentByCurrentUser ? (
-            <div className="messageOutput justifyEnd">
+            <div className="messageMine justifyEnd">
               <img className="messagePic" src={chat.avatar} alt="user"></img>
-              <div className="theoutput">
+              <div className="messageText">
                 <strong>{chat.author}:</strong> {chat.message}
               </div>
             </div>
           ) : (
-            <div className="messageOutputFromOther justifyStart">
+            <div className="messageTheirs justifyStart">
               <img className="messagePic" src={chat.avatar} alt="user"></img>
-              <div className="theoutputFromOtherUser">
+              <div className="messageText">
                 <strong>{chat.author}:</strong> {chat.message}
               </div>
             </div>

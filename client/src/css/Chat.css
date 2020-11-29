@@ -7,7 +7,8 @@
   margin-bottom: 0.5rem;
   border: 2px solid rgba(141, 146, 64, 0.75);
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  justify-content: flex-end;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -16,29 +17,7 @@
   width: 3.5rem;
   border-radius: 50%;
 }
-.theoutput {
-  display: flex;
-  flex-direction: column;
-  background-color: lightblue;
-  width: inherit;
-  padding: 0.5rem;
-  margin-left: 5px;
-  border-radius: 15px;
-  font-size: 13px;
-  font-family: 'Cabin', sans-serif;
-}
-.theoutputFromOtherUser {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(141, 146, 64, 0.75);
-  width: inherit;
-  padding: 0.5rem;
-  margin-left: 5px;
-  border-radius: 15px;
-  font-size: 13px;
-  font-family: 'Cabin', sans-serif;
-}
-.messageOutput {
+.messageMine {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-start;
@@ -46,17 +25,34 @@
   width: inherit;
   margin-left: 0.75rem;
 }
-.messageOutputFromOther {
+.messageText {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  padding: 0.5rem;
+  margin-left: 5px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-family: 'Cabin', sans-serif;
+}
+.messageMine .messageText {
+  background-color: lightblue;
+}
+.messageTheirs {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: inherit;
   margin-left: 0.75rem;
 }
+
+.messageTheirs .messageText {
+  background-color: rgba(141, 146, 64, 0.75);
+}
 .sendButton {
   border: none;
   border-radius: 8px;
-  background-color: white;
+  color: #ffac4f;
   display: flex;
   justify-content: center;
   align-items: center;
