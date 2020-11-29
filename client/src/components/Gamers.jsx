@@ -14,7 +14,7 @@ const Task = ({ users }) => {
     <>
       {filteredGamers.map((users) => (
         <div key={users._id}>
-          <Link to="/gamersprofile" className="gamerbutton">
+          <Link to={`/gamersprofile/${users._id}`} className="gamerbutton">
             <img
               src={
                 users?.avatar

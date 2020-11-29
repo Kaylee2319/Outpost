@@ -39,7 +39,7 @@ function App() {
           <Route exact path="/event" component={Events} />
           <Route exact path="/search" component={Gamers} />
           <Route exact path="/gamers" component={GamersList} />
-          <Route exact path="/gamersprofile" component={GamersProfile} />
+          <Route exact path="/gamersprofile/:id" component={GamersProfile} />
           <SecureRoute exact path="/chats" component={Chatroom} />
           <SecureRoute exact path="/profile" component={ProfilePage} />
           <SecureRoute exact path="/profileedit" component={ProfileEdit} />
