@@ -56,7 +56,7 @@ const GamersProfile = ({ match }) => {
           <h4 className="dutyStatus">{gamer?.service_branch}</h4>
 
           <Link to="/chats" className="messageButton">
-            <span className="messageButton1">Messages</span>s
+            <span className="messageButton1">Messages</span>
           </Link>
         </div>
         <div className="favGames" style={{ marginBottom: 20 }}>

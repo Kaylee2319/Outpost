@@ -45,24 +45,26 @@ const Chat = () => {
   return (
     <div className="container">
       <div className="messages">
-        {chats.map((chat) => {
-          let isSentByCurrentUser = chat.author === currentUser.user_name;
-          return isSentByCurrentUser ? (
-            <div className="messageMine justifyEnd">
-              <img className="messagePic" src={chat.avatar} alt="user"></img>
-              <div className="messageText">
-                <strong>{chat.author}:</strong> {chat.message}
+        <div className="theMess">
+          {chats.map((chat) => {
+            let isSentByCurrentUser = chat.author === currentUser.user_name;
+            return isSentByCurrentUser ? (
+              <div className="messageMine justifyEnd">
+                <img className="messagePic" src={chat.avatar} alt="user"></img>
+                <div className="messageText">
+                  <strong>{chat.author}:</strong> {chat.message}
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className="messageTheirs justifyStart">
-              <img className="messagePic" src={chat.avatar} alt="user"></img>
-              <div className="messageText">
-                <strong>{chat.author}:</strong> {chat.message}
+            ) : (
+              <div className="messageTheirs justifyStart">
+                <img className="messagePic" src={chat.avatar} alt="user"></img>
+                <div className="messageText">
+                  <strong>{chat.author}:</strong> {chat.message}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
       <div className="inputBox">
         <input
