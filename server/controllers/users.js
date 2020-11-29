@@ -91,7 +91,7 @@ exports.getAllUsers = async (req, res) => {
 
 exports.getUserByID = async (req, res) => {
   try {
-    const gamersID = await User.find(_id);
+    const gamersID = await User.findById(req.params.id);
     res.json(gamersID);
   } catch (error) {
     res.status(400).json({ error: error.message });
