@@ -6,9 +6,7 @@ const cloudinary = require('cloudinary').v2,
     forgotPasswordEmail
   } = require('../emails/index');
 const jwt = require('jsonwebtoken');
-// ==  OPEN ROUTES  ==
 
-// Create a User createuser
 exports.createUser = async (req, res) => {
   const { user_name, email, password } = req.body;
   try {
@@ -30,7 +28,6 @@ exports.createUser = async (req, res) => {
   }
 };
 
-// Login a User loginUser
 exports.loginUser = async (req, res) => {
   const { email, password } = req.body;
   try {
@@ -47,7 +44,6 @@ exports.loginUser = async (req, res) => {
   }
 };
 
-// Password Change Request requestPasswordReset
 exports.requestPasswordReset = async (req, res) => {
   try {
     const { email } = req.query;
@@ -65,7 +61,6 @@ exports.requestPasswordReset = async (req, res) => {
   }
 };
 
-// Password Change Page passwordRedirect
 exports.passwordRedirect = async (req, res) => {
   const { token } = req.params;
   try {
@@ -83,16 +78,10 @@ exports.passwordRedirect = async (req, res) => {
   }
 };
 
-//                                                   ====================
-
-// ==  SECURE ROUTES  ==                           ==================
-
-// User Profile Page getUserProfile
 exports.getUserProfile = async (req, res) => {
   res.json(req.user);
 };
 
-// Update User Info updateUserProfile
 exports.updateUserProfile = async (req, res) => {
   const updates = Object.keys(req.body);
   const allowedUpdates = [
@@ -115,18 +104,14 @@ exports.updateUserProfile = async (req, res) => {
   if (!isValidOperation)
     return res.status(400).json({ message: 'Invalid updates' });
   try {
-    //Loop through each update, and change the value for the current user to the value coming from the body
     updates.forEach((update) => (req.user[update] = req.body[update]));
-    //save the updates in the db
     await req.user.save();
-    //send the updated user as a response
     res.json(req.user);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }
 };
 
-// Update User Avatar uploadAvatar
 exports.uploadAvatar = async (req, res) => {
   try {
     const response = await cloudinary.uploader.upload(
@@ -140,7 +125,6 @@ exports.uploadAvatar = async (req, res) => {
   }
 };
 
-// Update Password updatePassword
 exports.updatePassword = async (req, res) => {
   try {
     req.user.password = req.body.password;
@@ -152,7 +136,6 @@ exports.updatePassword = async (req, res) => {
   }
 };
 
-// Logout User logoutUser
 exports.logoutUser = async (req, res) => {
   try {
     req.user.tokens = req.user.tokens.filter((token) => {
@@ -166,7 +149,6 @@ exports.logoutUser = async (req, res) => {
   }
 };
 
-// Delete User deleteUser
 exports.deleteUser = async (req, res) => {
   try {
     await req.user.remove();
