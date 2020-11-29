@@ -108,10 +108,11 @@ const EditUser = ({ history }) => {
           <FiSave size={25} style={{ color: 'rgba(5, 95, 158, 1)' }} /> Save
           Info
         </button>
+        <Link to="/passwordupdate" className="editFormButton1">
+          Update Password
+        </Link>
       </form>
-      <Link to="/passwordupdate" className="menuEvent">
-        Update Password
-      </Link>
+
       <Footer />
     </div>
   );
