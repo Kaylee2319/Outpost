@@ -21,8 +21,8 @@ const LoginPage = ({ history }) => {
     console.log(formData);
     console.log(event);
   };
-  const handleLogin = async (e) => {
-    e.preventDefault();
+  const handleLogin = async (event) => {
+    event.preventDefault();
     try {
       const response = await axios.post('/api/login', formData);
       setCurrentUser(response.data);

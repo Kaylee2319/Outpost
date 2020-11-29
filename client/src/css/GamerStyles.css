@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap&family=Cabin&display=swap&family=Montserrat:wght@300;400&display=swap');
+
+.gamersearch {
+  height: 30px;
+  width: 250px;
+  border: none;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25);
+  margin-bottom: 15px;
+  background-color: beige;
+  border-radius: 12px;
+}
+
+.searchcontainer {
+  width: 100%;
+}
+
+.searchgamer {
+  display: flex;
+  justify-content: center;
+}
+
+.gamerbutton {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 1rem;
+  width: 285px;
+  text-decoration: none;
+  color: black;
+  font-family: 'Cabin', sans-serif;
+}
+
+.gamerPic {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  margin-right: 5px;
+}

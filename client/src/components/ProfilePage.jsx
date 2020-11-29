@@ -19,13 +19,13 @@ const ProfilePage = ({ history: { push } }) => {
   const [image, setImage] = useState(null);
   const [preview, setPreview] = useState(null);
 
-  const handleImageSelect = (e) => {
-    setPreview(URL.createObjectURL(e.target.files[0]));
-    setImage(e.target.files[0]);
+  const handleImageSelect = (event) => {
+    setPreview(URL.createObjectURL(event.target.files[0]));
+    setImage(event.target.files[0]);
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     const avatar = new FormData();
     avatar.append('avatar', image, image.name);
     try {
@@ -159,7 +159,7 @@ const ProfilePage = ({ history: { push } }) => {
         <p className="consoles">Find me on:</p>
         <div className="mygameTags">
           <div>
-            <FaXbox /> <strong>Xbox:</strong> {currentUser?.xbox}{' '}
+            <FaXbox /> <strong>Xbox:</strong> {currentUser?.xbox}
           </div>
           <div>
             <FaPlaystation /> <strong>Playstation:</strong> {currentUser?.psn}

@@ -19,9 +19,6 @@ const Menu = ({ history }) => {
           />
         </button>
       </div>
-      <div className="searchBar">
-        <input className="searchMenu" type="text" placeholder="Search"></input>
-      </div>
       <div className="menuLinks">
         <div className="line1">
           {!currentUser ? (
@@ -38,7 +35,6 @@ const Menu = ({ history }) => {
           </Link>
         </div>
         <div className="line2">
-
           {!currentUser ? (
             <Link to="/login" className="menuChat">
               Chat Now
