@@ -28,7 +28,7 @@
   font-size: 13px;
   font-family: 'Cabin', sans-serif;
 }
-.theoutput1 {
+.theoutputFromOtherUser {
   display: flex;
   flex-direction: column;
   background-color: lightgreen;
@@ -47,7 +47,7 @@
   width: inherit;
   margin-left: 0.75rem;
 }
-.messageOutput1 {
+.messageOutputFromOther {
   display: flex;
   justify-content: flex-start;
   align-items: center;
