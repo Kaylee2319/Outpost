@@ -19,7 +19,6 @@ import ProfilePage from './components/ProfilePage';
 import ProfileEdit from './components/ProfileEdit';
 import GamersList from './components/GamersList';
 import GamersProfile from './components/GamersProfile';
-import './App.css';
 
 function App() {
   return (
