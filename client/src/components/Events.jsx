@@ -15,6 +15,7 @@ const Events = () => {
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"
+
           headerToolbar={{
             left: 'prev',
             center: 'title',

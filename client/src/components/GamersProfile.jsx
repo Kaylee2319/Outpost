@@ -9,6 +9,7 @@ import { AppContext } from '../context/AppContext';
 import { MdComputer, MdDevicesOther } from 'react-icons/md';
 import { FaXbox, FaPlaystation } from 'react-icons/fa';
 import { SiNintendoswitch } from 'react-icons/si';
+import wyncode from '../images/wyncode.png';
 
 const GamersProfile = ({ match }) => {
   const [loading, setLoading] = useState(true);
@@ -17,7 +18,7 @@ const GamersProfile = ({ match }) => {
   useEffect(() => {
     console.log('PARAMS', match);
     axios
-      .get(`/api/allusers/${match.params.id}`)
+      .get(`/api/users/allusers/${match.params.id}`)
       .then((response) => {
         setGamer(response.data);
         setLoading(false);
@@ -37,11 +38,7 @@ const GamersProfile = ({ match }) => {
         <div className="pic">
           <img
             className="proPic"
-            src={
-              gamer?.avatar
-                ? gamer?.avatar
-                : 'https://files.willkennedy.dev/wyncode/wyncode.png'
-            }
+            src={gamer?.avatar ? gamer?.avatar : `${wyncode}`}
             alt="profile"
           />
         </div>
@@ -56,7 +53,7 @@ const GamersProfile = ({ match }) => {
           <h4 className="dutyStatus">{gamer?.service_branch}</h4>
 
           <Link to="/chats" className="messageButton">
-            <span className="messageButton1">Messages</span>
+            <span className="messageButton1">Message</span>
           </Link>
         </div>
         <div className="favGames" style={{ marginBottom: 20 }}>

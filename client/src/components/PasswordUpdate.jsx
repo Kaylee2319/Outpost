@@ -4,6 +4,7 @@ import swal from 'sweetalert';
 import '../css/PasswordUpdate.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
+
 const PasswordUpdate = ({ history }) => {
   const [password, setPassword] = useState(null);
 

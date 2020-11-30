@@ -33,7 +33,9 @@ function Accordion(props) {
         style={{ maxHeight: `${setHeight}` }}
         className="accordion__content"
       >
+
         <div className="accordion__text">
+
           <a href={props.link}>{props.content}</a>
         </div>
       </div>
