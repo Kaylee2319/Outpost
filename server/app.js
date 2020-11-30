@@ -12,15 +12,12 @@ const express = require('express'),
 
 const app = express();
 
-//Middleware
 app.use(express.json());
 
 app.use(cookieParser());
 
-// Unauthenticated routes
 app.use('/api', openRoutes);
 
-// Serve any static files
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
@@ -32,12 +29,10 @@ app.use(
   })
 );
 
-// Any authentication middleware and related routing would be here.
 app.use('/api/*', passport.authenticate('jwt', { session: false }));
 
 app.use('/api/users', userRouter);
 
-// Handle React routing, return all requests to React app
 if (process.env.NODE_ENV === 'production') {
   app.get('*', (request, response) => {
     response.sendFile(
@@ -55,21 +50,15 @@ const io = require('socket.io')(http, {
 });
 
 io.on('connection', (socket) => {
-  console.log('a user is connected', socket.id);
-
   socket.on('send message', function (msg) {
     io.emit('receive message', msg);
   });
 
-  socket.on('disconnect', () => {
-    console.log('...and disconnected');
-  });
+  socket.on('disconnect', () => {});
 });
 
 if (process.env.NODE_ENV === 'production') {
-  // Serve any static files
   app.use(express.static(path.join(__dirname, 'client/build')));
-  // Handle React routing, return all requests to React app
   app.get('*', (request, response) => {
     response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   });
