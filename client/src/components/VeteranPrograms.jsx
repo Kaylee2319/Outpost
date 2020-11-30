@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/VeteranPrograms.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
+
 const VeteranPrograms = () => {
   return (
     <>

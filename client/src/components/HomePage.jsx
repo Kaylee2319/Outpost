@@ -8,6 +8,7 @@ import { FaRegHandshake } from 'react-icons/fa';
 import { AppContext } from '../context/AppContext';
 import Footer from './Footer';
 import outpost from '../images/outpost.mp4';
+
 const HomePage = ({ history }) => {
   const { currentUser } = useContext(AppContext);
   const handleClick = () => {
