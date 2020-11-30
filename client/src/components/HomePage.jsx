@@ -7,6 +7,7 @@ import { IoIosSearch } from 'react-icons/io';
 import { FaRegHandshake } from 'react-icons/fa';
 import { AppContext } from '../context/AppContext';
 import Footer from './Footer';
+import outpost from '../images/outpost.mp4';
 const HomePage = ({ history }) => {
   const { currentUser } = useContext(AppContext);
   const handleClick = () => {
@@ -54,7 +55,9 @@ const HomePage = ({ history }) => {
       </div>
       <div className="howVideo">
         <h3 className="howvideotitle">Watch how it works</h3>
-        <div className="video">video goes here</div>
+        <div className="video">
+          <video src={outpost} autoPlay loop muted></video>
+        </div>
       </div>
       <div className="upcomingEvents">
         <span className="eventTitle">Upcoming Events</span>
