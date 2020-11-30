@@ -121,9 +121,9 @@
 }
 .video {
   height: 15rem;
+  width: 90%;
   display: flex;
   justify-content: center;
-  background-color: lightgrey;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 3rem;

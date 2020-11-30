@@ -3,7 +3,7 @@ import socketIo from '../utils/socket-io';
 import { AppContext } from '../context/AppContext';
 import '../css/Chat.css';
 import { RiSendPlaneFill } from 'react-icons/ri';
-
+import wyncode from '../images/wyncode.png';
 const Chat = () => {
   const [message, setMessage] = useState('');
   const [chats, setChats] = useState([]);
@@ -29,11 +29,7 @@ const Chat = () => {
   const sendMessage = (event) => {
     event.preventDefault();
     socketIo.emit('send message', {
-      avatar: `${
-        currentUser?.avatar
-          ? currentUser?.avatar
-          : 'https://files.willkennedy.dev/wyncode/wyncode.png'
-      }`,
+      avatar: `${currentUser?.avatar ? currentUser?.avatar : `${wyncode}`}`,
       author: `${currentUser?.user_name}`,
       message: message
     });
