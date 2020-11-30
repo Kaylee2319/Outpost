@@ -11,11 +11,16 @@ const Events = () => {
   return (
     <React.Fragment>
       <NavBar />
-      <div>Home</div>
       <div>
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"
+
+          headerToolbar={{
+            left: 'prev',
+            center: 'title',
+            right: 'next'
+          }}
           events={[
             { title: 'Among Us - Game Session', date: '2020-12-07' },
             { title: 'Mario Kart - Game Session', date: '2020-12-09' },
