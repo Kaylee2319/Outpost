@@ -1,24 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import FullCalendar from '@fullcalendar/react';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import interactionPlugin from '@fullcalendar/interaction';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import { Link } from 'react-router-dom';
-import CreateEvent from './CreateEvent';
 import '../css/EventsPage.css';
+import Accordion from '../Accordion-components/Accordion';
 
 const Events = () => {
-  const [modal, setModal] = useState(false);
-
-  const handleClick = (event) => {
-    setModal(true);
-  };
-
-  const closeModal = () => {
-    setModal(false);
-  };
-
   return (
     <React.Fragment>
       <NavBar />
@@ -27,28 +16,37 @@ const Events = () => {
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"
-          dateClick={handleClick}
+          events={[
+            { title: 'Among Us - Game Session', date: '2020-12-07' },
+            { title: 'Mario Kart - Game Session', date: '2020-12-09' },
+            { title: 'Minecraft - Game Session', date: '2020-12-11' }
+          ]}
         />
       </div>
-      <CreateEvent className="modal" show={modal} onHide={closeModal} />
       <div>
-        <h4>
-          <Link to="/upcomingevents">
-            <span>Upcoming Events</span>
-          </Link>
+        <h4 className="upcomingEvents">
+          <span>Upcoming Events</span>
         </h4>
       </div>
       <div>
-        <h5>Thursday December 3, 2020</h5>
-        <h6>Among Us Game Session</h6>
-      </div>
-      <div>
-        <h5>Wednesday December 2, 2020</h5>
-        <h6>Mario Kart Game Session</h6>
-      </div>
-      <div>
-        <h5>Tuesday December 1, 2020</h5>
-        <h6>Minecraft Game Session</h6>
+        <Accordion
+          title="Among Us Gaming Session"
+          date="Thursday December 7, 2020"
+          content="Among Us Meetup Eventbrite Page"
+          link="https://www.eventbrite.com/e/among-us-game-session-tickets-130970942615"
+        />
+        <Accordion
+          title="Mario Kart Game Session"
+          date="Wednesday December 9, 2020"
+          content="Mario Kart Meetup Eventbrite Page"
+          link="https://www.eventbrite.com/e/mario-kart-game-session-tickets-130975991717"
+        />
+        <Accordion
+          title="Minecraft Gaming Session"
+          date="Tuesday December 11, 2020"
+          content="Minecraft Meetup Eventbrite Page"
+          link="https://www.eventbrite.com/e/minecraft-game-session-tickets-130976136149"
+        />
       </div>
       <Footer />
     </React.Fragment>
