@@ -4,6 +4,7 @@ import swal from 'sweetalert';
 import '../css/PasswordReset.css';
 import NavBar from './NavBar';
 import Footer from './Footer';
+
 const ResetPassword = () => {
   const [email, setEmail] = useState('');
 

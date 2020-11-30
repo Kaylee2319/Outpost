@@ -5,6 +5,7 @@ import Footer from './Footer';
 import { BsPeople } from 'react-icons/bs';
 import { IoIosSearch } from 'react-icons/io';
 import { FaRegHandshake } from 'react-icons/fa';
+
 const PolicyGuide = ({ history }) => {
   const handleClick = () => {
     history.push('/signup');

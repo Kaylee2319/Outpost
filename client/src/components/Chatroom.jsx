@@ -2,6 +2,7 @@ import React from 'react';
 import Chat from './Chats';
 import NavBar from './NavBar';
 import Footer from './Footer';
+
 const Chatroom = () => {
   return (
     <>

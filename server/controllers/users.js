@@ -89,15 +89,6 @@ exports.getAllUsers = async (req, res) => {
   }
 };
 
-exports.getUserByID = async (req, res) => {
-  try {
-    const gamersID = await User.findById(req.params.id);
-    res.json(gamersID);
-  } catch (error) {
-    res.status(400).json({ error: error.message });
-  }
-};
-
 //==SECURE ROUTES==
 
 exports.getUserProfile = async (req, res) => {
@@ -177,6 +168,15 @@ exports.deleteUser = async (req, res) => {
     sendCancellationEmail(req.user.email, req.user.user_name);
     res.clearCookie('jwt');
     res.json({ message: 'user deleted' });
+  } catch (error) {
+    res.status(400).json({ error: error.message });
+  }
+};
+
+exports.getUserByID = async (req, res) => {
+  try {
+    const gamersID = await User.findById(req.params.id);
+    res.json(gamersID);
   } catch (error) {
     res.status(400).json({ error: error.message });
   }

@@ -4,6 +4,7 @@ import { AppContext } from '../context/AppContext';
 import '../css/Chat.css';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import wyncode from '../images/wyncode.png';
+
 const Chat = () => {
   const [message, setMessage] = useState('');
   const [chats, setChats] = useState([]);

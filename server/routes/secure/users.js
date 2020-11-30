@@ -1,6 +1,7 @@
 const router = require('express').Router(),
   {
     getUserProfile,
+    getUserByID,
     updateUserProfile,
     uploadAvatar,
     updatePassword,
@@ -9,14 +10,11 @@ const router = require('express').Router(),
   } = require('../../controllers/users');
 
 router.get('/profile', getUserProfile);
+router.get('/allusers/:id', getUserByID);
 router.patch('/profile', updateUserProfile);
 router.post('/avatar', uploadAvatar);
 router.put('/password', updatePassword);
 router.post('/logout', logoutUser);
 router.delete('/', deleteUser);
-
-// Send DM - post and get???
-
-// Send Chat in Chatroom
 
 module.exports = router;
