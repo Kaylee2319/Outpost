@@ -21,6 +21,7 @@ const LoginPage = ({ history }) => {
     console.log(formData);
     console.log(event);
   };
+
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
@@ -32,6 +33,7 @@ const LoginPage = ({ history }) => {
       swal(`Oops!`, 'Something went wrong.');
     }
   };
+
   return (
     <>
       <NavBar />

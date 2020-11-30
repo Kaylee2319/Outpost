@@ -6,11 +6,10 @@
   margin-right: 1.5rem;
   margin-bottom: 0.5rem;
   border: 2px solid rgba(141, 146, 64, 0.75);
+  transform: rotate(180);
+  overflow: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+  flex-direction: column-reverse;
 }
 .messagePic {
   height: 3.5rem;

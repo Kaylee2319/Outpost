@@ -7,6 +7,7 @@ import Footer from './Footer';
 import axios from 'axios';
 import swal from 'sweetalert';
 import '../css/ProfileEdit.css';
+
 const EditUser = ({ history }) => {
   const { currentUser, setCurrentUser } = useContext(AppContext);
   const [formData, setFormData] = useState(null);
@@ -15,8 +16,8 @@ const EditUser = ({ history }) => {
     setFormData({ ...formData, [event.target.name]: event.target.value });
   };
 
-  const handleUpDate = async (e) => {
-    e.preventDefault();
+  const handleUpDate = async (event) => {
+    event.preventDefault();
     try {
       const response = await axios.patch('/api/users/profile', formData);
       sessionStorage.setItem('user', response.data);
